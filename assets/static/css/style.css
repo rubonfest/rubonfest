@@ -118,6 +118,30 @@ div#site-title span {
   font-weight: bold;
 }
 
+div.sidebar-block {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+a.sidebar-year-link {
+  display: block;
+  text-align: center;
+  margin-left: 5px;
+  padding: 2px;
+  float: left;
+  width: 30%;
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+}
+a.sidebar-year-link:hover {
+  color: #fff;
+}
+
+.bigtext {
+  font-size: 1.5em;
+}
+
 @media (max-width: 1200px) {
   nav#nav-main {
     display: none;

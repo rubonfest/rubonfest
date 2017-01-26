@@ -14,8 +14,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -88,11 +88,27 @@
     </section>
 
     <section class="row">
-      <div class="one-half column">
-        <h4>Пра Фэст</h4>
+      <div class="two-thirds column">
+        <h4>{% block page_title %}{% endblock %}</h4>
         {% block body %}{% endblock %}
       </div>
-      <div class="one-half column">
+      <div class="one-third column">
+        <div class="sidebar-block">
+          <h4>Кантакты</h4>
+          Lorem ipsum dolor sit amet<br/>
+          Consectetur adipiscing elit<br/>
+          Fusce lectus turpis, finibus<br/>
+        </div>
+        <div class="sidebar-block">
+          <h4>Генеральны партнёр</h4>
+          <a _target="blank" href="http://mts.by"><img src="{{ '/static/images/mts.png'|url }}" /></a>
+        </div>
+        <div class="sidebar-block u-cf">
+          <h4>Мінулыя фэсты</h4>
+          {% for previous in site.query('/').filter(F._model == 'previous').order_by('-year') %}
+          <a href="{{ previous|url }}" class="sidebar-year-link bigtext">{{ previous.year }}</a>
+          {% endfor %}
+        </div>
       </div>
     </section>
   </div><!-- .container -->
