@@ -1,0 +1,24 @@
+[project]
+name = rubon
+
+[alternatives.be]
+name = Беларуская
+locale = be
+primary = yes
+
+[alternatives.ru]
+name = Русский
+locale = ru
+url_prefix = /ru/
+
+[alternatives.en]
+name = English
+locale = en
+url_prefix = /en/
+
+[servers.production]
+name = Публікацыя
+default = yes
+enabled = yes
+target = rsync://bs.miesta.by/var/www/rubon
+

@@ -1,0 +1,134 @@
+body {
+  background: #dbc8ac;
+}
+img {
+  max-width: 100%;
+}
+nav#nav-main-mobile,
+nav#nav-main {
+  height: 65px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  background: url('../images/menu_bg.png') no-repeat;
+}
+
+nav#nav-main-mobile {
+  float: right;
+  display: none;
+  background: url('../images/menu_bg_small.png') no-repeat top right;
+  padding-left: 15px;
+}
+
+nav#nav-second ul,
+nav#nav-main ul,
+nav#nav-main-mobile ul {
+  overflow: hidden;
+  padding: 15px 0 0 0;
+  margin: 0px;
+  list-style: none;
+}
+
+nav#nav-second li,
+nav#nav-main li,
+nav#nav-main-mobile li {
+  padding: 0px;
+  margin: 0px;
+  display: inline;
+}
+
+nav#nav-second li ,
+nav#nav-main-mobile li ,
+nav#nav-main li  {
+  float: left;
+  display: block;
+  padding: 3px 20px 5px 20px;
+  text-align: center;
+  outline: none;
+}
+
+nav a {
+  font-size: 1.2em;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2e1313;
+}
+
+nav#nav-main-mobile li  {
+  padding-right: 60px;
+}
+
+nav#nav-second li  {
+  padding: 0 20px;
+  line-height: 1.2em;
+  border-right: 1px solid #2e1313;
+}
+
+nav#nav-main a:hover,
+nav#nav-second a:hover,
+nav#nav-main-mobile a:hover {
+  color: #fff;
+}
+
+nav#nav-second {
+  background: url('../images/second_menu_fill.png') repeat-x;
+  height: 50px;
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+
+nav#nav-second ul {
+  overflow: hidden;
+  padding: 5px 0 0 0;
+  margin: 0px;
+  list-style: none;
+}
+
+nav#nav-second ul li:last-child,
+nav#nav-main-mobile ul li:last-child,
+nav#nav-main ul li:last-child {
+  padding-right: 20px;
+  border: none;
+}
+
+nav#nav-menu-sidebar {
+}
+
+div#logo {
+  margin-top: 25px;
+}
+
+div#logo img {
+  width: 100%;
+}
+
+div#site-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+div#site-title a {
+  text-decoration: none;
+}
+
+
+div#site-title span {
+  display: block;
+  font-size: 0.5em;
+  color: #37322b;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  nav#nav-main {
+    display: none;
+  }
+  nav#nav-main-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  nav#nav-second {
+    display: none;
+  }
+}
