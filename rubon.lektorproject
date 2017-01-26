@@ -20,5 +20,5 @@ url_prefix = /en/
 name = Публікацыя
 default = yes
 enabled = yes
-target = rsync://bs.miesta.by/var/www/rubon
+target = rsync://repo@bs.miesta.by/var/www/rubon
 
