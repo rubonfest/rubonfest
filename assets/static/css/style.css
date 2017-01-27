@@ -123,6 +123,7 @@ div.sidebar-block {
   margin-bottom: 50px;
 }
 
+a.sidebar-smi-link,
 a.sidebar-year-link {
   display: block;
   text-align: center;
