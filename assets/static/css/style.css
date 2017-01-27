@@ -3,7 +3,23 @@ body {
 }
 img {
   max-width: 100%;
+  width: 100%;
 }
+
+a,
+a:visited,
+a:active {
+  color: #2e1313;
+}
+
+a:hover {
+  color: #fff;
+}
+
+h3 {
+  text-align: center;
+}
+
 nav#nav-main-mobile,
 nav#nav-main {
   height: 65px;
@@ -23,7 +39,7 @@ nav#nav-second ul,
 nav#nav-main ul,
 nav#nav-main-mobile ul {
   overflow: hidden;
-  padding: 15px 0 0 0;
+  padding: 1rem 0 0 0;
   margin: 0px;
   list-style: none;
 }
@@ -48,9 +64,13 @@ nav#nav-main li  {
 
 nav a {
   font-size: 1.2em;
+  line-height: 2.1em;
   font-weight: normal;
   text-decoration: none;
-  color: #2e1313;
+}
+
+nav a img {
+  height: 45px;
 }
 
 nav#nav-main-mobile li  {
@@ -59,21 +79,11 @@ nav#nav-main-mobile li  {
 
 nav#nav-second li  {
   padding: 0 20px;
-  line-height: 1.2em;
-  border-right: 1px solid #2e1313;
-}
-
-nav#nav-main a:hover,
-nav#nav-second a:hover,
-nav#nav-main-mobile a:hover {
-  color: #fff;
 }
 
 nav#nav-second {
   background: url('../images/second_menu_fill.png') repeat-x;
   height: 50px;
-  padding-top: 10px;
-  margin-bottom: 50px;
 }
 
 nav#nav-second ul {
@@ -88,9 +98,6 @@ nav#nav-main-mobile ul li:last-child,
 nav#nav-main ul li:last-child {
   padding-right: 20px;
   border: none;
-}
-
-nav#nav-menu-sidebar {
 }
 
 div#logo {
@@ -120,7 +127,12 @@ div#site-title span {
 
 div.sidebar-block {
   width: 100%;
-  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+div.content-block {
+  width: 100%;
+  margin-top: 50px;
 }
 
 a.sidebar-smi-link,
@@ -139,6 +151,14 @@ a.sidebar-year-link:hover {
   color: #fff;
 }
 
+a.helper-link {
+  display: block;
+  text-align: right;
+  padding: 2rem 0;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
 .bigtext {
   font-size: 1.5em;
 }
@@ -155,5 +175,9 @@ a.sidebar-year-link:hover {
 @media (max-width: 550px) {
   nav#nav-second {
     display: none;
+  }
+
+  a.helper-link {
+    text-transform: none;
   }
 }

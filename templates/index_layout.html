@@ -65,7 +65,7 @@
         </nav>
         <div id="site-title">
           <h1>
-            <a href="http://www.template4all.com/" target="_parent">
+            <a href="/">
               <img src="{{ '/static/images/templatemo_logo.png'|url }}" alt="logo">
               <span>фестываль у Полацку</span>
             </a>                
@@ -78,7 +78,7 @@
       <div class="column">
         <nav id="nav-second">
           <ul>
-            <li><a href="/"><img height="20px" src="{{ '/static/images/seal.png'|url }}" /></a></li>
+            <li><a href="/"><img src="{{ '/static/images/seal.png'|url }}" /></a></li>
             <li><a href="#program">Праграма</a></li>
             <li><a href="#guests">Госці</a></li>
             <li><a href="#events">Мерапрыемствы</a></li>
@@ -90,15 +90,16 @@
     <section class="row">
       <div class="two-thirds column">
         <div class="content-block">
-        <h4>{% block page_title %}{% endblock %}</h4>
+        <h3>{% block page_title %}{% endblock %}</h3>
         {% block body %}{% endblock %}
         </div>
         {% for guest_role in site.query('/festival-guests').all() %} 
           {% set headliner = guest_role.children.filter(F.to_front == True).first() %}
           <div class="content-block">
-            <h4>Галоўны госць фестывалю | <a href="{{ '/festival-guests'|url }}">Усе госці</a></h4>
-            <h4>{{ headliner.name }}</h4>
+            <h4>Галоўны госць фестывалю</h4>
+            <h3>{{ headliner.name }}</h3>
             <img src="{{ headliner.attachments.images.first()|url }}" />
+            <a class="helper-link" href="{{ '/festival-guests'|url }}">Усе госці &rarr;</a>
           </div>
         {% endfor %}
       </div>

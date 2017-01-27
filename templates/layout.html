@@ -34,53 +34,13 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <header class="row">
-      <div class="one-half column">
-        <div id="logo">
-          <a href="/"><img src="{{ '/static/images/logo.png'|url }}" /></a>
-        </div>
-      </div><!-- .column -->
-      <div class="one-half column">
-        <nav id="nav-main">
-          <ul>
-            <li><a href="/">Пра фэст</a></li>
-            <li><a href="/">Удзельнікам</a></li>
-            <li><a href="/">Кантакты</a></li>
-            <li><a href="/">БЕЛ</a></li>
-          </ul>
-        </nav>
-        <nav id="nav-main-mobile">
-          <ul>
-            <li><a href="/">БЕЛ</a></li>
-            <li><a href="#nav-menu-sidebar"><img width="45px" src="{{ '/static/images/menu_icon.png'|url }}" /></a></li>
-          </ul>
-        </nav>
-        <nav id="nav-menu-sidebar">
-          <ul>
-            <li><a href="/">Пра фэст</a></li>
-            <li><a href="/">Удзельнікам</a></li>
-            <li><a href="/">Кантакты</a></li>
-            <li><a href="/">БЕЛ</a></li>
-          </ul>
-        </nav>
-        <div id="site-title">
-          <h1>
-            <a href="http://www.template4all.com/" target="_parent">
-              <img src="{{ '/static/images/templatemo_logo.png'|url }}" alt="logo">
-              <span>фестываль у Полацку</span>
-            </a>                
-          </h1>
-        </div>
-        <iframe width="100%" height="350px" src="https://www.youtube.com/embed/_J3lVX_f_eQ" frameborder="0" allowfullscreen></iframe>
-      </div><!-- .column -->
-    </header><!-- .row -->
     <section class="row">
       <div class="column">
         <nav id="nav-second">
           <ul>
-            <li><a href="/"><img height="20px" src="{{ '/static/images/seal.png'|url }}" /></a></li>
             <li><a href="#program">Праграма</a></li>
             <li><a href="#guests">Госці</a></li>
+            <li><a href="/"><img src="{{ '/static/images/rubon.png'|url }}" /></a></li>
             <li><a href="#events">Мерапрыемствы</a></li>
           </ul>
         </nav>
@@ -88,27 +48,9 @@
     </section>
 
     <section class="row">
-      <div class="two-thirds column">
+      <div class="column">
         <h4>{% block page_title %}{% endblock %}</h4>
         {% block body %}{% endblock %}
-      </div>
-      <div class="one-third column">
-        <div class="sidebar-block">
-          <h4>Кантакты</h4>
-          Lorem ipsum dolor sit amet<br/>
-          Consectetur adipiscing elit<br/>
-          Fusce lectus turpis, finibus<br/>
-        </div>
-        <div class="sidebar-block">
-          <h4>Генеральны партнёр</h4>
-          <a _target="blank" href="http://mts.by"><img src="{{ '/static/images/mts.png'|url }}" /></a>
-        </div>
-        <div class="sidebar-block u-cf">
-          <h4>Мінулыя фэсты</h4>
-          {% for previous in site.query('/').filter(F._model == 'previous').order_by('-year') %}
-          <a href="{{ previous|url }}" class="sidebar-year-link bigtext">{{ previous.year }}</a>
-          {% endfor %}
-        </div>
       </div>
     </section>
   </div><!-- .container -->
