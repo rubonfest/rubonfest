@@ -52,7 +52,7 @@
         <nav id="nav-main-mobile">
           <ul>
             <li><a href="/">БЕЛ</a></li>
-            <li><a href="#nav-menu-sidebar"><img width="45px" src="{{ '/static/images/menu_icon.png'|url }}" /></a></li>
+            <li><a href="#nav-menu-sidebar"><img src="{{ '/static/images/menu_icon.png'|url }}" /></a></li>
           </ul>
         </nav>
         <nav id="nav-menu-sidebar">
@@ -71,7 +71,7 @@
             </a>                
           </h1>
         </div>
-        <iframe width="100%" height="350px" src="https://www.youtube.com/embed/_J3lVX_f_eQ" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="340px" src="https://www.youtube.com/embed/_J3lVX_f_eQ" frameborder="0" allowfullscreen></iframe>
       </div><!-- .column -->
     </header><!-- .row -->
     <section class="row">
@@ -97,18 +97,40 @@
           {% set headliner = guest_role.children.filter(F.to_front == True).first() %}
           <div class="content-block">
             <h4>Галоўны госць фестывалю</h4>
-            <h3>{{ headliner.name }}</h3>
+            <h3><a href="#">{{ headliner.name }}</a></h3>
             <img src="{{ headliner.attachments.images.first()|url }}" />
-            <a class="helper-link" href="{{ '/festival-guests'|url }}">Усе госці &rarr;</a>
+            <a class="helper-link" href="{{ '/festival-guests'|url }}">Усе госці</a>
           </div>
         {% endfor %}
+        <div class="content-block">
+          <table>
+            <tbody>
+              <tr>
+                <td class="content-box">
+                  <a href="#" class="helper-link">Праграма фестывалю</a></h4>
+                </td>
+                <td class="content-box">
+                  <a href="#" class="helper-link">Падаць заяўку</a></h4>
+                </td>
+              </tr>
+              <tr>
+                <td class="content-box">
+                  <a href="#" class="helper-link">Палажэнне фестывалю</a></h4>
+                </td>
+                <td class="content-box">
+                  <a href="#" class="helper-link">Полацкая ярмарка</a></h4>
+                </td>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div class="one-third column">
+      <div class="sidebar one-third column">
         <div class="sidebar-block">
           <h4>Кантакты</h4>
           Lorem ipsum dolor sit amet<br/>
           Consectetur adipiscing elit<br/>
           Fusce lectus turpis, finibus<br/>
+          <a href="#" class="helper-link">Як знайсці</a>
         </div>
         <div class="sidebar-block">
           <h4>Генеральны партнёр</h4>
@@ -120,12 +142,27 @@
           <a href="{{ previous|url }}" class="sidebar-year-link bigtext">{{ previous.year }}</a>
           {% endfor %}
         </div>
-        <div class="sidebar-block u-cf">
+        <div class="sidebar-block">
+          <h4>Арганізатары</h4>
+          <a href="#"><img src="{{ '/static/images/org_placeholder.png'|url }}" /></a>
+        </div>
+        <div class="sidebar-block">
           <h4>CMІ</h4>
-          <a href="#" class="sidebar-smi-link"><img src="{{ '/static/images/smi_placeholder.png'|url }}" /></a>
-          <a href="#" class="sidebar-smi-link"><img src="{{ '/static/images/smi_placeholder.png'|url }}" /></a>
-          <a href="#" class="sidebar-smi-link"><img src="{{ '/static/images/smi_placeholder.png'|url }}" /></a>
-          <a href="#" class="sidebar-smi-link"><img src="{{ '/static/images/smi_placeholder.png'|url }}" /></a>
+          <div class="u-cf">
+            <a href="#" class="sidebar-smi-link"><img src="{{ '/static/images/smi_placeholder.png'|url }}" /></a>
+            <a href="#" class="sidebar-smi-link"><img src="{{ '/static/images/smi_placeholder.png'|url }}" /></a>
+            <a href="#" class="sidebar-smi-link"><img src="{{ '/static/images/smi_placeholder.png'|url }}" /></a>
+            <a href="#" class="sidebar-smi-link"><img src="{{ '/static/images/smi_placeholder.png'|url }}" /></a>
+          </div>
+          <a href="#" class="helper-link">Палажэнне аб СМІ</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="column">
+        <div class="content-block">
+          <h4>Пры падтрымцы</h4>
         </div>
       </div>
     </section>

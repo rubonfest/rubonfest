@@ -1,5 +1,6 @@
 body {
-  background: #dbc8ac;
+  background: url('../images/old_map.png') #dbc8ac;
+  color: #291f25;
 }
 img {
   max-width: 100%;
@@ -9,7 +10,7 @@ img {
 a,
 a:visited,
 a:active {
-  color: #2e1313;
+  color: #291f25;
 }
 
 a:hover {
@@ -70,7 +71,7 @@ nav a {
 }
 
 nav a img {
-  height: 45px;
+  height: 40px;
 }
 
 nav#nav-main-mobile li  {
@@ -135,6 +136,27 @@ div.content-block {
   margin-top: 50px;
 }
 
+div.content-block table {
+  width: 100%;
+}
+
+div.content-block h4 {
+  color: #7f0615;
+}
+
+td.content-box {
+  width: 50%;
+  height: 200px;
+  border: 5px solid #291f25;
+  color: #fff;
+  text-align: center;
+}
+
+div.content-box a {
+  color: inherit;
+  text-decoration: none;
+}
+
 a.sidebar-smi-link,
 a.sidebar-year-link {
   display: block;
@@ -153,14 +175,37 @@ a.sidebar-year-link:hover {
 
 a.helper-link {
   display: block;
-  text-align: right;
+  text-align: center;
   padding: 2rem 0;
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 1.5em;
+  color: #7f0615;
+}
+a.helper-link:hover {
+  color: #fff;
+}
+
+.sidebar h4 {
+  background: #a4846a;
+  padding: 1rem 2rem;
+}
+
+.sidebar a.helper-link {
+  color: inherit;
+  text-decoration: underline;
+  text-transform: none;
+}
+.sidebar a.helper-link:hover {
+  text-decoration: none;
 }
 
 .bigtext {
   font-size: 1.5em;
+}
+
+.content-center {
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
