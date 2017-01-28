@@ -29,11 +29,11 @@
   <link rel="icon" type="image/png" href="{{ '/static/images/favicon.png'|url }}">
 
 </head>
-<body>
+<body class="index-page">
 <div id="content">
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+  <div class="content-relative container">
     <header class="row">
       <div class="one-half column">
         <div id="logo">
@@ -43,7 +43,7 @@
       <div class="one-half column">
         <nav id="nav-main">
           <ul>
-            <li><a href="/">Пра фэст</a></li>
+            <li><a href="#festival-menu">Пра фэст</a></li>
             <li><a href="/">Удзельнікам</a></li>
             <li><a href="/">Кантакты</a></li>
             <li><a href="/">БЕЛ</a></li>
@@ -66,28 +66,27 @@
         <div id="site-title">
           <h1>
             <a href="/">
-              <img src="{{ '/static/images/templatemo_logo.png'|url }}" alt="logo">
-              <span>фестываль у Полацку</span>
+              <span>Фестываль сярэднявечнай культуры ў&nbsp;Полацку</span>
             </a>                
           </h1>
         </div>
-        <iframe width="100%" height="340px" src="https://www.youtube.com/embed/_J3lVX_f_eQ" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="380px" src="https://www.youtube.com/embed/_J3lVX_f_eQ" frameborder="0" allowfullscreen></iframe>
       </div><!-- .column -->
     </header><!-- .row -->
-    <section class="row">
+    <section id="festival-menu" class="row">
       <div class="column">
         <nav id="nav-second">
           <ul>
-            <li><a href="/"><img src="{{ '/static/images/seal.png'|url }}" /></a></li>
-            <li><a href="#program">Праграма</a></li>
-            <li><a href="#guests">Госці</a></li>
-            <li><a href="#events">Мерапрыемствы</a></li>
+            <li><a href="#festival-news">Навіны</a></li>
+            <li><a href="#">Праграма</a></li>
+            <li><a href="{{ '/festival-guests/'|url }}">Госці</a></li>
+            <li><a href="#">Як узяць удзел?</a></li>
           </ul>
         </nav>
       </div>
     </section>
 
-    <section class="row">
+    <section id="festival-main" class="row">
       <div class="two-thirds column">
         <div class="content-block">
         <h3>{% block page_title %}{% endblock %}</h3>
@@ -97,7 +96,7 @@
           {% set headliner = guest_role.children.filter(F.to_front == True).first() %}
           <div class="content-block">
             <h4>Галоўны госць фестывалю</h4>
-            <h3><a href="#">{{ headliner.name }}</a></h3>
+            <h3><a href="{{ headliner|url }}">{{ headliner.name }}</a></h3>
             <img src="{{ headliner.attachments.images.first()|url }}" />
             <a class="helper-link" href="{{ '/festival-guests'|url }}">Пабачыць усіх гасцей</a>
           </div>
@@ -158,7 +157,7 @@
       </div>
     </section>
 
-    <section class="row">
+    <section id="festival-news" class="row">
       <div class="column">
         <div class="content-block">
           <h4>Навіны і СМІ</h4>
@@ -226,29 +225,36 @@
   <footer>
     <div class="container">
       <div class="row">
+        <div class="footer-logo column">
+          <h2>Фестываль сярэднявечча</h2>
+          <a href="/"><img src="{{ '/static/images/rubon.png'|url }}" /></a>
+          <h4>г. Полацк</h4>
+        </div>
+      </div>
+      <div class="row">
         <div class="three columns">
-          <h4>Інфармацыя</h4>
+          <h5>Інфармацыя</h5>
           <ul>
             <li><a href="#">Палажэнне фестывалю</a></li>
             <li><a href="#">Палажэнне фестывалю</a></li>
           </ul>
         </div>
         <div class="three columns">
-          <h4>Інфармацыя</h4>
+          <h5>Інфармацыя</h5>
           <ul>
             <li><a href="#">Палажэнне фестывалю</a></li>
             <li><a href="#">Палажэнне фестывалю</a></li>
           </ul>
         </div>
         <div class="three columns">
-          <h4>Інфармацыя</h4>
+          <h5>Інфармацыя</h5>
           <ul>
             <li><a href="#">Палажэнне фестывалю</a></li>
             <li><a href="#">Палажэнне фестывалю</a></li>
           </ul>
         </div>
         <div class="three columns">
-          <h4>Інфармацыя</h4>
+          <h5>Інфармацыя</h5>
           <ul>
             <li><a href="#">Палажэнне фестывалю</a></li>
             <li><a href="#">Палажэнне фестывалю</a></li>
