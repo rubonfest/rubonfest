@@ -7,6 +7,15 @@ img {
   width: 100%;
 }
 
+footer {
+  background: #291f25;
+  color: #fff;
+}
+
+footer a {
+  color: inherit;
+}
+
 a,
 a:visited,
 a:active {
@@ -191,21 +200,17 @@ a.helper-link:hover {
   padding: 1rem 2rem;
 }
 
-.sidebar a.helper-link {
-  color: inherit;
-  text-decoration: underline;
-  text-transform: none;
-}
-.sidebar a.helper-link:hover {
-  text-decoration: none;
-}
-
 .bigtext {
   font-size: 1.5em;
 }
 
 .content-center {
   text-align: center;
+}
+
+.content-date {
+  color: #777;
+  font-style: italic;
 }
 
 @media (max-width: 1200px) {
