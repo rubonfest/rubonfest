@@ -76,7 +76,12 @@ nav#nav-main-mobile {
   padding-left: 15px;
 }
 
+nav#nav-second-mobile {
+  display: none;
+}
+
 nav#nav-second ul,
+nav#nav-second-mobile ul,
 nav#nav-main ul,
 nav#nav-main-mobile ul {
   overflow: hidden;
@@ -85,17 +90,13 @@ nav#nav-main-mobile ul {
   list-style: none;
 }
 
-nav#nav-second li,
-nav#nav-main li,
-nav#nav-main-mobile li {
+nav#nav-second li ,
+nav#nav-second-mobile li ,
+nav#nav-main-mobile li ,
+nav#nav-main li  {
   padding: 0px;
   margin: 0px;
   display: inline;
-}
-
-nav#nav-second li ,
-nav#nav-main-mobile li ,
-nav#nav-main li  {
   float: left;
   display: block;
   padding: 3px 20px 5px 20px;
@@ -118,10 +119,6 @@ nav a:hover {
   color: #7f0615;
 }
 
-nav a img {
-  height: 90px;
-}
-
 nav#nav-main-mobile a img {
   height: 38px;
 }
@@ -130,24 +127,27 @@ nav#nav-main-mobile li  {
   padding-right: 60px;
 }
 
+nav#nav-second-mobile li,
 nav#nav-second li  {
   padding: 0 20px;
 }
 
+nav#nav-second-mobile a,
 nav#nav-second a {
   line-height: 5em;
 }
 
+nav#nav-second-mobile,
 nav#nav-second {
   background: url('../images/menu_texture.png');
   height: 100px;
-  position: fixed;
 }
 
 .index-page nav#nav-second {
   position: static;
 }
 
+nav#nav-second-mobile ul,
 nav#nav-second ul {
   overflow: hidden;
   padding: 5px 0 0 0;
@@ -155,11 +155,33 @@ nav#nav-second ul {
   list-style: none;
 }
 
+nav#nav-second-mobile ul li:last-child,
 nav#nav-second ul li:last-child,
 nav#nav-main-mobile ul li:last-child,
 nav#nav-main ul li:last-child {
   padding-right: 20px;
   border: none;
+}
+
+nav#nav-menu-sidebar a {
+  color: #291f25;
+}
+
+#sidebar-menu-toggle {
+  width: 50px;
+}
+
+#nav-second-mobile #sidebar-menu-toggle a {
+  line-height: 6em;
+}
+
+#menu-logo {
+  width: 30%;
+  max-width: 200px;
+}
+
+#nav-second-mobile #menu-logo a {
+  line-height: 7em;
 }
 
 div#logo {
@@ -265,8 +287,13 @@ a.helper-link:hover {
   font-style: italic;
 }
 
-.content-relative {
-  position: relative;
+@media (max-width: 960px) {
+  .regular-page nav#nav-second-mobile {
+    display: block;
+  }
+  .regular-page nav#nav-second {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -287,3 +314,4 @@ a.helper-link:hover {
     text-transform: none;
   }
 }
+

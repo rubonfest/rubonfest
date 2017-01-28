@@ -1,1 +1,23 @@
 {% extends 'layout.html' %}
+
+{% block page_title %}Госці фестывалю{% endblock %}
+
+{% block body %}
+  <div class="content-block">
+  <div class="row">
+  {% for guest_role in this.children %}
+    <div class="three columns">
+    <h4>{{ guest_role.name }}</h4>
+    {% for guest in guest_role.children %}
+      <div class="content-center">
+      <a href="{{ guest.website }}" class="bigtext" target="_blank">
+        <img src="{{ guest.attachments.images.first()|url }}" />
+        {{ guest.name }}
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+  </div>
+</div>
+{% endblock %}

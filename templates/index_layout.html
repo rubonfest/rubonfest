@@ -1,3 +1,6 @@
+{% from 'macros/link-blocks.html' import render_menu_sidebar %}
+{% from 'macros/common-blocks.html' import render_footer %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +36,7 @@
 <div id="content">
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="content-relative container">
+  <div class="container">
     <header class="row">
       <div class="one-half column">
         <div id="logo">
@@ -42,7 +45,7 @@
       </div><!-- .column -->
       <div class="one-half column">
         <div id="nav-wrapper" class="u-cf">
-          <nav id="nav-main" class="u-cf">
+          <nav id="nav-main">
             <ul>
               <li><a href="#festival-menu">Пра фэст</a></li>
               <li><a href="/">Удзельнікам</a></li>
@@ -56,14 +59,7 @@
               <li><a href="#nav-menu-sidebar"><img src="{{ '/static/images/menu_icon.png'|url }}" /></a></li>
             </ul>
           </nav>
-          <nav id="nav-menu-sidebar">
-            <ul>
-              <li><a href="/">Пра фэст</a></li>
-              <li><a href="/">Удзельнікам</a></li>
-              <li><a href="/">Кантакты</a></li>
-              <li><a href="/">БЕЛ</a></li>
-            </ul>
-          </nav>
+          {{ render_menu_sidebar() }}
         </div>
         <div id="site-title">
           <h1>
@@ -224,47 +220,7 @@
       </div>
     </section>
   </div><!-- .container -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="footer-logo column">
-          <h2>Фестываль сярэднявечча</h2>
-          <a href="/"><img src="{{ '/static/images/rubon.png'|url }}" /></a>
-          <h4>г. Полацк</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="three columns">
-          <h5>Інфармацыя</h5>
-          <ul>
-            <li><a href="#">Палажэнне фестывалю</a></li>
-            <li><a href="#">Палажэнне фестывалю</a></li>
-          </ul>
-        </div>
-        <div class="three columns">
-          <h5>Інфармацыя</h5>
-          <ul>
-            <li><a href="#">Палажэнне фестывалю</a></li>
-            <li><a href="#">Палажэнне фестывалю</a></li>
-          </ul>
-        </div>
-        <div class="three columns">
-          <h5>Інфармацыя</h5>
-          <ul>
-            <li><a href="#">Палажэнне фестывалю</a></li>
-            <li><a href="#">Палажэнне фестывалю</a></li>
-          </ul>
-        </div>
-        <div class="three columns">
-          <h5>Інфармацыя</h5>
-          <ul>
-            <li><a href="#">Палажэнне фестывалю</a></li>
-            <li><a href="#">Палажэнне фестывалю</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {{ render_footer() }}
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </div>
