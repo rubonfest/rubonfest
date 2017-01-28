@@ -30,6 +30,7 @@ a:active {
 
 a:hover {
   text-decoration: none;
+  color: inherit;
 }
 
 footer a,
