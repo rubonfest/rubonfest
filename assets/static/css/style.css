@@ -84,6 +84,9 @@ header {
 }
 
 /* information section */
+#information {
+  padding-bottom: 1em;
+}
 #information h1 {
   font-size: 1.5rem;
 }
@@ -92,7 +95,7 @@ header {
 }
 
 #dates div:first-child {
-  margin-right: 0.3em;
+  margin-right: 0.05em;
 }
 
 #dates {
@@ -106,3 +109,27 @@ header {
   line-height: 1.1em;
 }
 
+/* photo-gap-1 */
+#photo-gap-1 {
+  background-image: url('../images/photo-gap-1.jpg');
+  background-size: contain;
+  height: 230px;
+  position: relative;
+}
+
+.gap-1-triangle {
+  position: absolute;
+  height: 88px;
+  width: 100%;
+}
+.gap-1-triangle img {
+  height: 100%;
+}
+
+#triangle-top {
+  top: 0;
+}
+
+#triangle-bot {
+  bottom: 0;
+}
