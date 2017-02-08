@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="K" format="1">
+  <advance width="1161"/>
+  <unicode hex="002E"/>
+  <outline>
+    <contour>
+      <point x="586" y="342" type="line"/>
+      <point x="399" y="342"/>
+      <point x="397" y="156" type="qcurve" smooth="yes"/>
+      <point x="395" y="-27"/>
+      <point x="577" y="-25" type="qcurve"/>
+      <point x="762" y="-20"/>
+      <point x="764" y="158" type="qcurve"/>
+      <point x="760" y="340"/>
+      <point x="586" y="342" type="qcurve"/>
+    </contour>
+  </outline>
+</glyph>

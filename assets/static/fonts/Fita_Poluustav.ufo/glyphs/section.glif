@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="section" format="1">
+  <advance width="1939"/>
+  <unicode hex="2020"/>
+  <outline>
+    <contour>
+      <point x="774" y="1427" type="line"/>
+      <point x="813" y="797" type="line"/>
+      <point x="813" y="797" type="line"/>
+      <point x="188" y="840" type="line"/>
+      <point x="188" y="840" type="line"/>
+      <point x="188" y="504" type="line"/>
+      <point x="811" y="504" type="line"/>
+      <point x="811" y="-1036" type="line"/>
+      <point x="1145" y="-1036" type="line"/>
+      <point x="1145" y="532" type="line"/>
+      <point x="1765" y="532" type="line"/>
+      <point x="1765" y="838" type="line"/>
+      <point x="1765" y="838" type="line"/>
+      <point x="1145" y="799" type="line"/>
+      <point x="1145" y="799" type="line"/>
+      <point x="1145" y="1427" type="line"/>
+    </contour>
+  </outline>
+</glyph>
