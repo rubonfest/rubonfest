@@ -27,9 +27,13 @@ a:active {
   text-decoration: none;
 }
 
+header, h1, h2, h3, h4, h5, h6, #information {
+  font-family: Fita_Poluustav;
+}
+
 section {
   background-color: #fff;
-  font-family: Fita_Poluustav;
+  text-align: center;
 }
 
 /* general classes */
@@ -43,6 +47,24 @@ section {
   color: #000;
   padding: 0 14px;
   background-color: #000;
+}
+
+/* general elements */
+.gap-triangle {
+  position: absolute;
+  height: 88px;
+  width: 100%;
+}
+.gap-triangle img {
+  height: 100%;
+}
+
+.triangle-top {
+  top: 0;
+}
+
+.triangle-bot {
+  bottom: 0;
 }
 
 /* nav */
@@ -64,7 +86,6 @@ nav a {
 
 /* header */
 header {
-  font-family: Fita_Poluustav;
   margin-top: 3em;
   height: 542px;
   background: url('../images/head.png') no-repeat #fff;
@@ -112,24 +133,21 @@ header {
 /* photo-gap-1 */
 #photo-gap-1 {
   background-image: url('../images/photo-gap-1.jpg');
-  background-size: contain;
+  background-size: cover;
   height: 230px;
   position: relative;
 }
 
-.gap-1-triangle {
-  position: absolute;
-  height: 88px;
-  width: 100%;
-}
-.gap-1-triangle img {
-  height: 100%;
+/* participants */
+#participants {
+  height: 500px;
 }
 
-#triangle-top {
-  top: 0;
-}
-
-#triangle-bot {
-  bottom: 0;
+/* photo-gap-2 */
+#photo-gap-2 {
+  background-image: url('../images/photo-gap-2.jpg');
+  background-position: -80px 0;
+  background-size: cover;
+  height: 300px;
+  position: relative;
 }

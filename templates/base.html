@@ -1,8 +1,5 @@
-{% from 'macros/link-blocks.html' import render_menu_sidebar %}
-{% from 'macros/common-blocks.html' import render_footer %}
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ this.alt }}">
 <head>
 
   <!-- Basic Page Needs
@@ -36,45 +33,14 @@
 <div id="content">
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <header class="row">
-      <div class="column">
-        <nav id="nav-second">
-          <ul>
-            <li><a href="/#festival-news">Навіны</a></li>
-            <li><a href="#">Праграма</a></li>
-            <li><a href="{{ '/festival-guests/'|url }}">Госці</a></li>
-            <li><a href="#">БЕЛ</a></li>
-            <li id="menu-logo"><a href="/"><img src="{{ '/static/images/rubon.png'|url }}" /></a></li>
-            <li><a href="#">Удзельнікам</a></li>
-            <li><a href="#">Кантакты</a></li>
-          </ul>
-        </nav>
-        <nav id="nav-second-mobile">
-          <ul>
-            <li><a href="#">БЕЛ</a></li>
-            <li id="menu-logo"><a href="/"><img src="{{ '/static/images/rubon.png'|url }}" /></a></li>
-            <li id="sidebar-menu-toggle"><a href="#nav-menu-sidebar"><img src="{{ '/static/images/menu_icon.png'|url }}" /></a></li>
-          </ul>
-        </nav>
-        {{ render_menu_sidebar() }}
-      </div>
-    </header>
-
-    <section class="row">
-      <div class="column">
-        <h3>{% block page_title %}{% endblock %}</h3>
-        {% block body %}{% endblock %}
-      </div>
-    </section>
-  </div><!-- .container -->
-  {{ render_footer() }}
+  {% block content %}{% endblock %}
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </div>
 
 <script src="{{ '/static/js/jquery.min.js'|url }}"></script>
 <script src="{{ '/static/js/mmenu/jquery.mmenu.min.js'|url }}"></script>
+<script src="{{ '/static/js/jquery.nicescroll.min.js'|url }}"></script>
 <script src="{{ '/static/js/main.js'|url }}"></script>
 
 </body>

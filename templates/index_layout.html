@@ -1,38 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ this.alt }}">
-<head>
+{% extends 'base.html' %}
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+{% from 'macros/news.html' import news_block %}
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="{{ '/static/css/normalize.css'|url }}">
-  <link rel="stylesheet" href="{{ '/static/css/skeleton.css'|url }}">
-  <link rel="stylesheet" href="{{ '/static/css/mmenu/jquery.mmenu.css'|url }}">
-  <link rel="stylesheet" href="{{ '/static/css/style.css'|url }}">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="{{ '/static/images/favicon.png'|url }}">
-
-</head>
-<body class="index-page">
-<div id="content">
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+{% block content %}
   <nav>
     <a href="#">&#9776;</a>
   </nav>
@@ -72,20 +42,32 @@
     </div>
   </section>
   <section id="photo-gap-1">
-    <div id="triangle-top" class="gap-1-triangle">
+    <div class="triangle-top gap-triangle">
       <img src="{{ '/static/images/triangle-top.png'|url }}" />
     </div>
-    <div id="triangle-bot" class="gap-1-triangle">
+    <div class="triangle-bot gap-triangle">
       <img src="{{ '/static/images/triangle-bot.png'|url }}" />
     </div>
   </section>
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</div>
+  <section id="participants">
+  </section>
+  <section id="photo-gap-2">
+    <div class="triangle-top gap-triangle">
+      <img src="{{ '/static/images/triangle-top.png'|url }}" />
+    </div>
+    <div class="triangle-bot gap-triangle">
+      <img src="{{ '/static/images/triangle-bot.png'|url }}" />
+    </div>
+  </section>
+  <section id="news">
+    {% set news = site.get('/festival-news') %}
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          {{ news_block(news) }}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}
 
-<script src="{{ '/static/js/jquery.min.js'|url }}"></script>
-<script src="{{ '/static/js/mmenu/jquery.mmenu.min.js'|url }}"></script>
-<script src="{{ '/static/js/main.js'|url }}"></script>
-
-</body>
-</html>

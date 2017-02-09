@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% from 'macros/news.html' import news_block %}
+
+{% block content %}
+  {{ news_block(this) }}
+{% endblock content %}
