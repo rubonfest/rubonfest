@@ -31,6 +31,10 @@ header, h1, h2, h3, h4, h5, h6, #information {
   font-family: Fita_Poluustav;
 }
 
+h1, h2, h3 {
+  font-size: 1.8rem;
+}
+
 section {
   background-color: #fff;
   text-align: center;
@@ -108,9 +112,6 @@ header {
 #information {
   padding-bottom: 1em;
 }
-#information h1 {
-  font-size: 1.5rem;
-}
 #dates div {
   float: left;
 }
@@ -148,6 +149,34 @@ header {
   background-image: url('../images/photo-gap-2.jpg');
   background-position: -80px 0;
   background-size: cover;
+  height: 300px;
+  position: relative;
+}
+
+/* photo-gap-3*/
+#photo-gap-3 {
+  background-color: #fff;
+  height: 300px;
+  position: relative;
+}
+
+/* rest-information */
+#rest-information {
+  background-color: #fff;
+  height: 500px;
+}
+
+/* photo-gap-4 */
+#photo-gap-4 {
+  background-image: url('../images/photo-gap-4.jpg');
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+
+/* footer */
+footer {
+  background-color: #000;
   height: 300px;
   position: relative;
 }
