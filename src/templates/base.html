@@ -31,11 +31,13 @@
 </head>
 <body class="regular-page">
 <div id="content">
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  {% block content %}{% endblock %}
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="white-wrapper">
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    {% block content %}{% endblock %}
+  <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </div>
 </div>
 
 <script src="{{ '/static/js/jquery.min.js'|url }}"></script>

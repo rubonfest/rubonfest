@@ -4,28 +4,31 @@
 
 {% block content %}
   <nav>
-    <a href="#"><img src="{{ '/static/images/humb.png'|url }}" /></a>
+    <div class="show-mobile">
+      <a href="#"><img src="{{ '/static/images/humb.png'|url }}" /></a>
+    </div>
+    <div class="show-tablet">
+      <a href="#"><img src="{{ '/static/images/humb-black.png'|url }}" /></a>
+    </div>
   </nav>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="column">
-          <div id="languages">
-            <a href="{{ this|url(alt='be') }}">бел</a>
-            <a href="{{ this|url(alt='ru') }}">рус</a>
-            <a href="{{ this|url(alt='en') }}">eng</a>
-        </div>
-        <div>
-          <img src="{{ '/static/images/logo.png'|url }}" alt="{{ this.title }}" />
-        </div>
-      </div><!-- .row -->
-    </div><!-- .container -->
+  <header class="side-borders">
+    <div id="languages">
+      <a href="{{ this|url(alt='be') }}">бел</a>
+      <a href="{{ this|url(alt='ru') }}">рус</a>
+      <a href="{{ this|url(alt='en') }}">eng</a>
+    </div>
+    <div class="show-mobile">
+      <img src="{{ '/static/images/logo.png'|url }}" alt="{{ this.title }}" />
+    </div>
+    <div class="show-tablet">
+      <img src="{{ '/static/images/logo-tablet.png'|url }}" alt="{{ this.title }}" />
+    </div>
   </header>
   <section id="information">
     <div class="container">
       <div class="row">
         <div class="column">
-          <div id="dates" class="u-cf">
+          <div id="dates">
             <div id="year">
               {{ this.month }}<br />
               {{ this.year }}
