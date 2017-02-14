@@ -2,6 +2,8 @@
 
 {% from 'macros/news.html' import news_block %}
 
+{% from 'macros/'~this.alt~'/information.html' import contacts_block, partners_block %}
+
 {% block content %}
   <nav>
     <div class="show-mobile">
@@ -23,11 +25,14 @@
     <div class="show-tablet">
       <img src="{{ '/static/images/logo-tablet.png'|url }}" alt="{{ this.title }}" />
     </div>
+    <div id="main-partners" class="show-tablet">
+      <img src="{{ '/static/images/partners.png'|url }}" alt=""/>
+    </div>
   </header>
-  <section id="information">
+  <section id="information" class="side-borders">
     <div class="container">
       <div class="row">
-        <div class="column">
+        <div class="one-half column">
           <div id="dates">
             <div id="year">
               {{ this.month }}<br />
@@ -41,15 +46,21 @@
           <p>{{ this.body }}</p>
           <img src="{{ '/static/images/yt-placeholder.png'|url }}" />
         </div>
+        <div class="one-half column">
+          {{ partners_block() }}
+          {{ contacts_block() }}
+        </div>
       </div>
     </div>
   </section>
   <section id="photo-gap-1">
     <div class="triangle-top gap-triangle">
-      <img src="{{ '/static/images/triangle-top.png'|url }}" />
+      <img class="show-mobile" src="{{ '/static/images/triangle-top.png'|url }}" />
+      <img class="show-tablet" src="{{ '/static/images/triangle-double-top.png'|url }}" />
     </div>
     <div class="triangle-bot gap-triangle">
-      <img src="{{ '/static/images/triangle-bot.png'|url }}" />
+      <img class="show-mobile" src="{{ '/static/images/triangle-bot.png'|url }}" />
+      <img class="show-tablet" src="{{ '/static/images/triangle-double-bot.png'|url }}" />
     </div>
   </section>
   <section id="participants">

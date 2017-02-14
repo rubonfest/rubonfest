@@ -35,6 +35,10 @@ h1, h2, h3 {
   font-size: 1.8rem;
 }
 
+h4 {
+  font-size: 1.6rem;
+}
+
 section {
   background-color: #fff;
   text-align: center;
@@ -144,7 +148,8 @@ header {
 #photo-gap-1 {
   background-image: url('../images/photo-gap-1.jpg');
   background-size: cover;
-  height: 230px;
+  background-position: 40% 0;
+  height: 330px;
   position: relative;
 }
 
@@ -193,15 +198,15 @@ footer {
 @media (min-width: 550px) {
   /* general classes */
   .side-borders {
-    border: 2px solid #aaa;
+    border: 2px solid #ddd;
     border-top: none;
     border-bottom: none;
   }
-  .show-tablet {
-    display: block;
-  }
   .show-mobile {
     display: none;
+  }
+  .show-tablet {
+    display: block;
   }
   /* background elements */
   #white-wrapper {
@@ -213,7 +218,7 @@ footer {
     background-color: #fff;
     left: 64px;
     right: 64px;
-    border: 1px solid #aaa;
+    border: 1px solid #ddd;
     border-top: none;
   }
   /* header */
@@ -222,12 +227,27 @@ footer {
     padding: 0;
     background-image: url('../images/head-tablet.png');
     background-size: contain;
-    height: 35vw;
+    height: 33vw;
   }
 
   #languages {
     position: absolute;
     right: 10%;
     color: #fff;
+  }
+
+  #main-partners {
+    text-align: center;
+  }
+
+  #main-partners img {
+    max-width: 60%;
+  }
+
+  /* information */
+  #information {
+    background-image: url('../images/border.jpg');
+    background-position: top center;
+    background-repeat: repeat-y;
   }
 }
