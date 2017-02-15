@@ -44,11 +44,14 @@
           </div>
           <h1>{{ this.title }}</h1>
           <p>{{ this.body }}</p>
-          <img src="{{ '/static/images/yt-placeholder.png'|url }}" />
+          <div id="video">
+            <iframe width="100%"  src="https://www.youtube.com/embed/_J3lVX_f_eQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
         <div class="one-half column">
           {{ partners_block() }}
-          {{ contacts_block() }}
+          {% set contacts = site.get('/contacts') %}
+          {{ contacts_block(contacts) }}
         </div>
       </div>
     </div>

@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% from 'macros/'~this.alt~'/information.html' import contacts_block %}
+
+{% block content %}
+  {{ contacts_block(this) }}
+{% endblock content %}

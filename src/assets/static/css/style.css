@@ -50,6 +50,14 @@ section {
   display: none;
 }
 
+.show-mobile {
+  display: block;
+}
+
+.container .column {
+  padding: 0 5%;
+}
+
 /* background elements */
 #content {
   font-size: 1rem;
@@ -142,6 +150,10 @@ header {
 #dates #days {
   font-size: 1.5em;
   line-height: 1.1em;
+}
+
+#video {
+  margin-bottom: 3em;
 }
 
 /* photo-gap-1 */
@@ -249,5 +261,14 @@ footer {
     background-image: url('../images/border.jpg');
     background-position: top center;
     background-repeat: repeat-y;
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+  }
+
+  #information .column:first-child {
+    padding-left: 7%;
+  }
+  #information .column:last-child {
+    padding-right: 7%;
   }
 }
