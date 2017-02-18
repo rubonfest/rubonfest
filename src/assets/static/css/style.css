@@ -39,6 +39,10 @@ h4 {
   font-size: 1.6rem;
 }
 
+h5 {
+  font-size: 1.4rem;
+}
+
 section {
   background-color: #fff;
   text-align: center;
@@ -175,8 +179,45 @@ header {
   background-image: url('../images/photo-gap-2.jpg');
   background-position: -80px 0;
   background-size: cover;
-  height: 300px;
+  height: 360px;
   position: relative;
+  padding-top: 40%;
+  color: #fff;
+  position: relative;
+}
+
+#photo-gap-2 h2 {
+  letter-spacing: 0.1em;
+}
+
+.previous-fest-year {
+  position: absolute;
+  z-index: 1;
+}
+
+#photo-gap-2 div .previous-fest-year:first-child {
+  bottom: 3%;
+  left: 6%;
+}
+
+#photo-gap-2 div .previous-fest-year:nth-child(2) {
+  bottom: 10%;
+  left: 24%;
+}
+
+#photo-gap-2 div .previous-fest-year:nth-child(3) {
+  bottom: 16%;
+  left: 43%;
+}
+
+#photo-gap-2 div .previous-fest-year:nth-child(4) {
+  bottom: 10%;
+  right: 24%;
+}
+
+#photo-gap-2 div .previous-fest-year:nth-child(5) {
+  bottom: 3%;
+  right: 6%;
 }
 
 /* photo-gap-3*/
@@ -189,7 +230,7 @@ header {
 /* rest-information */
 #rest-information {
   background-color: #fff;
-  height: 500px;
+  height: 300px;
 }
 
 /* photo-gap-4 */
@@ -270,5 +311,11 @@ footer {
   }
   #information .column:last-child {
     padding-right: 7%;
+  }
+  /* photo gap-2 */
+  #photo-gap-2 {
+    height: 330px;
+    background-size: 100%;
+    background-position: 0 0;
   }
 }

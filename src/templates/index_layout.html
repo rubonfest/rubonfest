@@ -2,7 +2,8 @@
 
 {% from 'macros/news.html' import news_block %}
 
-{% from 'macros/'~this.alt~'/information.html' import contacts_block, partners_block %}
+{% from 'macros/'~this.alt~'/information.html' import contacts_block, partners_block, partners_mobile_block %}
+{% from 'macros/previous.html' import previous_block %}
 
 {% block content %}
   <nav>
@@ -15,9 +16,9 @@
   </nav>
   <header class="side-borders">
     <div id="languages">
-      <a href="{{ this|url(alt='be') }}">бел</a>
-      <a href="{{ this|url(alt='ru') }}">рус</a>
-      <a href="{{ this|url(alt='en') }}">eng</a>
+      <a href="{{ '.'|url(alt='be') }}">бел</a>
+      <a href="{{ '.'|url(alt='ru') }}">рус</a>
+      <a href="{{ '.'|url(alt='en') }}">eng</a>
     </div>
     <div class="show-mobile">
       <img src="{{ '/static/images/logo.png'|url }}" alt="{{ this.title }}" />
@@ -60,6 +61,8 @@
     <div class="triangle-top gap-triangle">
       <img src="{{ '/static/images/triangle-top.png'|url }}" />
     </div>
+    {% set history = site.get('/festival-history') %}
+    {{ previous_block(history) }}
     <div class="triangle-bot gap-triangle">
       <img src="{{ '/static/images/triangle-bot.png'|url }}" />
     </div>
@@ -86,6 +89,7 @@
     <div class="container">
       <div class="row">
         <div class="column">
+          {{ partners_mobile_block() }}
         </div>
       </div>
     </div>

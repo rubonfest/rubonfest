@@ -1,1 +1,7 @@
 {% extends 'base.html' %}
+
+{% from 'macros/previous.html' import previous_block %}
+
+{% block content %}
+  {{ previous_block(this) }}
+{% endblock %}

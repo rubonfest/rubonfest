@@ -1,0 +1,8 @@
+{% macro previous_block(history) %}
+  <h2>{{ history.title }}</h2>
+  <div>
+    {% for fest in history.children.all() %}
+      <h5 class="previous-fest-year"><a href="{{ fest|url }}">{{ fest.year }}</a></h5>
+    {% endfor %}
+  </div>
+{% endmacro %}
