@@ -279,8 +279,9 @@ footer {
     position: relative;
     padding: 0;
     background-image: url('../images/head-tablet.png');
-    background-size: contain;
-    height: 33vw;
+    background-size: 100%;
+    background-position: 0 -30px;
+    height: auto;
   }
 
   #languages {
@@ -314,8 +315,55 @@ footer {
   }
   /* photo gap-2 */
   #photo-gap-2 {
-    height: 330px;
+    height: 110px;
     background-size: 100%;
     background-position: 0 0;
+  }
+  #prev-overlay {
+    height: 145px;
+    top: 34px;
+    left: 30%;
+    right: 30%;
+    position: absolute;
+    background-image: url('../images/prev-overlay.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: padding-box;
+    padding-top: 40px;
+  }
+
+  #prev-overlay h2 {
+    display: inline-block;
+    width: 80%;
+  }
+
+  #photo-gap-2 div .previous-fest-year:first-child {
+    top: 100px;
+    left: 17%;
+  }
+
+  #photo-gap-2 div .previous-fest-year:nth-child(2) {
+    top: 150px;
+    left: 30%;
+  }
+
+  #photo-gap-2 div .previous-fest-year:nth-child(3) {
+    top: 190px;
+    left: 47%;
+  }
+
+  #photo-gap-2 div .previous-fest-year:nth-child(4) {
+    top: 150px;
+    right: 30%;
+  }
+
+  #photo-gap-2 div .previous-fest-year:nth-child(5) {
+    top: 100px;
+    right: 17%;
+  }
+
+  /* news */
+  #news {
+    padding-top: 3em;
   }
 }
