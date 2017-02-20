@@ -1,6 +1,9 @@
 {% macro news_block(news) %}
   <h4>{{ news.title }}</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-  <p>Nulla dignissim aliquam arcu vel ornare</p>
-  <p>In ullamcorper leo at nisi imperdiet, ac faucibus orci laoreet</p>
+  <div id="news-content">
+    {% for item in news.children.all() %}
+      <p class="news-pub-date">{{ item.pub_date.strftime('%d/%m/%Y') }}</p>
+      <p class="news-body">{{ item.body }}</p>
+    {% endfor %}
+  </div>
 {% endmacro %}

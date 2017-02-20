@@ -27,7 +27,11 @@ a:active {
   text-decoration: none;
 }
 
-header, h1, h2, h3, h4, h5, h6, #information {
+a:hover {
+  color: #ddd;
+}
+
+header, nav, h1, h2, h3, h4, h5, h6, #information {
   font-family: Fita_Poluustav;
 }
 
@@ -49,6 +53,10 @@ section {
 }
 
 /* general classes */
+
+.show-desktop {
+  display: none;
+}
 
 .show-tablet {
   display: none;
@@ -103,10 +111,10 @@ nav {
   right: 0;
   z-index: 99;
   background-color: #000;
-  color: #fff;
+  color: #000;
 }
 
-nav a {
+.nav-humb {
   display: block;
   width: 27px;
   margin-top: 5px;
@@ -220,6 +228,19 @@ header {
   right: 6%;
 }
 
+/* news */
+#news {
+  height: 500px;
+}
+.news-pub-date {
+  margin-bottom: 0.5em;
+  color: #aaa;
+}
+
+#news p.news-body:first-line {
+  font-weight: bold;
+}
+
 /* photo-gap-3*/
 #photo-gap-3 {
   background-color: #fff;
@@ -237,7 +258,8 @@ header {
 #photo-gap-4 {
   background-image: url('../images/photo-gap-4.jpg');
   background-size: cover;
-  height: 300px;
+  height: 110px;
+  padding-top: 60%;
   position: relative;
 }
 
@@ -263,14 +285,17 @@ footer {
   }
   /* background elements */
   #white-wrapper {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #content {
+    padding: 0 3%;
   }
   /* nav */
   nav {
     background-color: #fff;
-    left: 64px;
-    right: 64px;
+    left: 12.37%;
+    right: 12.37%;
     border: 1px solid #ddd;
     border-top: none;
   }
@@ -366,4 +391,46 @@ footer {
   #news {
     padding-top: 3em;
   }
+
+@media (min-width: 750px) {
+  /* general classes */
+  .show-tablet {
+    display: none;
+  }
+  .show-desktop {
+    display: block;
+  }
+
+  /* nav */
+  nav {
+    padding: 0 1%;
+  }
+  nav ul > li > img {
+    height: 34px;
+    width: auto;
+    margin-top: 5px;
+  }
+  nav ul li {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 0.5%;
+  }
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  nav a:hover {
+    color: #555;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* nav */
+  nav {
+    padding: 0 28px;
+    font-size: 1.1rem
+  }
+  nav ul li {
+    margin-right: 1em;
+  }
+}
 }

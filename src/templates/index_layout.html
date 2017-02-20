@@ -3,15 +3,19 @@
 {% from 'macros/news.html' import news_block %}
 
 {% from 'macros/'~this.alt~'/information.html' import contacts_block, partners_block, partners_mobile_block %}
+{% from 'macros/'~this.alt~'/menu.html' import top_menu %}
 {% from 'macros/previous.html' import previous_block %}
 
 {% block content %}
   <nav>
     <div class="show-mobile">
-      <a href="#"><img src="{{ '/static/images/humb.png'|url }}" /></a>
+      <a class="nav-humb" href="#"><img src="{{ '/static/images/humb.png'|url }}" /></a>
     </div>
     <div class="show-tablet">
-      <a href="#"><img src="{{ '/static/images/humb-black.png'|url }}" /></a>
+      <a class="nav-humb" href="#"><img src="{{ '/static/images/humb-black.png'|url }}" /></a>
+    </div>
+    <div class="show-desktop">
+      {{ top_menu() }}
     </div>
   </nav>
   <header class="side-borders">
@@ -23,10 +27,10 @@
     <div class="show-mobile">
       <img src="{{ '/static/images/logo.png'|url }}" alt="{{ this.title }}" />
     </div>
-    <div class="show-tablet">
+    <div class="show-tablet show-desktop">
       <img src="{{ '/static/images/logo-tablet.png'|url }}" alt="{{ this.title }}" />
     </div>
-    <div id="main-partners" class="show-tablet">
+    <div id="main-partners" class="show-tablet show-desktop">
       <img src="{{ '/static/images/partners.png'|url }}" alt=""/>
     </div>
   </header>
@@ -60,16 +64,16 @@
   <section id="photo-gap-2">
     <div class="triangle-top gap-triangle">
       <img class="show-mobile" src="{{ '/static/images/triangle-top.png'|url }}" />
-      <img class="show-tablet" src="{{ '/static/images/triangle-double-top.png'|url }}" />
+      <img class="show-tablet show-desktop" src="{{ '/static/images/triangle-double-top.png'|url }}" />
     </div>
-    {% set history = site.get('/festival-history') %}
+    {% set history = site.get('festival-history', alt=this.alt) %}
     {{ previous_block(history) }}
     <div class="triangle-bot gap-triangle">
       <img class="show-mobile" src="{{ '/static/images/triangle-bot.png'|url }}" />
     </div>
   </section>
   <section id="news">
-    {% set news = site.get('/festival-news') %}
+    {% set news = site.get('festival-news', alt=this.alt) %}
     <div class="container">
       <div class="row">
         <div class="column">

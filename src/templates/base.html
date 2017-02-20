@@ -1,3 +1,5 @@
+{% from 'macros/'~this.alt~'/menu.html' import top_menu %}
+
 <!DOCTYPE html>
 <html lang="{{ this.alt }}">
 <head>
@@ -22,6 +24,7 @@
   <link rel="stylesheet" href="{{ '/static/css/normalize.css'|url }}">
   <link rel="stylesheet" href="{{ '/static/css/skeleton.css'|url }}">
   <link rel="stylesheet" href="{{ '/static/css/mmenu/jquery.mmenu.css'|url }}">
+  <link rel="stylesheet" href="{{ '/static/css/overlay.css'|url }}">
   <link rel="stylesheet" href="{{ '/static/css/style.css'|url }}">
 
   <!-- Favicon
@@ -37,6 +40,16 @@
     {% block content %}{% endblock %}
   <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </div>
+</div>
+
+<!-- overlay -->
+<div id="nav-overlay" class="overlay">
+  <!-- Button to close the overlay navigation -->
+  <a href="#" class="closebtn">x</a>
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    {{ top_menu() }}
   </div>
 </div>
 
