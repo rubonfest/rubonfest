@@ -230,7 +230,6 @@ header {
 
 /* news */
 #news {
-  height: 500px;
 }
 .news-pub-date {
   margin-bottom: 0.5em;
@@ -239,6 +238,10 @@ header {
 
 #news p.news-body:first-line {
   font-weight: bold;
+}
+
+#news-content {
+  height: 500px;
 }
 
 /* photo-gap-3*/

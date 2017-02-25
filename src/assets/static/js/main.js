@@ -14,5 +14,27 @@ jQuery(function($) {
 
   $('nav#nav-menu-sidebar').mmenu();
   $('html').niceScroll();
-  $('#news-content').niceScroll();
+  $('#news-content').niceScroll({
+    mousescrollstep: 7,
+    enablescrollonselection: false,
+  });
+
+  function inNewsViewport(i, el) {
+    var vp = $(this).parent();
+    var vpCoords = vp.offset();
+    var vpBottom = vpCoords.top + vp.innerHeight();
+    return ($(this).offset().top < vpBottom);
+  }
+
+  function manageNewsOpacity() {
+    $('#news-content .news-wrap').css('opacity', 1);
+    $('#news-content .news-wrap').filter(inNewsViewport).slice(-2).each(function(i) {
+      $(this).css('opacity', 0.5-i*0.3);
+    });
+  }
+
+  manageNewsOpacity();
+  $('#news-content').on('scroll', function() {
+    manageNewsOpacity();
+  });
 });
