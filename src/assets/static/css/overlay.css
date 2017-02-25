@@ -1,6 +1,10 @@
  /* The Overlay (background) */
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    background-image: url('../images/menu-logo.png');
+    background-size: 80%;
+    background-position: center 200px;
+    background-repeat: no-repeat;
     height: 100%;
     width: 0;
     position: fixed; /* Stay in place */
@@ -41,7 +45,16 @@
     position: absolute;
     top: 0;
     right: 0.7em;
-    font-size: 6em;
+    font-size: 3em;
+}
+
+.overlay a {
+  color: #fff;
+  line-height: 1.3em;
+}
+
+.overlay a:hover {
+  color: #555;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */

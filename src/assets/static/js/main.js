@@ -12,13 +12,8 @@ jQuery(function($) {
   $('.nav-humb').click(openNav);
   $('#nav-overlay .closebtn').click(closeNav);
 
-  $('nav#nav-menu-sidebar').mmenu();
+  //$('nav#nav-menu-sidebar').mmenu();
   $('html').niceScroll();
-  $('#news-content').niceScroll({
-    mousescrollstep: 7,
-    enablescrollonselection: false,
-  });
-
   function inNewsViewport(i, el) {
     var vp = $(this).parent();
     var vpCoords = vp.offset();

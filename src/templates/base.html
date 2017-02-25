@@ -1,4 +1,4 @@
-{% from 'macros/'~this.alt~'/menu.html' import top_menu %}
+{% from 'macros/menu.html' import overlay_menu %}
 
 <!DOCTYPE html>
 <html lang="{{ this.alt }}">
@@ -24,8 +24,8 @@
   <link rel="stylesheet" href="{{ '/static/css/normalize.css'|url }}">
   <link rel="stylesheet" href="{{ '/static/css/skeleton.css'|url }}">
   <link rel="stylesheet" href="{{ '/static/css/mmenu/jquery.mmenu.css'|url }}">
-  <link rel="stylesheet" href="{{ '/static/css/overlay.css'|url }}">
   <link rel="stylesheet" href="{{ '/static/css/style.css'|url }}">
+  <link rel="stylesheet" href="{{ '/static/css/overlay.css'|url }}">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -49,12 +49,11 @@
   <a href="#" class="closebtn">x</a>
   <!-- Overlay content -->
   <div class="overlay-content">
-    {{ top_menu() }}
+    {{ overlay_menu(this.alt) }}
   </div>
 </div>
 
 <script src="{{ '/static/js/jquery.min.js'|url }}"></script>
-<script src="{{ '/static/js/mmenu/jquery.mmenu.min.js'|url }}"></script>
 <script src="{{ '/static/js/jquery.nicescroll.min.js'|url }}"></script>
 <script src="{{ '/static/js/main.js'|url }}"></script>
 

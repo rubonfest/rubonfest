@@ -1,0 +1,13 @@
+{% macro overlay_menu(alt) %}
+  {% from 'macros/'~alt~'/menu.html' import menu_items %}
+
+  {{ menu_items() }}
+{% endmacro %}
+
+{% macro top_menu(alt) %}
+  {% from 'macros/'~alt~'/menu.html' import menu_items %}
+  <ul>
+    <li><a href="{{ '/'|url(alt=alt) }}"><img src="{{ '/static/images/menu-logo.png'|url }}" alt="" /></a></li>
+    {{ menu_items() }}
+  </ul>
+{% endmacro %}
