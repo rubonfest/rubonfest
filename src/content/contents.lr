@@ -15,3 +15,30 @@ month: верасень
 year: 2017
 ---
 video: https://www.youtube.com/embed/_J3lVX_f_eQ?rel=0&amp;showinfo=0
+---
+partners:
+
+#### partner ####
+file: mts.png
+----
+link: http://www.mts.by/
+----
+title: МТС
+----
+placement: center
+#### partner ####
+file: eksby.png
+----
+link: https://ekskursii.by/
+----
+title: Экскурсіі
+----
+placement: left
+#### partner ####
+file: tut.png
+----
+link: https://tut.by
+----
+title: Беларускі партал
+----
+placement: right

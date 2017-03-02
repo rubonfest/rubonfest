@@ -31,7 +31,21 @@
       <img src="{{ '/static/images/logo-tablet.png'|url }}" alt="{{ this.title }}" />
     </div>
     <div id="main-partners" class="show-tablet show-desktop">
-      <img src="{{ '/static/images/partners.png'|url }}" alt=""/>
+      <div id="main-partners-left">
+        {% for blk in this.partners.blocks if blk.placement == 'left' %}
+          {{ blk }}
+        {% endfor %}
+      </div>
+      <div id="main-partners-center">
+        {% for blk in this.partners.blocks if blk.placement == 'center' %}
+          {{ blk }}
+        {% endfor %}
+      </div>
+      <div id="main-partners-right">
+        {% for blk in this.partners.blocks if blk.placement == 'right' %}
+          {{ blk }}
+        {% endfor %}
+      </div>
     </div>
   </header>
   <section id="information" class="side-borders">

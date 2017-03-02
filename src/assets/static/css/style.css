@@ -143,6 +143,8 @@ header {
 /* information section */
 #information {
   padding-bottom: 1em;
+  line-height: 1.7em;
+  letter-spacing: 0.08em;
 }
 #dates div {
   vertical-align: middle;
@@ -323,8 +325,23 @@ footer {
     text-align: center;
   }
 
+  #main-partners  div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   #main-partners img {
-    max-width: 60%;
+    max-width: none;
+    width: auto;
+  }
+
+  #main-partners-center img {
+    height: 64px;
+  }
+
+  #main-partners-left img,
+  #main-partners-right img {
+    height: 32px;
   }
 
   /* information */
@@ -333,7 +350,6 @@ footer {
     background-position: top center;
     background-repeat: repeat-y;
     font-size: 0.85rem;
-    line-height: 1.3rem;
   }
 
   #information .column:first-child {
@@ -428,6 +444,10 @@ footer {
 }
 
 @media (min-width: 1000px) {
+  /* information */
+  #information {
+    font-size: 1.2rem;
+  }
   /* nav */
   nav {
     padding: 0 28px;
