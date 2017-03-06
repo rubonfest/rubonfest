@@ -373,7 +373,7 @@ footer {
     background-image: url('../images/prev-overlay.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    box-sizing: padding-box;
+    box-sizing: border-box;
     padding-top: 40px;
   }
 
@@ -411,6 +411,7 @@ footer {
   #news {
     padding-top: 3em;
   }
+}
 
 @media (min-width: 750px) {
   /* general classes */
@@ -429,6 +430,9 @@ footer {
     height: 34px;
     width: auto;
     margin-top: 5px;
+  }
+  nav ul {
+    text-align: center;
   }
   nav ul li {
     vertical-align: middle;
@@ -454,7 +458,11 @@ footer {
     font-size: 1.1rem
   }
   nav ul li {
-    margin-right: 1em;
+    margin-right: 2%;
   }
-}
+
+  /* photo-gap-2 */
+  #prev-overlay {
+    padding-top: 55px;
+  }
 }

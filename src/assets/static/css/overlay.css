@@ -28,7 +28,7 @@
 /* The navigation links inside the overlay */
 .overlay a {
     text-decoration: none;
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
@@ -44,8 +44,8 @@
 .overlay .closebtn {
     position: absolute;
     top: 0;
-    right: 0.7em;
-    font-size: 3em;
+    left: 30px;
+    font-size: 2em;
 }
 
 .overlay a {
@@ -57,12 +57,8 @@
   color: #555;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 400px) {
-    .overlay a {font-size: 2.2rem}
-    .overlay .closebtn {
-        font-size: 4rem;
-        top: 0;
-        right: 0.8em;
-    }
+@media (min-width: 550px) {
+  .overlay .closebtn {
+    left: 100px;
+  }
 }
