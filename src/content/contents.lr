@@ -8,37 +8,12 @@ body:
 
 Ніводны  горад Беларусі не мае такой багатай гісторыі, культурнай спадчыны, не зведаў такой велічы і славы і, разам з тым, вынішчэння ды заняпаду як Полацк. Дзе як не тут, у цэнтры зараджэння духоўнасці і культуры, трэба звяртацца да сваёй легендарнай мінуўшчыны, каб абудзіць у душах людзей гонар, павагу ды любоў да сваёй Радзімы, спадчыны, продкаў. Каб жыхары горада пазайздросцілі самі сабе, што нарадзіліся на такой вялікай зямлі, што ўвабрала ў сябе энергетыку адданых сваёй радзіме людзей.
 ---
-days: 25-26
+days: 1-3
 ---
 month: верасень
 ---
 year: 2017
 ---
-video: https://www.youtube.com/embed/_J3lVX_f_eQ?rel=0&amp;showinfo=0
+video: https://www.youtube.com/embed/vv94kXoP2sU?rel=0&amp;showinfo=0
 ---
-partners:
-
-#### partner ####
-file: mts.png
-----
-link: http://www.mts.by/
-----
-title: МТС
-----
-placement: center
-#### partner ####
-file: eksby.png
-----
-link: https://ekskursii.by/
-----
-title: Экскурсіі
-----
-placement: left
-#### partner ####
-file: tut.png
-----
-link: https://tut.by
-----
-title: Беларускі партал
-----
-placement: right
+partners: 
