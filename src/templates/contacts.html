@@ -1,7 +1,7 @@
-{% extends 'base.html' %}
+{% extends 'page_layout.html' %}
 
 {% from 'macros/'~this.alt~'/information.html' import contacts_block %}
 
-{% block content %}
+{% block article_body %}
   {{ contacts_block(this) }}
-{% endblock content %}
+{% endblock article_body %}

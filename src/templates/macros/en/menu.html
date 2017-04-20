@@ -6,11 +6,11 @@
     {% if show_guests %}
     <li><a href="#">Guests</a></li>
     {% endif %}
-    <li><a href="#">Partners</a></li>
+    <li><a href="{{ '/festival-partners'|url }}">Partners</a></li>
     <li><a href="{{ '/festival-participants'|url }}">Participate</a></li>
-    <li><a href="#">Mass Media</a></li>
+    <li><a href="{{ '/mass-media'|url }}">Mass Media</a></li>
     {% if show_polack %}
     <li><a href="#">Polatsk</a></li>
     {% endif %}
-    <li><a href="#">Contacts</a></li>
+    <li><a href="{{ '/contacts'|url }}">Contacts</a></li>
 {% endmacro %}

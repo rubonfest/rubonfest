@@ -24,11 +24,33 @@ a:link,
 a:visited,
 a:active {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
+  text-decoration: none;
+}
+
+nav a, 
+nav a:link, 
+nav a:visited, 
+nav a:active, 
+header a,
+header a:link, 
+header a:visited, 
+header a:active {
+  text-decoration: none;
+}
+
+header a:hover {
   color: #ddd;
+}
+
+h1 a:link, h2 a:link, h3 a:link, h4 a:link {
+  text-decoration: none;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+  text-decoration: underline;
 }
 
 header, nav, h1, h2, h3, h4, h5, h6, #dates, #nav-overlay {
@@ -72,6 +94,14 @@ section {
 
 .align-left {
   text-align: left;
+}
+
+.bottom-margin {
+  padding-bottom: 80px;
+}
+
+.top-margin {
+  padding-top: 30px;
 }
 
 /* background elements */

@@ -9,8 +9,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{% block page_title %}{% endblock %}</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="keywords" content="{{ this.meta_keywords }}">
+  <meta name="description" content="{{ this.meta_description }}">
+  <meta name="author" content="{{ this.meta_author or 'Полацкі звяз' }}">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

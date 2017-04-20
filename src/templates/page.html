@@ -1,9 +1,15 @@
 {% extends "page_layout.html" %}
 
+{% from 'macros/'~this.alt~'/page.html' import page_empty %}
+
 {% block page_title %}{{ this.title }}{% endblock %}
 
 {% block article_title %}{{ this.title }}{% endblock %}
 
 {% block article_body %}
-  {{ this.body }}
+  {% if this.body %}
+    {{ this.body }}
+  {% else %}
+    {{ page_empty() }}
+  {% endif %}
 {% endblock article_body %}
