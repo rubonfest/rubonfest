@@ -1,5 +1,5 @@
 {% macro menu_items(show_prog=False, show_guests=False, show_polack=False) %}
-    <li><a href="#">Навіны</a></li>
+    <li><a href="#news">Навіны</a></li>
     {% if show_prog %}
     <li><a href="#">Праграма-2017</a></li>
     {% endif %}
@@ -7,7 +7,7 @@
     <li><a href="#">Госці</a></li>
     {% endif %}
     <li><a href="#">Партнёрам</a></li>
-    <li><a href="#">Удзельнікам</a></li>
+    <li><a href="{{ '/festival-participants'|url }}">Удзельнікам</a></li>
     <li><a href="#">СМІ</a></li>
     {% if show_polack %}
     <li><a href="#">Полацк</a></li>

@@ -28,8 +28,32 @@ jQuery(function($) {
     });
   }
 
+  function scrollToIfOnPage(e) {
+    var anchorTest = /^#/,
+        href,
+        target
+    ;
+    target = href = $(this).attr('href');
+    if ($(this).is('.nav-humb')) {
+      e.preventDefault();
+      return false;
+    }
+    if (anchorTest.test(href)) {
+      if (href == '#') {
+        target = 'body';
+      }
+      if ( ! $(this).is('.closebtn')) {
+        $.scrollTo(target, {duration: 1000, offset: -98});
+      }
+    }
+    if ($(this).parents('#nav-overlay').length > 0) {
+      closeNav();
+    }
+  }
+
   manageNewsOpacity();
   $('#news-content').on('scroll', function() {
     manageNewsOpacity();
   });
+  $('nav a, #nav-overlay a').click(scrollToIfOnPage);
 });
