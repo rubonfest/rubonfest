@@ -1,1 +1,18 @@
-look
+{% extends 'page_layout.html' %}
+
+{% block article_title %}{{ this.title }}{% endblock %}
+
+{% block article_body %}{{ this.body }}{% endblock %}
+
+{% block page_children %}
+  <div class="container">
+    <div class="row">
+      <div class="one-half column">
+        {% for child in this.children.all() %}
+          <h3><a href="{{ child|url }}">{{ child.title }}</a></h3>
+          <div class="align-left">{{ child.description }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock page_children %}

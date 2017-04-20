@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block page_title %}{{ this.title }}{% endblock %}
+
+{% block content %}
+<section id="page-intro" class="side-borders">
+  <div class="container">
+    <div class="row">
+      <article class="column">
+        <h1>{% block article_title %}{% endblock %}</h1>
+        <div>{% block article_body %}{% endblock %}</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="page-children" class="side-borders">{% block page_children %}{% endblock %}</section>
+{% endblock content %}

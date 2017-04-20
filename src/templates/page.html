@@ -1,7 +1,9 @@
-{% extends "base.html" %}
+{% extends "page_layout.html" %}
 
 {% block page_title %}{{ this.title }}{% endblock %}
 
-{% block content %}
+{% block article_title %}{{ this.title }}{% endblock %}
+
+{% block article_body %}
   {{ this.body }}
-{% endblock %}
+{% endblock article_body %}

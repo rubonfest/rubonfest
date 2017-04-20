@@ -1,4 +1,5 @@
 {% from 'macros/menu.html' import overlay_menu %}
+{% from 'macros/menu.html' import top_menu %}
 
 <!DOCTYPE html>
 <html lang="{{ this.alt }}">
@@ -37,7 +38,56 @@
   <div id="white-wrapper">
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    {% set index = site.get('/', alt=this.alt) %}
+    <nav>
+      <div class="show-mobile">
+        <a class="nav-humb" href="#"><img src="{{ '/static/images/humb.png'|url }}" /></a>
+      </div>
+      <div class="show-tablet">
+        <a class="nav-humb" href="#"><img src="{{ '/static/images/humb-black.png'|url }}" /></a>
+      </div>
+      <div class="show-desktop">
+        {{ top_menu(this.alt, site) }}
+      </div>
+    </nav>
+    <header class="side-borders">
+      <div id="languages">
+        <a href="{{ '.'|url(alt='be') }}">бел</a>
+        <a href="{{ '.'|url(alt='ru') }}">рус</a>
+        <a href="{{ '.'|url(alt='en') }}">eng</a>
+      </div>
+      <div class="show-mobile">
+        <img src="{{ '/static/images/logo.png'|url }}" alt="{{ index.title }}" />
+      </div>
+      <div class="show-tablet show-desktop">
+        <img src="{{ '/static/images/logo-tablet.png'|url }}" alt="{{ index.title }}" />
+      </div>
+      <div id="main-partners" class="show-tablet show-desktop">
+        <div id="main-partners-left">
+          {% for blk in index.partners.blocks if blk.placement == 'left' %}
+            {{ blk }}
+          {% endfor %}
+        </div>
+        <div id="main-partners-center">
+          {% for blk in index.partners.blocks if blk.placement == 'center' %}
+            {{ blk }}
+          {% endfor %}
+        </div>
+        <div id="main-partners-right">
+          {% for blk in index.partners.blocks if blk.placement == 'right' %}
+            {{ blk }}
+          {% endfor %}
+        </div>
+      </div>
+    </header>
     {% block content %}{% endblock %}
+    <section id="photo-gap-4">
+      <div class="triangle-bot gap-triangle">
+        <img src="{{ '/static/images/triangle-bot-black.png'|url }}" />
+      </div>
+    </section>
+    <footer>
+    </footer>
   <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   </div>

@@ -1,3 +1,16 @@
 {% macro menu_items(show_prog=False, show_guests=False, show_polack=False) %}
-    <li><a href="#news">News</a></li>
+    <li><a href="/en/#news">News</a></li>
+    {% if show_prog %}
+    <li><a href="#">Schedule-2017</a></li>
+    {% endif %}
+    {% if show_guests %}
+    <li><a href="#">Guests</a></li>
+    {% endif %}
+    <li><a href="#">Partners</a></li>
+    <li><a href="{{ '/festival-participants'|url }}">Participate</a></li>
+    <li><a href="#">Mass Media</a></li>
+    {% if show_polack %}
+    <li><a href="#">Polatsk</a></li>
+    {% endif %}
+    <li><a href="#">Contacts</a></li>
 {% endmacro %}

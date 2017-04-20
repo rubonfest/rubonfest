@@ -70,6 +70,10 @@ section {
   padding: 0 5%;
 }
 
+.align-left {
+  text-align: left;
+}
+
 /* background elements */
 #content {
   font-size: 1rem;
@@ -79,6 +83,7 @@ section {
 }
 
 #white-wrapper {
+  min-height: 1024px;
   background-color: #fff;
   padding-top: 42px;
 }
