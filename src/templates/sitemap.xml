@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+{% set alternates = ['en', 'ru'] %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {%- for page in [site.root] if page != this recursive %}
+  <url>
+    <loc>{{ page|url(external=true) }}</loc>
+    {% for alt in alternates %}
+      <xhtml:link rel="alternate"
+                  hreflang="{{ alt }}"
+                  href="{{ page|url(alt=alt, external=True) }}" />
+    {% endfor %}
+  </url>
+    {{- loop(page.children) }}
+  {%- endfor %}
+</urlset>
