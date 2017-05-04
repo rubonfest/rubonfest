@@ -1,0 +1,25 @@
+{% macro contacts_block(contacts) %}
+  <div class="show-mobile show-tablet show-desktop" id="contacts">
+    <h4>{{ contacts.title }}</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td>{{ contacts.main_phone_title }}</td>
+          <td><nobr>{{ contacts.main_phone }}</nobr><br /><nobr>{{ contacts.main_phone_1 }}</nobr></td>
+        </tr>
+        <tr>
+          <td>{{ contacts.phone_1_title }}</td>
+          <td><nobr>{{ contacts.phone_1 }}</nobr></td>
+        </tr>
+        <tr>
+          <td>{{ contacts.phone_2_title }}</td>
+          <td><nobr>{{ contacts.phone_2 }}</nobr></td>
+        </tr>
+        <tr>
+          <td>{{ contacts.phone_3_title }}</td>
+          <td><nobr>{{ contacts.phone_3 }}</nobr></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+{% endmacro %}

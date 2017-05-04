@@ -10,9 +10,18 @@
        
 }
 
+@font-face {
+  font-family: Charis_R;
+  src: url('../fonts/CharisSIL-R.woff') format('woff');
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Charis_R;
 }
 
 img {
@@ -134,6 +143,15 @@ section {
 
 .triangle-bot {
   bottom: 0;
+}
+
+/* #contacts */
+#contacts {
+  font-size: 0.9em;
+}
+
+#contacts td {
+  border: none;
 }
 
 /* nav */
