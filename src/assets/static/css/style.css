@@ -105,6 +105,10 @@ section {
   text-align: left;
 }
 
+.bottom-margin-sm {
+  margin-bottom: 3em;
+}
+
 .bottom-margin {
   padding-bottom: 80px;
 }
@@ -143,15 +147,6 @@ section {
 
 .triangle-bot {
   bottom: 0;
-}
-
-/* #contacts */
-#contacts {
-  font-size: 0.9em;
-}
-
-#contacts td {
-  border: none;
 }
 
 /* nav */
@@ -195,6 +190,7 @@ header {
 
 /* information section */
 #information {
+  padding-top: 2em;
   padding-bottom: 1em;
   line-height: 1.7em;
   letter-spacing: 0.08em;
@@ -212,7 +208,6 @@ header {
   font-size: 2.1rem;
   line-height: 1em;
   margin-bottom: 1.5em;
-  margin-top: 0.7em;
 }
 
 #dates #days {
@@ -222,6 +217,27 @@ header {
 
 #video {
   margin-bottom: 3em;
+}
+
+#contacts {
+  font-size: 0.9em;
+}
+
+#contacts td {
+  border: none;
+}
+
+#contacts-mobile p {
+  margin-bottom: 1em;
+}
+
+#contacts-mobile .contact {
+  margin-bottom: 2em;
+}
+
+img.partner {
+  display: inline-block;
+  width: 33.33%;
 }
 
 /* photo-gap-1 */

@@ -7,7 +7,7 @@
 {% block page_children %}
   <div class="container">
     <div class="row">
-      <div class="one-half column">
+      <div class="column">
         {% for child in this.children.all() %}
           <h3><a href="{{ child|url }}">{{ child.title }}</a></h3>
           <div class="align-left">{{ child.description }}</div>

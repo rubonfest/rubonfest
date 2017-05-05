@@ -33,6 +33,26 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="{{ '/static/images/favicon.png'|url }}">
 
+  <script>
+    function rubonGetMessage(module, message) {
+      var messages = window.rubonMessages;
+      if (typeof messages == 'undefined') {
+        console.log('No messages');
+        return '';
+      }
+      if (typeof messages[module] == 'undefined') {
+        console.log('No messages for module ' + module);
+        return '';
+      }
+      if (typeof messages[module][message] == 'undefined') {
+        console.log('No such message ' + message);
+        return '';
+      }
+
+      return messages[module][message];
+    }
+  </script>
+
 </head>
 <body class="regular-page">
 <div id="content">
@@ -104,10 +124,13 @@
   </div>
 </div>
 
+{% block javascripts %}
 <script src="{{ '/static/js/jquery.min.js'|url }}"></script>
 <script src="{{ '/static/js/jquery.scrollTo.min.js'|url }}"></script>
 <script src="{{ '/static/js/jquery.nicescroll.min.js'|url }}"></script>
+<script src="{{ ('/static/js/messages_'~ this.alt ~ '.js')|url }}"></script>
 <script src="{{ '/static/js/main.js'|url }}"></script>
+{% endblock javascripts %}
 
 </body>
 </html>

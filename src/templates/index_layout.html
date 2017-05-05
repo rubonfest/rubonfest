@@ -28,7 +28,7 @@
         </div>
         <div class="one-half column">
           {{ partners_block() }}
-          {% set contacts = site.get('/contacts') %}
+          {% set contacts = site.get('/contacts', alt=this.alt) %}
           {{ contacts_block(contacts) }}
         </div>
       </div>
@@ -73,4 +73,9 @@
     </div>
   </section>
 {% endblock content %}
+
+{% block javascripts %}
+  {{ super() }}
+  <script src="{{ '/static/js/contacts-wrap.js'|url }}"></script>
+{% endblock javascripts %}
 
