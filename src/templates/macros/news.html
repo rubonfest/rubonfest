@@ -1,10 +1,12 @@
 {% macro news_block(news) %}
   <h4>{{ news.title }}</h4>
   <div id="news-content">
+    <img id="news-left" src="{{ '/static/images/news-left.jpg'|url }}" />
+    <img id="news-right" src="{{ '/static/images/news-right.jpg'|url }}" />
     {% for item in news.children.all() %}
       <div class="news-wrap">
         <p class="news-pub-date">{{ item.pub_date.strftime('%d/%m/%Y') }}</p>
-        <p class="news-body">{{ item.body }}</p>
+        <div class="news-body">{{ item.body }}</div>
       </div>
     {% endfor %}
   </div>

@@ -51,7 +51,9 @@ jQuery(function($) {
     }
   }
 
-  manageNewsOpacity();
+  if ($('#news-content .news-wrap').length > 2) {
+    manageNewsOpacity();
+  }
   $('#news-content').on('scroll', function() {
     manageNewsOpacity();
   });
