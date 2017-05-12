@@ -322,7 +322,7 @@ img.partner {
 }
 
 #news-content {
-  height: 500px;
+  max-height: 500px;
   overflow: auto;
 }
 
@@ -337,7 +337,7 @@ img.partner {
 /* photo-gap-3*/
 #photo-gap-3 {
   background-color: #fff;
-  height: 300px;
+  height: 200px;
   position: relative;
 }
 
