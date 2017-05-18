@@ -195,6 +195,10 @@ header {
   line-height: 1.5em;
   letter-spacing: 0.08em;
 }
+
+#information h1 {
+  margin-bottom: 3em;
+}
 #dates div {
   vertical-align: middle;
   display: inline-block;
