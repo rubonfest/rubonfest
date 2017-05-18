@@ -192,8 +192,9 @@ header {
 #information {
   padding-top: 2em;
   padding-bottom: 1em;
-  line-height: 1.7em;
+  line-height: 1.5em;
   letter-spacing: 0.08em;
+  font-weight: bold;
 }
 #dates div {
   vertical-align: middle;
@@ -208,8 +209,6 @@ header {
   font-size: 2.1rem;
   line-height: 1em;
   margin-bottom: 1.5em;
-  color: #ef0406;
-  text-shadow: 1px 1px 2px #777;
 }
 
 #dates #days {
@@ -410,7 +409,7 @@ footer {
 
   #main-partners {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
 
   #main-partners  div {
