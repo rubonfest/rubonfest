@@ -261,13 +261,68 @@ img.partner {
   background-image: url('../images/photo-gap-1.jpg');
   background-size: cover;
   background-position: 40% 0;
-  height: 330px;
+  height: 630px;
   position: relative;
 }
 
-/* participants */
-#participants {
+/* guests */
+#musical-guests{
+  padding-top: 380px;
+  position: relative;
+}
+ 
+#other-guests {
+  padding-top: 280px;
+  position: relative;
+}
+
+.musical-guest, .other-guest {
+  position: absolute;
+}
+
+.guest-left {
+  left: 2%;
+  right: 52%;
+}
+
+.guest-right {
+  left: 52%;
+  right: 2%;
+}
+
+#main-musical-guest{
+  left: 15%;
+  right: 15%;
+}
+
+.musical-guest img, .other-guest img {
+  height: 85px;
+}
+
+#main-musical-guest img{
+  height: 130px;
+}
+
+.guest-row-0 {
+  top: 0;
+}
+
+.guest-row-1 {
+  top: 100px;
+}
+
+.guest-row-2 {
+  top: 200px;
+}
+
+
+/* features */
+#features {
+  background-image: url('../images/photo-gap-1.jpg');
+  background-size: cover;
+  background-position: 40% 0;
   height: 500px;
+  position: relative;
 }
 
 /* photo-gap-2 */
