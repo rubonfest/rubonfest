@@ -194,7 +194,6 @@ header {
   padding-bottom: 1em;
   line-height: 1.5em;
   letter-spacing: 0.08em;
-  font-weight: bold;
 }
 #dates div {
   vertical-align: middle;
@@ -209,6 +208,9 @@ header {
   font-size: 2.1rem;
   line-height: 1em;
   margin-bottom: 1.5em;
+}
+#intro {
+  font-weight: bold;
 }
 
 #dates #days {
@@ -226,7 +228,7 @@ header {
   top: -40px;
   width: 50%;
   padding: 0 10%;
-  box-sizing: padding-box;
+  box-sizing: border-box;
 }
 
 #contacts {
@@ -377,17 +379,17 @@ footer {
   }
   /* background elements */
   #white-wrapper {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 4%;
+    padding-right: 4%;
   }
   #content {
-    padding: 0 3%;
+    padding: 0 10%;
   }
   /* nav */
   nav {
     background-color: #fff;
-    left: 12.37%;
-    right: 12.37%;
+    left: 13.2%;
+    right: 13.2%;
     border: 1px solid #ddd;
     border-top: none;
   }
