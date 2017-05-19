@@ -49,7 +49,7 @@
   </section>
   <section id="musical-guests">
     <div id="main-musical-guest" class="musical-guest guest-row-0">
-      <img src="{{ '/static/images/guest-placeholder.png'|url }}" />
+      <img src="{{ '/static/images/test.png'|url }}" />
     </div>
     <div class="musical-guest guest-left guest-row-1">
       <img src="{{ '/static/images/guest-placeholder.png'|url }}" />
@@ -63,14 +63,16 @@
     <div class="musical-guest guest-right guest-row-2">
       <img src="{{ '/static/images/guest-placeholder.png'|url }}" />
     </div>
-    <a href="#">Больш пра музыкантаў</a>
+    <h2><a href="#">Музычныя госці</a></h2>
   </section>
   <section id="features">
     <div class="triangle-top gap-triangle">
       <img class="show-mobile" src="{{ '/static/images/triangle-top.png'|url }}" />
+      <img class="show-tablet show-desktop" src="{{ '/static/images/triangle-double-top.png'|url }}" />
     </div>
     <div class="triangle-bot gap-triangle">
-      <img class="show-mobile" src="{{ '/static/images/triangle-sides-white-bot.png'|url }}" />
+      <img class="show-mobile" src="{{ '/static/images/triangle-bot.png'|url }}" />
+      <img class="show-tablet show-desktop" src="{{ '/static/images/triangle-double-bot.png'|url }}" />
     </div>
   </section>
   <section id="other-guests">
@@ -86,11 +88,12 @@
     <div class="other-guest guest-right guest-row-1">
       <img src="{{ '/static/images/guest-placeholder.png'|url }}" />
     </div>
-    <a href="#">Больш іншых гасцей</a>
+    <h2><a href="#">Госці фестывалю</a></h2>
   </section>
   <section id="photo-gap-2">
     <div class="triangle-top gap-triangle">
       <img class="show-mobile" src="{{ '/static/images/triangle-top.png'|url }}" />
+      <img class="show-tablet show-desktop" src="{{ '/static/images/triangle-double-top.png'|url }}" />
     </div>
     {% set history = site.get('festival-history', alt=this.alt) %}
     {{ previous_block(history) }}

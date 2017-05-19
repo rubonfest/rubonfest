@@ -267,7 +267,11 @@ img.partner {
 
 /* guests */
 #musical-guests{
-  padding-top: 380px;
+  padding-top: 300px;
+  position: relative;
+}
+
+#musical-guests h2 {
   position: relative;
 }
  
@@ -499,13 +503,50 @@ footer {
     background-repeat: repeat-y;
     font-size: 0.85rem;
   }
-
   #information .column:first-child {
     padding-left: 7%;
   }
   #information .column:last-child {
     padding-right: 7%;
   }
+
+  /* guests */
+  #musical-guests{
+    padding-top: 280px;
+  }
+  #musical-guests h2 {
+    margin-bottom: 4em;
+  }
+  #other-guests {
+    height: 200px;
+    padding-top: 180px;
+  }
+  #main-musical-guest {
+    left: 27%;
+    right: 27%;
+  }
+  #main-musical-guest img {
+    height: 160px;
+  }
+  .musical-guest img, .other-guest img {
+    height: 160px;
+  }
+  .musical-guest.guest-row-0 {
+    top: 20px;
+  }
+  .musical-guest.guest-row-1 {
+    top: -70px;
+  }
+  .musical-guest.guest-row-2 {
+    top: 110px;
+  }
+  .other-guest.guest-row-0 {
+    top: 20px;
+  }
+  .other-guest.guest-row-1 {
+    top: 200px;
+  }
+
   /* photo gap-2 */
   #photo-gap-2 {
     height: 110px;
