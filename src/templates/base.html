@@ -23,11 +23,13 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  {% block stylesheets %}
   <link rel="stylesheet" href="{{ '/static/css/normalize.css'|url }}">
   <link rel="stylesheet" href="{{ '/static/css/skeleton.css'|url }}">
   <link rel="stylesheet" href="{{ '/static/css/mmenu/jquery.mmenu.css'|url }}">
   <link rel="stylesheet" href="{{ '/static/css/style.css'|url }}">
   <link rel="stylesheet" href="{{ '/static/css/overlay.css'|url }}">
+  {% endblock stylesheets %}
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -6,6 +6,11 @@
 {% from 'macros/information.html' import contacts_block %}
 {% from 'macros/previous.html' import previous_block %}
 
+{% block stylesheets %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ '/static/css/animate.css/animate.min.css'|url }}" />
+{% endblock stylesheets %}
+
 {% block content %}
   <section id="information" class="side-borders">
     <div class="container">
@@ -48,22 +53,18 @@
     </div>
   </section>
   <section id="musical-guests">
-    <div id="main-musical-guest" class="musical-guest guest-row-0">
-      <img src="{{ '/static/images/test.png'|url }}" />
-    </div>
-    <div class="musical-guest guest-left guest-row-1">
-      <img src="{{ '/static/images/guest-placeholder.png'|url }}" />
-    </div>
-    <div class="musical-guest guest-right guest-row-1">
-      <img src="{{ '/static/images/guest-placeholder.png'|url }}" />
-    </div>
-    <div class="musical-guest guest-left guest-row-2">
-      <img src="{{ '/static/images/guest-placeholder.png'|url }}" />
-    </div>
-    <div class="musical-guest guest-right guest-row-2">
-      <img src="{{ '/static/images/guest-placeholder.png'|url }}" />
-    </div>
-    <h2><a href="#">Музычныя госці</a></h2>
+    {% set musicians = site.get('festival-guests/musicians', alt=this.alt) %}
+    {% set row_index = 0 %}
+    {% for guest in musicians.children.all() %}
+      {% if loop.index % 2 == 0 %}
+        {% set row_index = row_index + 1 %}
+      {% endif %}
+      <div {% if loop.first %}id="main-musical-guest"{% endif %} 
+        class="musical-guest guest-{% if loop.index0 % 2 %}left{% else %}right{% endif %} guest-row-{{ row_index }} animated">
+        <img src="{{ guest.attachments.get('logo.png')|url }}" />
+      </div>
+    {% endfor %}
+    <h2><a href="#">{{ musicians.name }}</a></h2>
   </section>
   <section id="features">
     <div class="triangle-top gap-triangle">
@@ -76,19 +77,17 @@
     </div>
   </section>
   <section id="other-guests">
-    <div class="other-guest guest-left guest-row-0">
-      <img src="{{ '/static/images/guest-placeholder.png'|url }}" />
+    {% set other_guests = site.get('festival-guests/participants', alt=this.alt) %}
+    {% set row_index = 0 %}
+    {% for guest in other_guests.children.all() %}
+      {% if not loop.first and loop.index % 2 %}
+        {% set row_index = row_index + 1 %}
+      {% endif %}
+    <div class="other-guest guest-{% if loop.index0 % 2 %}right{% else %}left{% endif %} guest-row-{{ row_index }} animated">
+      <img src="{{ guest.attachments.get('logo.png')|url }}" />
     </div>
-    <div class="other-guest guest-right guest-row-0">
-      <img src="{{ '/static/images/guest-placeholder.png'|url }}" />
-    </div>
-    <div class="other-guest guest-left guest-row-1">
-      <img src="{{ '/static/images/guest-placeholder.png'|url }}" />
-    </div>
-    <div class="other-guest guest-right guest-row-1">
-      <img src="{{ '/static/images/guest-placeholder.png'|url }}" />
-    </div>
-    <h2><a href="#">Госці фестывалю</a></h2>
+    {% endfor %}
+    <h2><a href="#">{{ other_guests.name }}</a></h2>
   </section>
   <section id="photo-gap-2">
     <div class="triangle-top gap-triangle">
