@@ -136,6 +136,7 @@ section {
   position: absolute;
   height: 88px;
   width: 100%;
+  z-index: 1;
 }
 .gap-triangle img {
   height: 100%;
@@ -228,7 +229,7 @@ header {
 
 #mountain {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: -40px;
   width: 50%;
   padding: 0 10%;
@@ -282,6 +283,7 @@ img.partner {
 
 .musical-guest, .other-guest {
   position: absolute;
+  z-index: 2;
 }
 
 .guest-left {
@@ -322,9 +324,6 @@ img.partner {
 
 /* features */
 #features {
-  background-image: url('../images/photo-gap-1.jpg');
-  background-size: cover;
-  background-position: 40% 0;
   height: 500px;
   position: relative;
 }
@@ -347,7 +346,7 @@ img.partner {
 
 .previous-fest-year {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 #photo-gap-2 div .previous-fest-year:first-child {
@@ -518,8 +517,8 @@ footer {
     margin-bottom: 4em;
   }
   #other-guests {
-    height: 200px;
-    padding-top: 180px;
+    height: 115px;
+    padding-top: 85px;
   }
   #main-musical-guest {
     left: 27%;
@@ -541,10 +540,10 @@ footer {
     top: 110px;
   }
   .other-guest.guest-row-0 {
-    top: 20px;
+    top: -70px;
   }
   .other-guest.guest-row-1 {
-    top: 200px;
+    top: 110px;
   }
 
   /* photo gap-2 */

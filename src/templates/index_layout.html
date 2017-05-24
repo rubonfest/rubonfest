@@ -9,6 +9,7 @@
 {% block stylesheets %}
   {{ super() }}
   <link rel="stylesheet" href="{{ '/static/css/animate.css/animate.min.css'|url }}" />
+  <link rel="stylesheet" href="{{ '/static/js/flexslider/flexslider.css'|url }}" />
 {% endblock stylesheets %}
 
 {% block content %}
@@ -71,6 +72,16 @@
       <img class="show-mobile" src="{{ '/static/images/triangle-top.png'|url }}" />
       <img class="show-tablet show-desktop" src="{{ '/static/images/triangle-double-top.png'|url }}" />
     </div>
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="{{ '/static/images/photo-gap-1.jpg'|url }}" />
+        </li>
+        <li>
+          <img src="{{ '/static/images/photo-gap-2.jpg'|url }}" />
+        </li>
+      </ul>
+    </div>
     <div class="triangle-bot gap-triangle">
       <img class="show-mobile" src="{{ '/static/images/triangle-bot.png'|url }}" />
       <img class="show-tablet show-desktop" src="{{ '/static/images/triangle-double-bot.png'|url }}" />
@@ -132,5 +143,6 @@
 {% block javascripts %}
   {{ super() }}
   <script src="{{ '/static/js/contacts-wrap.js'|url }}"></script>
+  <script src="{{ '/static/js/flexslider/jquery.flexslider-min.js'|url }}"></script>
 {% endblock javascripts %}
 

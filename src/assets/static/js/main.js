@@ -91,4 +91,7 @@ jQuery(function($) {
     showAnimations();
   });
   $('nav a, #nav-overlay a').click(scrollToIfOnPage);
+  $('.flexslider').flexslider({
+    animation: 'slide'
+  });
 });
