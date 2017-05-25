@@ -340,6 +340,7 @@ img.partner {
   background: #dbc8ac;
 }
 .flexslider {
+  border: none;
   z-index: 0;
 }
 #features .slides span {
