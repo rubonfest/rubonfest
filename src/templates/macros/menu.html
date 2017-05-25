@@ -8,7 +8,9 @@
   {% set show_guests = (guests != None and not guests._hidden) %}
   {% set show_polack = (polack != None and not polack._hidden) %}
 
+  <ul>
   {{ menu_items(show_prog, show_guests, show_polack) }}
+  </ul>
 {% endmacro %}
 
 {% macro top_menu(alt, site) %}
