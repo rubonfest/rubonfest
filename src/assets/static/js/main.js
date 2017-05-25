@@ -92,6 +92,9 @@ jQuery(function($) {
   });
   $('nav a, #nav-overlay a').click(scrollToIfOnPage);
   $('.flexslider').flexslider({
-    animation: 'slide'
+    animation: 'fade',
+    controlNav: true,
+    directionNav: false,
+    controlsContainer: '.features-controls',
   });
 });

@@ -7,9 +7,9 @@
 {% from 'macros/previous.html' import previous_block %}
 
 {% block stylesheets %}
-  {{ super() }}
   <link rel="stylesheet" href="{{ '/static/css/animate.css/animate.min.css'|url }}" />
   <link rel="stylesheet" href="{{ '/static/js/flexslider/flexslider.css'|url }}" />
+  {{ super() }}
 {% endblock stylesheets %}
 
 {% block content %}
@@ -74,14 +74,15 @@
     </div>
     <div class="flexslider">
       <ul class="slides">
+        {% set features = site.get('festival-features', alt=this.alt) %}
+        {% for feature in features.children.all() %}
         <li>
-          <img src="{{ '/static/images/photo-gap-1.jpg'|url }}" />
+          <span style="background-image: url({{ feature.attachments.get('logo.png')|url }})"></span>
         </li>
-        <li>
-          <img src="{{ '/static/images/photo-gap-2.jpg'|url }}" />
-        </li>
+        {% endfor %}
       </ul>
     </div>
+    <div class="features-controls"></div>
     <div class="triangle-bot gap-triangle">
       <img class="show-mobile" src="{{ '/static/images/triangle-bot.png'|url }}" />
       <img class="show-tablet show-desktop" src="{{ '/static/images/triangle-double-bot.png'|url }}" />
