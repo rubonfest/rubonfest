@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="one-half column">
-          {{ partners_block() }}
+          {{ partners_block(this) }}
           {% set contacts = site.get('/contacts', alt=this.alt) %}
           {{ contacts_block(contacts) }}
         </div>
@@ -53,20 +53,28 @@
       <img class="show-tablet show-desktop" src="{{ '/static/images/triangle-double-bot.png'|url }}" />
     </div>
   </section>
-  <section id="musical-guests">
-    {% set musicians = site.get('festival-guests/musicians', alt=this.alt) %}
+  {% block musical_guests %}
+  <section id="musical-guests" class="side-borders">
+    {% set musicians = site.get(this.path~'/festival-guests/musicians', alt=this.alt) %}
     {% set row_index = 0 %}
+    {% if musicians  %}
     {% for guest in musicians.children.all() %}
       {% if loop.index % 2 == 0 %}
         {% set row_index = row_index + 1 %}
       {% endif %}
       <div {% if loop.first %}id="main-musical-guest"{% endif %} 
         class="musical-guest guest-{% if loop.index0 % 2 %}left{% else %}right{% endif %} guest-row-{{ row_index }} animated">
-        <img src="{{ guest.attachments.get('logo.png')|url }}" />
+        {% set logo = guest.attachments.get('logo.png') %}
+        {% if logo %}
+        <img src="{{ logo|url }}" />
+        {% endif %}
       </div>
     {% endfor %}
+    {% endif %}
     <h2><a href="#">{{ musicians.name }}</a></h2>
   </section>
+  {% endblock musical_guests %}
+  {% block features %}
   <section id="features">
     <div class="triangle-top gap-triangle">
       <img class="show-mobile" src="{{ '/static/images/triangle-top.png'|url }}" />
@@ -74,12 +82,17 @@
     </div>
     <div class="flexslider">
       <ul class="slides">
-        {% set features = site.get('festival-features', alt=this.alt) %}
+        {% set features = site.get(this.path ~ '/festival-features', alt=this.alt) %}
+        {% if features %}
         {% for feature in features.children.all() %}
         <li>
-          <span style="background-image: url({{ feature.attachments.get('logo.png')|url }})"></span>
+          {% set logo = feature.attachments.get('logo.png') %}
+          {% if logo %}
+          <span style="background-image: url({{ logo|url }})"></span>
+          {% endif %}
         </li>
         {% endfor %}
+        {% endif %}
       </ul>
     </div>
     <div class="features-controls"></div>
@@ -88,19 +101,28 @@
       <img class="show-tablet show-desktop" src="{{ '/static/images/triangle-double-bot.png'|url }}" />
     </div>
   </section>
-  <section id="other-guests">
-    {% set other_guests = site.get('festival-guests/participants', alt=this.alt) %}
+  {% endblock features %}
+  {% block other_guests %}
+  <section id="other-guests" class="side-borders">
+    {% set other_guests = site.get(this.path ~ '/festival-guests/participants', alt=this.alt) %}
     {% set row_index = 0 %}
+    {% if other_guests %}
     {% for guest in other_guests.children.all() %}
       {% if not loop.first and loop.index % 2 %}
         {% set row_index = row_index + 1 %}
       {% endif %}
     <div class="other-guest guest-{% if loop.index0 % 2 %}right{% else %}left{% endif %} guest-row-{{ row_index }} animated">
-      <img src="{{ guest.attachments.get('logo.png')|url }}" />
+      {% set logo = guest.attachments.get('logo.png') %}
+      {% if logo %}
+      <img src="{{ logo|url }}" />
+      {% endif %}
     </div>
     {% endfor %}
+    {% endif %}
     <h2><a href="#">{{ other_guests.name }}</a></h2>
   </section>
+  {% endblock other_guests %}
+  {% block history %}
   <section id="photo-gap-2">
     <div class="triangle-top gap-triangle">
       <img class="show-mobile" src="{{ '/static/images/triangle-top.png'|url }}" />
@@ -112,6 +134,8 @@
       <img class="show-mobile" src="{{ '/static/images/triangle-bot.png'|url }}" />
     </div>
   </section>
+  {% endblock history %}
+  {% block news %}
   <section id="news" class="side-borders">
     {% set news = site.get('festival-news', alt=this.alt) %}
     <div class="container">
@@ -122,6 +146,7 @@
       </div>
     </div>
   </section>
+  {% endblock news %}
   <section id="photo-gap-3">
     <div class="triangle-top gap-triangle">
       <img src="{{ '/static/images/triangle-top-border.png'|url }}" />
@@ -134,7 +159,7 @@
     <div class="container">
       <div class="row">
         <div class="column">
-          {{ partners_mobile_block() }}
+          {{ partners_mobile_block(this) }}
         </div>
       </div>
     </div>

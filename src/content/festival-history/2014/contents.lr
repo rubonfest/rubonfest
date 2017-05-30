@@ -1,0 +1,66 @@
+title: Летапіс фэсту сярэднявечнай культуры "Рубон"
+---
+body: body
+---
+description: desc
+---
+year: 2014
+---
+partners:
+
+#### partner ####
+file: mts.png
+----
+link: http://www.mts.by/
+----
+title: МТС
+----
+placement: center
+#### partner ####
+file: polack.png
+----
+link: http://polotsk.vitebsk-region.gov.by/index.php/ru/
+----
+title: Полацкі раённы выканаўчы камітэт
+----
+placement: column
+#### partner ####
+file: polack_info.jpg
+----
+link: http://www.polotsk-turizm.by
+----
+title: Полацкі аддзел міністэрства спорту і турызму
+----
+placement: column
+#### partner ####
+file: eksby.png
+----
+link: https://ekskursii.by/
+----
+title: Беларускі экскурсійны партал
+----
+placement: column
+#### partner ####
+file: tut.png
+----
+link: https://www.tut.by
+----
+title: Беларускі партал TUT.BY
+----
+placement: column
+#### partner ####
+file: skif.png
+----
+link: http://skif.by/
+----
+title: Тэлерадыёкампанія Скіф
+----
+placement: column
+#### partner ####
+file: pvestnik.jpg
+----
+link: http://www.pvestnik.by/
+----
+title: Полацкі веснік
+----
+placement: column

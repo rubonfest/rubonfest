@@ -55,10 +55,10 @@ header a:hover {
   color: #ddd;
 }
 
-h1 a:link, h2 a:link, h3 a:link, h4 a:link {
+h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link {
   text-decoration: none;
 }
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   text-decoration: underline;
 }
 
@@ -196,7 +196,6 @@ header {
   line-height: 1.5em;
   letter-spacing: 0.08em;
 }
-
 #information h1 {
   margin-bottom: 3em;
 }
@@ -204,11 +203,9 @@ header {
   vertical-align: middle;
   display: inline-block;
 }
-
 #dates div:first-child {
   margin-right: 0.05em;
 }
-
 #dates {
   font-size: 2.1rem;
   line-height: 1em;
@@ -217,16 +214,13 @@ header {
 #intro {
   font-weight: bold;
 }
-
 #dates #days {
   font-size: 1.5em;
   line-height: 1.1em;
 }
-
 #video {
   margin-bottom: 5em;
 }
-
 #mountain {
   position: absolute;
   z-index: 2;
@@ -235,26 +229,20 @@ header {
   padding: 0 10%;
   box-sizing: border-box;
 }
-
 #contacts {
   font-size: 0.9em;
 }
-
 #contacts td {
   border: none;
 }
-
 #contacts-mobile p {
   margin-bottom: 1em;
 }
-
 #contacts-mobile .contact {
   margin-bottom: 2em;
 }
-
-img.partner {
-  display: inline-block;
-  width: 20%;
+#partners .partner-block {
+  max-width: 30%;
 }
 
 /* photo-gap-1 */
@@ -500,7 +488,7 @@ footer {
     padding-bottom: 40px;
   }
 
-  #main-partners  div {
+  .partner-block {
     display: inline-block;
     vertical-align: middle;
   }

@@ -85,7 +85,9 @@
       <div class="show-tablet show-desktop">
         <img src="{{ '/static/images/logo-tablet.png'|url }}" alt="{{ index.title }}" />
       </div>
+      {% block main_partners %}
       <div id="main-partners" class="show-tablet show-desktop">
+        {% if index.partners %}
         <div id="main-partners-left">
           {% for blk in index.partners.blocks if blk.placement == 'left' %}
             {{ blk }}
@@ -101,7 +103,9 @@
             {{ blk }}
           {% endfor %}
         </div>
+        {% endif %}
       </div>
+      {% endblock main_partners %}
     </header>
     {% block content %}{% endblock %}
     <section id="photo-gap-4">

@@ -1,14 +1,22 @@
-{% macro partners_block() %}
+{% macro partners_block(index) %}
   <div class="show-tablet show-desktop bottom-margin-sm" id="partners">
+    {% if index.partners %}
     <h4>Партнёры</h4>
-    <img class="partner" src="{{ '/static/images/partner_1.jpg'|url }}" alt="" />
+    {% for blk in index.partners.blocks if blk.placement == 'column' %}
+      {{ blk }}
+    {% endfor %}
+    {% endif %}
   </div>
 {% endmacro %}
 
-{% macro partners_mobile_block() %}
+{% macro partners_mobile_block(index) %}
   <div class="show-mobile bottom-margin-sm" id="partners-mobile">
+    {% if index.partners %}
     <h4>Партнёры</h4>
-    <img class="partner" src="{{ '/static/images/partner_1.jpg'|url }}" alt="" />
+    {% for blk in index.partners.blocks if blk.placement == 'column' %}
+      {{ blk }}
+    {% endfor %}
+    {% endif %}
   </div>
 {% endmacro %}
 
