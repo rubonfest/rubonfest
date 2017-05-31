@@ -1,7 +1,9 @@
-title: Pawa
+title: PAWA
 ---
-name: Pawa
+name: PAWA
 ---
 to_front: yes
 ---
 weight: 0
+---
+show_name: no

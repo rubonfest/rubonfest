@@ -256,7 +256,7 @@ header {
 
 /* guests */
 #musical-guests{
-  padding-top: 300px;
+  padding-top: 380px;
   position: relative;
 }
 
@@ -285,12 +285,29 @@ header {
   right: 15%;
 }
 
-.musical-guest img, .other-guest img {
+.musical-guest, .other-guest {
   height: 85px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-#main-musical-guest img{
+.musical-guest h3, .other-guest h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+.musical-guest h3 a:hover, .other-guest h3 a:hover {
+  text-decoration: none;
+}
+
+#main-musical-guest {
+  padding-top: 65px;
   height: 130px;
+}
+#main-musical-guest h3 {
+  font-size: 1.8rem;
 }
 
 .guest-row-0 {
@@ -351,36 +368,33 @@ header {
   color: #fff;
   position: relative;
 }
-
 #photo-gap-2 h2 {
   letter-spacing: 0.1em;
 }
-
+#photo-gap-2 h5 a:hover {
+  text-decoration: none;
+  text-shadow: 1px 1px 3px #000;
+}
 .previous-fest-year {
   position: absolute;
   z-index: 2;
 }
-
 #photo-gap-2 div .previous-fest-year:first-child {
   bottom: 3%;
   left: 6%;
 }
-
 #photo-gap-2 div .previous-fest-year:nth-child(2) {
   bottom: 10%;
   left: 24%;
 }
-
 #photo-gap-2 div .previous-fest-year:nth-child(3) {
   bottom: 16%;
   left: 43%;
 }
-
 #photo-gap-2 div .previous-fest-year:nth-child(4) {
   bottom: 10%;
   right: 24%;
 }
-
 #photo-gap-2 div .previous-fest-year:nth-child(5) {
   bottom: 3%;
   right: 6%;
@@ -533,10 +547,12 @@ footer {
     left: 27%;
     right: 27%;
   }
-  #main-musical-guest img {
+  #main-musical-guest {
+    padding-top: 95px;
     height: 160px;
   }
-  .musical-guest img, .other-guest img {
+  .musical-guest, .other-guest {
+    padding-top: 105px;
     height: 160px;
   }
   .musical-guest.guest-row-0 {

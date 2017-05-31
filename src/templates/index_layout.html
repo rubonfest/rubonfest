@@ -62,13 +62,15 @@
       {% if loop.index % 2 == 0 %}
         {% set row_index = row_index + 1 %}
       {% endif %}
+      {% set logo = guest.attachments.get('logo.png') %}
+      {% if logo %}
       <div {% if loop.first %}id="main-musical-guest"{% endif %} 
+        style="background-image: url({{ logo|url }})"
+        title="{{ guest.name }}"
         class="musical-guest guest-{% if loop.index0 % 2 %}left{% else %}right{% endif %} guest-row-{{ row_index }} animated">
-        {% set logo = guest.attachments.get('logo.png') %}
-        {% if logo %}
-        <img src="{{ logo|url }}" />
-        {% endif %}
+        {% if guest.show_name %}<h3><a href="#">{{ guest.name }}</a></h3>{% endif %}
       </div>
+      {% endif %}
     {% endfor %}
     {% endif %}
     <h2><a href="#">{{ musicians.name }}</a></h2>
@@ -111,12 +113,14 @@
       {% if not loop.first and loop.index % 2 %}
         {% set row_index = row_index + 1 %}
       {% endif %}
-    <div class="other-guest guest-{% if loop.index0 % 2 %}right{% else %}left{% endif %} guest-row-{{ row_index }} animated">
-      {% set logo = guest.attachments.get('logo.png') %}
-      {% if logo %}
-      <img src="{{ logo|url }}" />
-      {% endif %}
+    {% set logo = guest.attachments.get('logo.png') %}
+    {% if logo %}
+    <div style="background-image: url({{ logo|url }})"
+         title="{{ guest.name }}"
+         class="other-guest guest-{% if loop.index0 % 2 %}right{% else %}left{% endif %} guest-row-{{ row_index }} animated">
+         {% if guest.show_name %}<h3><a href="#">{{ guest.name }}</a></h3>{% endif %}
     </div>
+    {% endif %}
     {% endfor %}
     {% endif %}
     <h2><a href="#">{{ other_guests.name }}</a></h2>
