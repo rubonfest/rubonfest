@@ -15,4 +15,12 @@
 </section>
 
 <section id="page-children" class="side-borders bottom-margin">{% block page_children %}{% endblock %}</section>
+<section id="photo-gap-3">
+  <div class="triangle-top gap-triangle">
+    <img src="{{ '/static/images/triangle-top-border.png'|url }}" />
+  </div>
+  {% set index = site.get('/', alt=this.alt) %}
+  <h2><a href="{{ index|url }}">{{ index.title }}</a></h2>
+  <p>{{ index.description }}</p>
+</section>
 {% endblock content %}

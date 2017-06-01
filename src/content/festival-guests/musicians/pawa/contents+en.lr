@@ -1,20 +1,10 @@
-title: PAWA
----
-name: PAWA
----
-to_front: yes
----
-weight: 0
----
-show_name: no
----
 body:
 
-**Чаму PAWA ???**
+**Why PAWA ???**
 
 ![PAWA](pawa-1.jpg)
 
-Гурт PAWA спалучае мінулыя стагоддзі і сучаснасць. На адной сцэне &mdash; непаўторная эстэтыка славянскай традыцыі і цяжкі сінтэтычны гук сучаснага мегаполіса.Арыгінальныя сярэднявечныя музычныя інструменты, зробленыя па тэхналогіі таго часу , традыцыйныя ўборы і сучасныя сінтэзатары, гітара і барабаны.
+The Pawa-band combines past centures and modernity. Unrepeatable aesthetics of the Slavs tradition together with hard synthetic sound of modern metropolis on one stage. Original medieval musical instruments, made by that time technology, traditional wearings and modern synthesizers, guitar and drums.
 
 ![PAWA](pawa-2.jpg)
 
@@ -60,6 +50,14 @@ Shauchenka Walery &mdash; audio engineer;
 <a target="_blank" href="http://vk.com/p_a_w_a">PAWA VK</a>
 
 ---
-meta_keywords: рубон 2017, рубон полацк, рубон полацк 2017, музычны фестываль полацк, фестываль сярэднявечнай музыкі полацк, pawa
+name: PAWA
 ---
-meta_description: Гурт PAWA спалучае мінулыя стагоддзі і сучаснасць. Арыгінальныя сярэднявечныя музычныя інструменты, зробленыя па тэхналогіі таго часу , традыцыйныя ўборы і сучасныя сінтэзатары, гітара і барабаны - на фестывалі Рубон 2017 у Полацку.
+show_name: no
+---
+title: PAWA
+---
+weight: 0
+---
+meta_description: The Pawa-band combines past centures and modernity. Original medieval musical instruments, made by that time technology, traditional wearings and modern synthesizers, guitar and drums - at Rubon 2017 festival in Polatsk
+---
+meta_keywords: rubon 2017, rubon polatsk, rubon polatsk 2017, music festival polatsk, medieval music polatsk, pawa

@@ -259,49 +259,44 @@ header {
   padding-top: 380px;
   position: relative;
 }
-
 #other-guests {
   padding-top: 280px;
   position: relative;
 }
-
-.musical-guest, .other-guest {
-  position: absolute;
-  z-index: 2;
-}
-
 .guest-left {
   left: 2%;
   right: 52%;
 }
-
 .guest-right {
   left: 52%;
   right: 2%;
 }
-
 #main-musical-guest{
   left: 15%;
   right: 15%;
 }
-
 .musical-guest, .other-guest {
+  display: block;
+  position: absolute;
+  z-index: 2;
   height: 85px;
   box-sizing: border-box;
   padding-top: 40px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
+a.musical-guest,
+a.other-guest {
+  text-decoration: none;
+}
+a.musical-guest:hover, a.other-guest:hover {
+  z-index: 3;
+}
 .musical-guest h3, .other-guest h3 {
   font-size: 1.4rem;
   color: #fff;
   text-shadow: 1px 1px 3px #000;
 }
-.musical-guest h3 a:hover, .other-guest h3 a:hover {
-  text-decoration: none;
-}
-
 #main-musical-guest {
   padding-top: 65px;
   height: 130px;
@@ -309,15 +304,12 @@ header {
 #main-musical-guest h3 {
   font-size: 1.8rem;
 }
-
 .guest-row-0 {
   top: 0;
 }
-
 .guest-row-1 {
   top: 100px;
 }
-
 .guest-row-2 {
   top: 200px;
 }
@@ -426,7 +418,8 @@ header {
 /* photo-gap-3*/
 #photo-gap-3 {
   background-color: #fff;
-  height: 200px;
+  min-height: 200;
+  padding: 150px 0 50px 0;
   position: relative;
 }
 
