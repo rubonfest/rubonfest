@@ -276,21 +276,22 @@ header {
   right: 15%;
 }
 .musical-guest, .other-guest {
-  display: block;
   position: absolute;
   z-index: 2;
   height: 85px;
-  box-sizing: border-box;
-  padding-top: 40px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-a.musical-guest,
-a.other-guest {
+.musical-guest a,
+.other-guest a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  margin: 5% auto;
+  box-sizing: border-box;
+  padding-top: 40px;
+  height: 70%;
   text-decoration: none;
-}
-a.musical-guest:hover, a.other-guest:hover {
-  z-index: 3;
 }
 .musical-guest h3, .other-guest h3 {
   font-size: 1.4rem;
@@ -298,8 +299,10 @@ a.musical-guest:hover, a.other-guest:hover {
   text-shadow: 1px 1px 3px #000;
 }
 #main-musical-guest {
-  padding-top: 65px;
   height: 130px;
+}
+#main-musical-guest a {
+  padding-top: 65px;
 }
 #main-musical-guest h3 {
   font-size: 1.8rem;
@@ -541,12 +544,16 @@ footer {
     right: 27%;
   }
   #main-musical-guest {
-    padding-top: 95px;
     height: 160px;
   }
+  #main-musical-guest a {
+    padding-top: 95px;
+  }
   .musical-guest, .other-guest {
-    padding-top: 105px;
     height: 160px;
+  }
+  .musical-guest a, .other-guest a{
+    padding-top: 105px;
   }
   .musical-guest.guest-row-0 {
     top: 20px;

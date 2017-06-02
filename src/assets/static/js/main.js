@@ -57,7 +57,7 @@ jQuery(function($) {
       var animation, delay;
       animation = $(this).data('animation') || 'fadeInUp';
       delay = $(this).data('animation-duration') || 600;
-      if ($(this).hasClass(animation))
+      if ($(this).hasClass('scroll-animation-done'))
         return;
       if ( ! $(this).isOnScreen())
         return;
@@ -69,17 +69,39 @@ jQuery(function($) {
           '-o-animation-duration': delay,
         })
         .css('visibility', 'visible')
-        .addClass(animation)
+        .addClass(animation+' scroll-animation-done')
+        .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass('animated '+animation);
+        })
       ;
     });
+  }
+
+  function setGuestHovers() {
+    var timeout,
+        animation = 'tada';
+    $('.musical-guest > a, .other-guest > a').hover(
+        function(e) {
+          timeout = setTimeout(function() {
+            $(this).parent()
+              .addClass('animated '+animation);
+          }.bind(this), 50);
+        },
+        function(e) {
+          clearTimeout(timeout);
+          $(this).parent().removeClass('animated '+animation);
+        }
+    );
   }
 
   $('.animated').css('visibility', 'hidden');
   $('.nav-humb').click(openNav);
   $('#nav-overlay .closebtn').click(closeNav);
 
-  //$('nav#nav-menu-sidebar').mmenu();
-  $('html').niceScroll();
+  $('html').niceScroll({
+    mousescrollstep: 120,
+    scrollspeed: 100,
+  });
 
   if ($('#news-content .news-wrap').length > 2) {
     manageNewsOpacity();
@@ -90,6 +112,8 @@ jQuery(function($) {
   $(document).on('scroll', function() {
     showAnimations();
   });
+  showAnimations();
+  setGuestHovers();
   $('nav a, #nav-overlay a').click(scrollToIfOnPage);
   $('.flexslider').flexslider({
     animation: 'fade',

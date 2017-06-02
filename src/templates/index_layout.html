@@ -64,13 +64,14 @@
       {% endif %}
       {% set logo = guest.attachments.get('logo.png') %}
       {% if logo %}
-      <a {% if loop.first %}id="main-musical-guest"{% endif %} 
+      <div {% if loop.first %}id="main-musical-guest"{% endif %} 
         style="background-image: url({{ logo|url }})"
-        href="{{ guest|url }}"
-        title="{{ guest.name }}"
         class="musical-guest guest-{% if loop.index0 % 2 %}left{% else %}right{% endif %} guest-row-{{ row_index }} animated">
+        <a href="{{ guest|url }}"
+           title="{{ guest.name }}">
         {% if guest.show_name %}<h3>{{ guest.name }}</h3>{% endif %}
-      </a>
+        </a>
+      </div>
       {% endif %}
     {% endfor %}
     {% endif %}
@@ -116,12 +117,13 @@
       {% endif %}
     {% set logo = guest.attachments.get('logo.png') %}
     {% if logo %}
-    <a style="background-image: url({{ logo|url }})"
-         title="{{ guest.name }}"
-         href="{{ guest|url }}"
+    <div style="background-image: url({{ logo|url }})"
          class="other-guest guest-{% if loop.index0 % 2 %}right{% else %}left{% endif %} guest-row-{{ row_index }} animated">
+         <a title="{{ guest.name }}"
+            href="{{ guest|url }}">
          {% if guest.show_name %}<h3>{{ guest.name }}</h3>{% endif %}
-    </a>
+         </a>
+    </div>
     {% endif %}
     {% endfor %}
     {% endif %}
