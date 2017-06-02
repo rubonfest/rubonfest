@@ -90,7 +90,7 @@
         {% if features %}
         {% for feature in features.children.all() %}
         <li>
-          {% set logo = feature.attachments.get('logo.png') %}
+          {% set logo = feature.attachments.get('logo.jpg') %}
           {% if logo %}
           <span style="background-image: url({{ logo|url }})"></span>
           {% endif %}
