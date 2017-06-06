@@ -68,7 +68,8 @@
         style="background-image: url({{ logo|url }})"
         class="musical-guest guest-{% if loop.index0 % 2 %}left{% else %}right{% endif %} guest-row-{{ row_index }} animated">
         <a href="{{ guest|url }}"
-           title="{{ guest.name }}">
+           title="{{ guest.name }}"
+           alt="{{ guest.name }}">
         {% if guest.show_name %}<h3>{{ guest.name }}</h3>{% endif %}
         </a>
       </div>

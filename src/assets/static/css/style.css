@@ -241,9 +241,15 @@ header {
 #contacts-mobile .contact {
   margin-bottom: 2em;
 }
-#partners .partner-block {
+#partners .partner-block,
+#partners-mobile .partner-block {
   max-width: 30%;
 }
+.partner-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 /* photo-gap-1 */
 #photo-gap-1 {
@@ -496,11 +502,6 @@ footer {
   #main-partners {
     text-align: center;
     padding-bottom: 40px;
-  }
-
-  .partner-block {
-    display: inline-block;
-    vertical-align: middle;
   }
 
   #main-partners img {
