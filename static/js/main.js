@@ -79,7 +79,7 @@ jQuery(function($) {
 
   function setGuestHovers() {
     var timeout,
-        animation = 'tada';
+        animation = 'pulse';
     $('.musical-guest > a, .other-guest > a').hover(
         function(e) {
           timeout = setTimeout(function() {
