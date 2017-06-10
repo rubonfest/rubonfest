@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="infinity" format="1">
+  <advance width="545"/>
+  <unicode hex="2019"/>
+  <outline>
+    <contour>
+      <point x="94" y="1915" type="line"/>
+      <point x="141" y="1943"/>
+      <point x="186" y="1943" type="qcurve" smooth="yes"/>
+      <point x="297" y="1941"/>
+      <point x="301" y="1802" type="qcurve"/>
+      <point x="301" y="1712"/>
+      <point x="199" y="1552" type="qcurve"/>
+      <point x="231" y="1524" type="line"/>
+      <point x="534" y="1653"/>
+      <point x="541" y="1915" type="qcurve"/>
+      <point x="539" y="2019"/>
+      <point x="465" y="2072" type="qcurve"/>
+      <point x="430" y="2099"/>
+      <point x="387" y="2111" type="qcurve" smooth="yes"/>
+      <point x="344" y="2124"/>
+      <point x="299" y="2124" type="qcurve" smooth="yes"/>
+      <point x="205" y="2122"/>
+      <point x="139" y="2087" type="qcurve"/>
+      <point x="76" y="2052"/>
+      <point x="35" y="1997" type="qcurve"/>
+    </contour>
+  </outline>
+</glyph>
