@@ -4,4 +4,6 @@ name: Стары Ольса
 ---
 to_front: no
 ---
-weight: 0
+row: 0
+---
+placement: center

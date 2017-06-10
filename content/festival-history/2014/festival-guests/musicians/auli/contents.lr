@@ -4,4 +4,6 @@ name: Auli
 ---
 show_name: yes
 ---
-weight: 1
+row: 1
+---
+placement: right
