@@ -3,3 +3,7 @@ title: Test 2
 to_front: yes
 ---
 weight: 1
+---
+placement: right
+---
+row: 0

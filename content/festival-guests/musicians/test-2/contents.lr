@@ -4,4 +4,6 @@ name:
 ---
 to_front: yes
 ---
-weight: 1
+row: 1
+---
+placement: right

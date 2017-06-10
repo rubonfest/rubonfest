@@ -56,17 +56,13 @@
   {% block musical_guests %}
   <section id="musical-guests" class="side-borders">
     {% set musicians = site.get(this.path~'/festival-guests/musicians', alt=this.alt) %}
-    {% set row_index = 0 %}
     {% if musicians  %}
     {% for guest in musicians.children.all() %}
-      {% if loop.index % 2 == 0 %}
-        {% set row_index = row_index + 1 %}
-      {% endif %}
       {% set logo = guest.attachments.get('logo.png') %}
       {% if logo %}
-      <div {% if loop.first %}id="main-musical-guest"{% endif %} 
+      <div {% if guest.placement == 'center' %}id="main-musical-guest"{% endif %} 
         style="background-image: url({{ logo|url }})"
-        class="musical-guest guest-{% if loop.index0 % 2 %}left{% else %}right{% endif %} guest-row-{{ row_index }} animated">
+        class="musical-guest guest-{{ guest.placement}} guest-row-{{ guest.row }} animated">
         <a href="{{ guest|url }}"
            title="{{ guest.name }}"
            alt="{{ guest.name }}">
@@ -110,16 +106,12 @@
   {% block other_guests %}
   <section id="other-guests" class="side-borders">
     {% set other_guests = site.get(this.path ~ '/festival-guests/participants', alt=this.alt) %}
-    {% set row_index = 0 %}
     {% if other_guests %}
     {% for guest in other_guests.children.all() %}
-      {% if not loop.first and loop.index % 2 %}
-        {% set row_index = row_index + 1 %}
-      {% endif %}
     {% set logo = guest.attachments.get('logo.png') %}
     {% if logo %}
     <div style="background-image: url({{ logo|url }})"
-         class="other-guest guest-{% if loop.index0 % 2 %}right{% else %}left{% endif %} guest-row-{{ row_index }} animated">
+      class="other-guest guest-{{ guest.placement }} guest-row-{{ guest.row }} animated">
          <a title="{{ guest.name }}"
             href="{{ guest|url }}">
          {% if guest.show_name %}<h3>{{ guest.name }}</h3>{% endif %}
