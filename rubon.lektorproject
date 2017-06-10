@@ -21,5 +21,5 @@ url_prefix = /en/
 name = Публікацыя
 default = yes
 enabled = yes
-target = ghpages+https://rubonfest/rubonfest.git
+target = ghpages+https://rubonfest/rubonfest.git?cname=test.rubonfest.by
 
