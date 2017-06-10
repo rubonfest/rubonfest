@@ -17,9 +17,9 @@ name = English
 locale = en
 url_prefix = /en/
 
-[servers.production]
+[servers.ghpages]
 name = Публікацыя
 default = yes
 enabled = yes
-target = rsync://repo@bs.miesta.by/var/www/rubon
+target = ghpages+https://rubonfest/rubonfest
 
