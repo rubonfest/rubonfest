@@ -194,6 +194,42 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-history/2008/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-history/2008/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-history/2008/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-history/2010/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-history/2010/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-history/2010/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-history/2012/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-history/2012/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-history/2012/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-history/2014/</loc>
     
       <xhtml:link rel="alternate"
