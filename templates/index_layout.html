@@ -2,8 +2,7 @@
 
 {% from 'macros/news.html' import news_block %}
 
-{% from 'macros/'~this.alt~'/information.html' import partners_block, partners_mobile_block %}
-{% from 'macros/information.html' import contacts_block %}
+{% from 'macros/information.html' import partners_block, partners_mobile_block, contacts_block %}
 {% from 'macros/previous.html' import previous_block %}
 
 {% block stylesheets %}
@@ -29,7 +28,7 @@
           <h1>{{ this.title }}</h1>
           <div id="intro">{{ this.body }}</div>
           <div id="video">
-            <iframe width="100%" height="300px" src="{{ this.video }}" frameborder="0" allowfullscreen></iframe>
+            <!--<iframe width="100%" height="300px" src="{{ this.video }}" frameborder="0" allowfullscreen></iframe>-->
           </div>
         </div>
         <div class="one-half column">

@@ -9,6 +9,23 @@ days: 1-3
 month: September
 ---
 partners: 
+
+#### partner ####
+file: polack.png
+----
+link: http://polotsk.vitebsk-region.gov.by
+----
+title: Полацкі раённы выканаўчы камітэт
+----
+placement: column
+#### partner ####
+file: polack_info.jpg
+----
+link: http://www.polotsk-turizm.by
+----
+title: Полацкі аддзел міністэрства спорту і турызму
+----
+placement: column
 ---
 title: The Medieval Сulture Festival "Rubon 2017" in Polatsk
 ---
@@ -21,3 +38,5 @@ meta_description: On September 1-3th everyone is welcome to visit the medieval c
 meta_keywords: Rubon, Rubon 2017, Rubon 2017 Polatsk, Rubon Polatsk 2017, mediaval culture festival, medieval festival, Belarusian festival, Polatsk festival, Polotsk festival
 ---
 description: Please, welcome to the [Rubon 2017](/en) medieval culture festival page! Once again the Rubon festival will take place in the oldest Belarusian city on September 1-3, 2017. On this site you'll find all necessary information about [Polatsk Rubon festival](/en)
+---
+partners_title: Partners

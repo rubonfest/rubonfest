@@ -1,6 +1,7 @@
 [project]
 name = rubon
 url  = http://rubonfest.by/
+url_style = absolute
 
 [alternatives.be]
 name = Беларуская
