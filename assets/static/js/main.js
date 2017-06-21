@@ -111,6 +111,18 @@ jQuery(function($) {
   });
   $(document).on('scroll', function() {
     showAnimations();
+
+    if ($(this).scrollTop() > 100) {
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+  $('#back-to-top a').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
   });
   showAnimations();
   setGuestHovers();
