@@ -111,14 +111,28 @@ jQuery(function($) {
   });
   $(document).on('scroll', function() {
     showAnimations();
+
+    if ($(this).scrollTop() > 100) {
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+  $('#back-to-top a').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
   });
   showAnimations();
   setGuestHovers();
   $('nav a, #nav-overlay a').click(scrollToIfOnPage);
-  $('.flexslider').flexslider({
-    animation: 'fade',
-    controlNav: true,
-    directionNav: false,
-    controlsContainer: '.features-controls',
-  });
+  if ($('.flexslider').length) {
+    $('.flexslider').flexslider({
+      animation: 'fade',
+      controlNav: true,
+      directionNav: false,
+      controlsContainer: '.features-controls',
+    });
+  }
 });
