@@ -273,6 +273,10 @@ header {
 #contacts-mobile .contact {
   margin-bottom: 2em;
 }
+#vk_groups {
+  max-width: 300px;
+  margin: 0 auto;
+}
 #partners .partner-block,
 #partners-mobile .partner-block {
   max-width: 30%;
@@ -481,9 +485,18 @@ header {
 
 /* footer */
 footer {
+  text-align :center;
+  font: #fff;
   background-color: #000;
   height: 300px;
   position: relative;
+  padding: 100px 0 0 0;
+}
+footer a:link,
+footer a:visited,
+footer a:active
+{
+  color: #ddd;
 }
 
 @media (min-width: 550px) {
