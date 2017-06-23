@@ -1,5 +1,6 @@
 {% from 'macros/menu.html' import overlay_menu %}
 {% from 'macros/menu.html' import top_menu %}
+{% from 'macros/menu.html' import footer_menu %}
 
 <!DOCTYPE html>
 <html lang="{{ this.alt }}">
@@ -124,6 +125,7 @@
               {{ index.title }}
             </a>
           </h2>
+          {{ footer_menu(this.alt, site) }}
         </div>
         <div class="one-half column">
           <script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
