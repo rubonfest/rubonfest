@@ -467,6 +467,14 @@ header {
   padding: 150px 0 50px 0;
   position: relative;
 }
+#festival-gallery {
+  min-height: 300px;
+  margin: 100px auto;
+}
+#festival-gallery a {
+  display: inline-block;
+  width: 45%;
+}
 
 /* rest-information */
 #rest-information {
@@ -497,6 +505,9 @@ footer a:visited,
 footer a:active
 {
   color: #ddd;
+}
+footer li {
+  margin-bottom: 0;
 }
 
 @media (min-width: 550px) {
@@ -676,6 +687,11 @@ footer a:active
     padding-top: 3em;
   }
 
+  /* photo-gap-3 */
+  #festival-gallery a {
+    width: 32%;
+  }
+
   /* footer */
   #footer-menu {
     text-align: left;
@@ -696,6 +712,11 @@ footer a:active
   /* news */
   #news-content {
     font-size: 1.2em;
+  }
+
+  /* photo-gap-3 */
+  #festival-gallery a {
+    width: 24%;
   }
 
   /* nav */
@@ -747,6 +768,11 @@ footer a:active
   /* photo-gap-2 */
   #prev-overlay {
     padding-top: 55px;
+  }
+
+  /* photo-gap-3 */
+  #festival-gallery a {
+    width: 18%;
   }
 
   /* news */

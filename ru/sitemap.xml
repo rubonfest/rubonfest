@@ -302,6 +302,18 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-history/2014/gallery/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-history/2014/gallery/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-history/2014/gallery/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-news/</loc>
     
       <xhtml:link rel="alternate"
