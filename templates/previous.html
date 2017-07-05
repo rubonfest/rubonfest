@@ -2,6 +2,11 @@
 
 {% block page_title %}Рубон {{ this.year }}{% endblock page_title %}
 
+{% block stylesheets %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ '/static/js/lightbox2-master/dist/css/lightbox.min.css' }}">
+{% endblock stylesheets %}
+
 {% block main_partners %}
   <div id="main-partners" class="show-tablet show-desktop">
   {% if this.partners %}
@@ -24,7 +29,26 @@
   </div>
 {% endblock main_partners %}
 
+{% block gap_3_content %}
+{% set gallery = site.get(this.path~'/gallery') %}
+{% if gallery != None %}
+  <div id="festival-gallery">
+  {% for image in gallery.attachments.all() %}
+  <a href="{{ image|url }}" 
+     data-lightbox="gallery">
+     <img src="{{ image.thumbnail(300, 300, True)|url }}" />
+  </a>
+  {% endfor %}
+  </div>
+{% endif %}
+{% endblock gap_3_content %}
+
 {% block features %}{% endblock %}
 {% block other_guests %}{% endblock %}
 {% block news %}{% endblock %}
 {% block history %}{% endblock %}
+
+{% block javascripts %}
+  {{ super() }}
+  <script src="{{ '/static/js/lightbox2-master/dist/js/lightbox.min.js'|url }}"></script>
+{% endblock javascripts %}
