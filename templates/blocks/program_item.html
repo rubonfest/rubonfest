@@ -1,0 +1,14 @@
+<div class="row">
+  {% if this.timeline != '' %}
+  <div class="four columns">
+    {{ this.timeline }}
+  </div>
+  <div class="align-left eight columns">
+  {% else %}
+  <div class="twelve columns">
+  {% endif %}
+    {% if this.is_bold %}<strong>{% endif %}
+    {{ this.title }}
+    {% if this.is_bold %}</strong>{% endif %}
+  </div>
+</div>

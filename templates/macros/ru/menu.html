@@ -1,7 +1,7 @@
 {% macro menu_items(show_prog=False, show_guests=False, show_polack=False) %}
     <li><a href="/ru/#news">Новости</a></li>
     {% if show_prog %}
-    <li><a href="#">Программа-2017</a></li>
+    <li><a href="{{ '/ru/festival-program'|url }}">Программа-2017</a></li>
     {% endif %}
     {% if show_guests %}
     <li><a href="#">Гости</a></li>

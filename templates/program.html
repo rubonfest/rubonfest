@@ -1,0 +1,21 @@
+{% extends 'page_layout.html' %}
+
+{% block title %}{{ this.title }}{% endblock %}
+
+{% block article_title %}{% endblock %}
+
+{% block article_body %}
+  {% for day in this.children.all() %}
+    <div class="festival-program-day">
+      <h2>{{ day.title }}</h2>
+      <div class="container">
+      {% for item in day.items.blocks %}
+        {{ item }}
+      {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+  <div id="festival-program-additional" class="align-left">
+    {{ this.body }}
+  </div>
+{% endblock article_body %}
