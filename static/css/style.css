@@ -286,6 +286,13 @@ header {
   vertical-align: middle;
 }
 
+/* festival-program-additional */
+#festival-program-additional {
+  margin-top: 4em;
+}
+.festival-program-day {
+  margin-top: 2em;
+}
 
 /* photo-gap-1 */
 #photo-gap-1 {

@@ -374,6 +374,54 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-program/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-program/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-program/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-program/day-1/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-program/day-1/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-program/day-1/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-program/day-2/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-program/day-2/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-program/day-2/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-program/day-3/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-program/day-3/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-program/day-3/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/mass-media/</loc>
     
       <xhtml:link rel="alternate"
