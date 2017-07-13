@@ -56,7 +56,7 @@
   </script>
 
 </head>
-<body class="regular-page">
+<body class="{% block body_class %}{% endblock %}">
 <div id="content">
   <div id="white-wrapper">
     <!-- Primary Page Layout
@@ -74,6 +74,7 @@
       </div>
     </nav>
     <header class="side-borders">
+      {% block header_inner %}
       <div id="languages">
         <a href="{{ '.'|url(alt='be') }}">бел</a>
         <a href="{{ '.'|url(alt='ru') }}">рус</a>
@@ -106,6 +107,7 @@
         {% endif %}
       </div>
       {% endblock main_partners %}
+    {% endblock header_inner %}
     </header>
     {% block content %}{% endblock %}
     <section id="photo-gap-4">

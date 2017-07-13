@@ -1,5 +1,15 @@
 {% extends 'base.html' %}
 
+{% block body_class %}usual-page{% endblock %}
+
+{% block header_inner %}
+    <div id="languages">
+      <a href="{{ '.'|url(alt='be') }}">бел</a>
+      <a href="{{ '.'|url(alt='ru') }}">рус</a>
+      <a href="{{ '.'|url(alt='en') }}">eng</a>
+    </div>
+{% endblock header_inner %}
+
 {% block page_title %}{{ this.title }}{% endblock %}
 
 {% block content %}
