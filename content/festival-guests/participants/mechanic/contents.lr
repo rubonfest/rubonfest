@@ -10,11 +10,18 @@ body:
 
 А ў другі дзень кожны жадаючы зможа прыручыць маланку ў інтэрактыўным павільёне (там дзе будзе кропка ў другі дзень), прапусціць праз сябе электрычны разрад напругай да 400 тысяч вольт і нават запальваць лямпы на адлегласці!
 
+
 <img src="/festival-guests/participants/mechanic/mechanic-2.jpg" alt="Лабараторыя Механік" />
+<div class="row">
+  <div class="six columns">
 <img src="/festival-guests/participants/mechanic/mechanic-3.jpg" alt="Лабараторыя Механік" />
 <img src="/festival-guests/participants/mechanic/mechanic-4.jpg" alt="Лабараторыя Механік" />
+  </div>
+  <div class="six columns">
 <img src="/festival-guests/participants/mechanic/mechanic-5.jpg" alt="Лабараторыя Механік" />
 <img src="/festival-guests/participants/mechanic/mechanic-6.jpg" alt="Лабараторыя Механік" />
+  </div>
+</div>
 ---
 description:
 
@@ -34,6 +41,6 @@ placement: left
 ---
 row: 0
 ---
-show_name: no
+show_name: yes
 ---
 title: Лабараторыя Механік - удзельнік фэсту сярэднявечай культуры "Рубон-2017" у Полацку
