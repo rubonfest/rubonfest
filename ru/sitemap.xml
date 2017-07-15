@@ -134,6 +134,18 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-guests/participants/elemental/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/elemental/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/elemental/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-guests/participants/mechanic/</loc>
     
       <xhtml:link rel="alternate"
@@ -143,18 +155,6 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-guests/participants/mechanic/" />
-    
-  </url>
-  <url>
-    <loc>http://rubonfest.by/festival-guests/participants/test-2/</loc>
-    
-      <xhtml:link rel="alternate"
-                  hreflang="en"
-                  href="http://rubonfest.by/en/festival-guests/participants/test-2/" />
-    
-      <xhtml:link rel="alternate"
-                  hreflang="ru"
-                  href="http://rubonfest.by/ru/festival-guests/participants/test-2/" />
     
   </url>
   <url>
