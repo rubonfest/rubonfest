@@ -63,7 +63,7 @@
         style="background-image: url({{ logo|url }})"
         class="musical-guest guest-{{ guest.placement}} guest-row-{{ guest.row }} animated">
         <a href="{{ guest|url }}"
-           title="{{ guest.name }}"
+           title="{{ guest.title }}"
            alt="{{ guest.name }}">
         {% if guest.show_name %}<h3>{{ guest.name }}</h3>{% endif %}
         </a>
@@ -111,7 +111,7 @@
     {% if logo %}
     <div style="background-image: url({{ logo|url }})"
       class="other-guest guest-{{ guest.placement }} guest-row-{{ guest.row }} animated">
-         <a title="{{ guest.name }}"
+         <a title="{{ guest.title }}"
             href="{{ guest|url }}">
          {% if guest.show_name %}<h3>{{ guest.name }}</h3>{% endif %}
          </a>
