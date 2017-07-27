@@ -158,6 +158,18 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-guests/participants/marceliukes-kletis/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/marceliukes-kletis/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/marceliukes-kletis/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-guests/participants/mechanic/</loc>
     
       <xhtml:link rel="alternate"
@@ -167,18 +179,6 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-guests/participants/mechanic/" />
-    
-  </url>
-  <url>
-    <loc>http://rubonfest.by/festival-guests/participants/test-4/</loc>
-    
-      <xhtml:link rel="alternate"
-                  hreflang="en"
-                  href="http://rubonfest.by/en/festival-guests/participants/test-4/" />
-    
-      <xhtml:link rel="alternate"
-                  hreflang="ru"
-                  href="http://rubonfest.by/ru/festival-guests/participants/test-4/" />
     
   </url>
   <url>
