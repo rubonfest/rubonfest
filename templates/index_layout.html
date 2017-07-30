@@ -39,10 +39,44 @@
       </div>
     </div>
   </section>
+  {% block photo_gap_1 %}
   <section id="photo-gap-1">
     <div id="mountain" class="show-desktop show-tablet">
       <img src="{{ '/static/images/mount.jpg'|url }}" />
     </div>
+    <div class="triangle-top gap-triangle">
+      <img class="show-mobile" src="{{ '/static/images/triangle-top.png'|url }}" />
+      <img class="show-tablet show-desktop" src="{{ '/static/images/triangle-double-top.png'|url }}" />
+    </div>
+    <div class="triangle-bot gap-triangle">
+      <img class="show-mobile" src="{{ '/static/images/triangle-bot.png'|url }}" />
+      <img class="show-tablet show-desktop" src="{{ '/static/images/triangle-double-bot.png'|url }}" />
+    </div>
+  </section>
+  {% endblock photo_gap_1 %}
+  {% block festival_events %}
+  <section id="festival-events" class="side-borders">
+    {% set events = site.get(this.path~'/festival-events', alt=this.alt) %}
+    {% if events  %}
+    {% for event in events.children.all() %}
+      {% set logo = event.attachments.get('logo.png') %}
+      {% if logo %}
+      <div {% if event.placement == 'center' %}id="main-event"{% endif %} 
+        style="background-image: url({{ logo|url }})"
+        class="festival-event event-{{ event.placement}} event-row-{{ event.row }} animated">
+        <a href="{{ event|url }}"
+           title="{{ event.title }}"
+           alt="{{ event.name }}">
+        {% if event.show_name %}<h3>{{ event.name }}</h3>{% endif %}
+        </a>
+      </div>
+      {% endif %}
+    {% endfor %}
+    {% endif %}
+    <h2><a href="{{ events|url }}">{{ events.title }}</a></h2>
+  </section>
+  {% endblock %}
+  <section id="photo-gap-1-1">
     <div class="triangle-top gap-triangle">
       <img class="show-mobile" src="{{ '/static/images/triangle-top.png'|url }}" />
       <img class="show-tablet show-desktop" src="{{ '/static/images/triangle-double-top.png'|url }}" />
@@ -71,7 +105,7 @@
       {% endif %}
     {% endfor %}
     {% endif %}
-    <h2><a href="#">{{ musicians.name }}</a></h2>
+    <h2><a href="{{ '/festival-guests'|url }}">{{ musicians.name }}</a></h2>
   </section>
   {% endblock musical_guests %}
   {% block features %}
@@ -119,7 +153,7 @@
     {% endif %}
     {% endfor %}
     {% endif %}
-    <h2><a href="#">{{ other_guests.name }}</a></h2>
+    <h2><a href="{{ '/festival-guests'|url }}">{{ other_guests.name }}</a></h2>
   </section>
   {% endblock other_guests %}
   {% block history %}

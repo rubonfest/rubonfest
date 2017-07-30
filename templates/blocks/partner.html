@@ -1,4 +1,6 @@
 <div class="partner-block">
   {% set img = record.attachments.images.get(this.file) %}
+  {% if img %}
   <a target="_blank" href="{{ this.link }}"><img src="{{ img|url }}" alt="{{ this.title }}" title="{{ this.title }}" /></a>
+  {% endif %}
 </div>

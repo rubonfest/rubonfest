@@ -1,17 +1,22 @@
-{% extends 'base.html' %}
+{% extends 'page_layout.html' %}
 
-{% block page_title %}Госці фестывалю{% endblock %}
+{% block page_title %}{{ this.title }}{% endblock %}
 
-{% block content %}
+{% block article_title %}{% endblock %}
+
+{% block article_body %}
   <div class="content-block">
   <div class="row">
   {% for guest_role in this.children %}
-    <div class="three columns">
+    <div class="one-half column">
     <h4>{{ guest_role.name }}</h4>
     {% for guest in guest_role.children %}
       <div class="content-center">
-      <a href="{{ guest.website }}" class="bigtext" target="_blank">
-        <img src="{{ guest.attachments.images.first()|url }}" />
+      <a href="{{ guest|url }}" class="bigtext">
+        {% set img = guest.attachments.images.first() %}
+        {% if img %}
+        <img src="{{ img|url }}" />
+        {% endif %}
         {{ guest.name }}
       </a>
     </div>

@@ -1,13 +1,13 @@
 {% macro menu_items(show_prog=False, show_guests=False, show_polack=False) %}
     <li><a href="/ru/#news">Новости</a></li>
     {% if show_prog %}
-    <li><a href="{{ '/ru/festival-program'|url }}">Программа-2017</a></li>
+    <li><a href="{{ '/festival-program'|url }}">Программа-2017</a></li>
     {% endif %}
+    <li><a href="{{ '/festival-events'|url }}">Модули феста</a></li>
     {% if show_guests %}
-    <li><a href="#">Гости</a></li>
+    <li><a href="{{ '/festival-guests'|url }}">Гости</a></li>
     {% endif %}
     <li><a href="{{ '/festival-partners'|url }}">Партнерам</a></li>
-    <li><a href="{{ '/festival-participants'|url }}">Участникам</a></li>
     <li><a href="{{ '/mass-media'|url }}">СМИ</a></li>
     {% if show_polack %}
     <li><a href="#">Полоцк</a></li>

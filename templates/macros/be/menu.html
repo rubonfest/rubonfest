@@ -3,11 +3,11 @@
     {% if show_prog %}
     <li><a href="{{ '/festival-program'|url }}">Праграма-2017</a></li>
     {% endif %}
+    <li><a href="{{ '/festival-events'|url }}">Модулі фэсту</a></li>
     {% if show_guests %}
-    <li><a href="#">Госці</a></li>
+    <li><a href="{{ '/festival-guests'|url }}">Госці</a></li>
     {% endif %}
     <li><a href="{{ '/festival-partners'|url }}">Партнёрам</a></li>
-    <li><a href="{{ '/festival-participants'|url }}">Удзельнікам</a></li>
     <li><a href="{{ '/mass-media'|url }}">СМІ</a></li>
     {% if show_polack %}
     <li><a href="#">Полацк</a></li>

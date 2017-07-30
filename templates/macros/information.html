@@ -1,5 +1,16 @@
 {% macro contacts_block(contacts) %}
   <h4>{{ contacts.title }}</h4>
+  <div id="social-icons">
+    <a href="{{ contacts.vk }}" target="_blank">
+      <img src="{{ '/static/images/vk.png'|url }}" />
+    </a>
+    <a href="{{ contacts.fb }}" target="_blank">
+      <img src="{{ '/static/images/fb.png'|url }}" />
+    </a>
+  </div>
+  <div>
+    <img src="{{ '/static/images/email.png'|url }}" />
+  </div>
   <div class="show-mobile show-tablet bottom-margin" id="contacts-mobile">
     <div class="contact main-contact">
       <p>{{ contacts.main_phone_title }}</p>
@@ -26,6 +37,12 @@
         <nobr>{{ contacts.phone_3 }}</nobr><br />
       </p>
     </div>
+    <div class="contact">
+      <p>{{ contacts.phone_4_title }}</p>
+      <p>
+        <nobr>{{ contacts.phone_4 }}</nobr><br />
+      </p>
+    </div>
   </div>
   <div class="show-desktop bottom-margin" id="contacts">
     <table>
@@ -45,6 +62,10 @@
         <tr class="contact">
           <td>{{ contacts.phone_3_title }}</td>
           <td><nobr>{{ contacts.phone_3 }}</nobr></td>
+        </tr>
+        <tr class="contact">
+          <td>{{ contacts.phone_4_title }}</td>
+          <td><nobr>{{ contacts.phone_4 }}</nobr></td>
         </tr>
       </tbody>
     </table>
