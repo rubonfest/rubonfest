@@ -26,6 +26,78 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-events/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-events/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-events/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-events/arhaichnyya-spevy/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-events/arhaichnyya-spevy/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-events/arhaichnyya-spevy/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-events/drakkar/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-events/drakkar/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-events/drakkar/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-events/dzicyachaya-plyacoka/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-events/dzicyachaya-plyacoka/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-events/dzicyachaya-plyacoka/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-events/festyval-syarednyavechnaj-kuhni/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-events/festyval-syarednyavechnaj-kuhni/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-events/festyval-syarednyavechnaj-kuhni/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-events/pavetranyya-shary/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-events/pavetranyya-shary/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-events/pavetranyya-shary/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-features/</loc>
     
       <xhtml:link rel="alternate"
@@ -86,6 +158,30 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-guests/musicians/hardwood/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/musicians/hardwood/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/musicians/hardwood/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-guests/musicians/hmelny-vir/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/musicians/hmelny-vir/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/musicians/hmelny-vir/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-guests/musicians/pawa/</loc>
     
       <xhtml:link rel="alternate"
@@ -95,30 +191,6 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-guests/musicians/pawa/" />
-    
-  </url>
-  <url>
-    <loc>http://rubonfest.by/festival-guests/musicians/test-1/</loc>
-    
-      <xhtml:link rel="alternate"
-                  hreflang="en"
-                  href="http://rubonfest.by/en/festival-guests/musicians/test-1/" />
-    
-      <xhtml:link rel="alternate"
-                  hreflang="ru"
-                  href="http://rubonfest.by/ru/festival-guests/musicians/test-1/" />
-    
-  </url>
-  <url>
-    <loc>http://rubonfest.by/festival-guests/musicians/test-2/</loc>
-    
-      <xhtml:link rel="alternate"
-                  hreflang="en"
-                  href="http://rubonfest.by/en/festival-guests/musicians/test-2/" />
-    
-      <xhtml:link rel="alternate"
-                  hreflang="ru"
-                  href="http://rubonfest.by/ru/festival-guests/musicians/test-2/" />
     
   </url>
   <url>
@@ -158,6 +230,42 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-guests/participants/illizium/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/illizium/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/illizium/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-guests/participants/karabel-vikinga-nameisis/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/karabel-vikinga-nameisis/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/karabel-vikinga-nameisis/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-guests/participants/kresiva/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/kresiva/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/kresiva/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-guests/participants/marceliukes-kletis/</loc>
     
       <xhtml:link rel="alternate"
@@ -179,6 +287,42 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-guests/participants/mechanic/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-guests/participants/morskaya-druzhina-rus/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/morskaya-druzhina-rus/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/morskaya-druzhina-rus/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-guests/participants/polacki-zvyaz/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/polacki-zvyaz/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/polacki-zvyaz/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-guests/participants/terra-incognita/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/terra-incognita/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/terra-incognita/" />
     
   </url>
   <url>
@@ -335,30 +479,6 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-news/festyval-syarednyavechnaj-kuhni/" />
-    
-  </url>
-  <url>
-    <loc>http://rubonfest.by/festival-participants/</loc>
-    
-      <xhtml:link rel="alternate"
-                  hreflang="en"
-                  href="http://rubonfest.by/en/festival-participants/" />
-    
-      <xhtml:link rel="alternate"
-                  hreflang="ru"
-                  href="http://rubonfest.by/ru/festival-participants/" />
-    
-  </url>
-  <url>
-    <loc>http://rubonfest.by/festival-participants/festyval-syarednyavechnaj-kuhni/</loc>
-    
-      <xhtml:link rel="alternate"
-                  hreflang="en"
-                  href="http://rubonfest.by/en/festival-participants/festyval-syarednyavechnaj-kuhni/" />
-    
-      <xhtml:link rel="alternate"
-                  hreflang="ru"
-                  href="http://rubonfest.by/ru/festival-participants/festyval-syarednyavechnaj-kuhni/" />
     
   </url>
   <url>

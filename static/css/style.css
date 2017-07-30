@@ -281,6 +281,10 @@ header {
 #contacts-mobile .contact {
   margin-bottom: 2em;
 }
+#social-icons a {
+  display: inline-block;
+  width: 10%;
+}
 #vk_groups {
   max-width: 300px;
   margin: 0 auto;
@@ -311,8 +315,17 @@ header {
   position: relative;
 }
 
+#photo-gap-1-1 {
+  background-image: url('../images/photo-gap-1-1.jpg');
+  background-size: cover;
+  background-position: 40% 0;
+  height: 630px;
+  position: relative;
+}
+
 /* guests */
-#musical-guests{
+#musical-guests, 
+#festival-events{
   padding-top: 380px;
   position: relative;
 }
@@ -320,19 +333,24 @@ header {
   padding-top: 280px;
   position: relative;
 }
+.event-left ,
 .guest-left {
   left: 2%;
   right: 52%;
 }
-.guest-right {
+.guest-right ,
+.event-right {
   left: 52%;
   right: 2%;
 }
-#main-musical-guest{
+#main-musical-guest, 
+#main-event{
   left: 15%;
   right: 15%;
 }
-.musical-guest, .other-guest {
+.musical-guest, 
+.festival-event, 
+.other-guest {
   position: absolute;
   z-index: 2;
   height: 85px;
@@ -340,6 +358,7 @@ header {
   background-size: 100% 100%;
 }
 .musical-guest a,
+.festival-event a,
 .other-guest a {
   display: inline-block;
   vertical-align: middle;
@@ -350,27 +369,35 @@ header {
   height: 70%;
   text-decoration: none;
 }
-.musical-guest h3, .other-guest h3 {
+.musical-guest h3, 
+.festival-event h3, 
+.other-guest h3 {
   font-size: 1.4rem;
   color: #fff;
   text-shadow: 1px 1px 3px #000;
 }
-#main-musical-guest {
+#main-musical-guest,
+#main-event {
   height: 130px;
 }
-#main-musical-guest a {
+#main-musical-guest a , 
+#main-event a {
   padding-top: 65px;
 }
-#main-musical-guest h3 {
+#main-musical-guest h3 , 
+#main-event h3 {
   font-size: 1.8rem;
 }
-.guest-row-0 {
+.guest-row-0 ,
+.event-row-0 {
   top: 0;
 }
-.guest-row-1 {
+.guest-row-1 ,
+.event-row-1 {
   top: 100px;
 }
-.guest-row-2 {
+.guest-row-2 ,
+.event-row-2 {
   top: 200px;
 }
 
@@ -607,36 +634,47 @@ footer li {
   }
 
   /* guests */
-  #musical-guests{
+  #musical-guests, 
+  #festival-events {
     padding: 280px 0 50px 0;
   }
   #other-guests {
     height: 115px;
     padding-top: 85px;
   }
-  #main-musical-guest {
+  #main-musical-guest,
+  #main-event {
     left: 27%;
     right: 27%;
   }
-  #main-musical-guest {
+  #main-musical-guest ,
+  #main-event {
     height: 160px;
   }
-  #main-musical-guest a {
+  #main-musical-guest a , 
+  #main-event a {
     padding-top: 95px;
   }
-  .musical-guest, .other-guest {
+  .musical-guest, 
+  .festival-event, 
+  .other-guest {
     height: 160px;
   }
-  .musical-guest a, .other-guest a{
+  .musical-guest a, 
+  .festival-event a, 
+  .other-guest a{
     padding-top: 105px;
   }
-  .musical-guest.guest-row-0 {
+  .musical-guest.guest-row-0,
+  .festival-event.event-row-0 {
     top: 20px;
   }
-  .musical-guest.guest-row-1 {
+  .musical-guest.guest-row-1 ,
+  .festival-event.event-row-1 {
     top: -70px;
   }
-  .musical-guest.guest-row-2 {
+  .musical-guest.guest-row-2 ,
+  .festival-event.event-row-2 {
     top: 110px;
   }
   .other-guest.guest-row-0 {
