@@ -242,6 +242,18 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-guests/participants/irisan/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/irisan/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/irisan/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-guests/participants/karabel-vikinga-nameisis/</loc>
     
       <xhtml:link rel="alternate"
@@ -311,18 +323,6 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-guests/participants/polacki-zvyaz/" />
-    
-  </url>
-  <url>
-    <loc>http://rubonfest.by/festival-guests/participants/terra-incognita/</loc>
-    
-      <xhtml:link rel="alternate"
-                  hreflang="en"
-                  href="http://rubonfest.by/en/festival-guests/participants/terra-incognita/" />
-    
-      <xhtml:link rel="alternate"
-                  hreflang="ru"
-                  href="http://rubonfest.by/ru/festival-guests/participants/terra-incognita/" />
     
   </url>
   <url>
