@@ -230,6 +230,18 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-guests/participants/garmoniya/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/garmoniya/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/garmoniya/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-guests/participants/illizium/</loc>
     
       <xhtml:link rel="alternate"
@@ -251,6 +263,18 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-guests/participants/irisan/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-guests/participants/kapyalyush/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/kapyalyush/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/kapyalyush/" />
     
   </url>
   <url>
@@ -467,6 +491,18 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-news/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-news/dzicyachaya-plyacoka/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-news/dzicyachaya-plyacoka/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-news/dzicyachaya-plyacoka/" />
     
   </url>
   <url>
