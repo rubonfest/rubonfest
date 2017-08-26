@@ -1,4 +1,4 @@
-from . import create_app
+from fotakonkurs import create_app
 
 application = create_app('prod.cfg')
 
