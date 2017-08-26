@@ -1,0 +1,5 @@
+env
+instance/*.cfg
+*.swp
+*.pyc
+fotakonkurs/static/uploads/*
