@@ -1,6 +1,8 @@
 import os
+from json import dumps
 from flask          import (Blueprint, render_template, request, 
-                            redirect, flash, current_app, url_for, jsonify
+                            redirect, flash, current_app, url_for,
+                            abort
                             )
 from werkzeug.utils import secure_filename
 from flask_babelex  import gettext as _
@@ -77,7 +79,9 @@ def post_upload():
     flash(_("Oops! You've got an error"))
     return render_template('upload.html', form=form)
 
-@views.route('/user-files', methods=[ 'GET' ])
-def get_user_files():
+@views.route('/jsonp/<string:endpoint>', methods=[ 'GET' ])
+def jsonp(endpoint):
     user_files = UserFile.query.all()
-    return jsonify({'records': map(user_file_dict, user_files)})
+    return 'try { fotakonkurs.%s(%s); } catch (e) { console.log(e.message); }' % (
+            endpoint, dumps({'records': map(user_file_dict, user_files)})
+    )

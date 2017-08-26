@@ -1,0 +1,10 @@
+.fotakonkurs-image-block {
+  display: inline-block;
+}
+.fotakonkurs-mid-image-block {
+  width: 25%;
+}
+.fotakonkurs-image {
+  margin: 2px;
+  border: 5px solid white;
+}

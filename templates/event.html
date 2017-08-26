@@ -1,3 +1,13 @@
 {% extends 'page.html' %}
 
 {% block article_title %}{{ this.title }}{% endblock %}
+
+{% block stylesheets %}
+  {{ super() }}
+  <link rel="stylesheet" href="http://apps.rubonfest.by/fotakonkurs/static/css/fotakonkurs.css" type="text/css"/>
+{% endblock %}
+
+{% block javascripts %}
+  {{ super() }}
+  <script src="http://apps.rubonfest.by/fotakonkurs/static/js/fotakonkurs.js"></script>
+{% endblock javascripts %}
