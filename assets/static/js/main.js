@@ -25,7 +25,7 @@ jQuery(function($) {
   function manageNewsOpacity() {
     $('#news-content .news-wrap').css('opacity', 1);
     $('#news-content .news-wrap').filter(inNewsViewport).slice(-2).each(function(i) {
-      $(this).css('opacity', 0.5-i*0.3);
+      $(this).css('opacity', 1-i*0.3);
     });
   }
 
@@ -80,7 +80,7 @@ jQuery(function($) {
   function setGuestHovers() {
     var timeout,
         animation = 'pulse';
-    $('.musical-guest > a, .other-guest > a').hover(
+    $('.musical-guest > a, .other-guest > a, .festival-event > a').hover(
         function(e) {
           timeout = setTimeout(function() {
             $(this).parent()
