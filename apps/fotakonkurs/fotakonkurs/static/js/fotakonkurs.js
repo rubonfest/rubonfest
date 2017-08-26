@@ -1,7 +1,7 @@
 var fotakonkurs = (function($) {
   var api = {};
   var container;
-  var hostUrl = "http://apps.rubonfest.by/fotakonkurs";
+  var hostUrl = "http://fotakonkurs.rubonfest.by";
 
   function init() {
     container = $('#fotakonkurs-container');
