@@ -350,6 +350,18 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-guests/participants/vargan/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/vargan/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/vargan/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-history/</loc>
     
       <xhtml:link rel="alternate"
@@ -491,6 +503,18 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-news/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-news/arhaichnyya-spevy/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-news/arhaichnyya-spevy/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-news/arhaichnyya-spevy/" />
     
   </url>
   <url>
