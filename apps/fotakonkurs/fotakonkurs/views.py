@@ -6,6 +6,7 @@ from flask          import (Blueprint, render_template, request,
                             )
 from werkzeug.utils import secure_filename
 from flask_babelex  import gettext as _
+from flask_security.utils import login_user
 from PIL import Image
 from sqlalchemy.orm.exc import NoResultFound
 
@@ -94,6 +95,7 @@ def post_upload():
         file_model = UserFile(f.filename, filename, form.name_from_email, user) 
         db.session.add(file_model)
         db.session.commit()
+        login_user(user)
         flash(_('Thank you, the file was successfully uploaded'))
         return redirect(url_for('.get_upload'))
     flash(_("Oops! You've got an error"))
