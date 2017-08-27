@@ -36,7 +36,7 @@ def get_upload():
 @views.route('/upload', methods=[ 'POST' ])
 def post_upload():
     form = UploadForm()
-    if form.is_submitted():
+    if form.validate_on_submit():
         f = request.files['photo']
         filename    = secure_filename(f.filename)
         # place to refactor
