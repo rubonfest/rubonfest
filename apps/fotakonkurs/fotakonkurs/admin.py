@@ -12,6 +12,8 @@ from .utils import user_file_preset_url
 class ClosedView(object):
     
     def is_accessible(self):
+        if current_app.config.get('FOTAKONKURS_ADMIN_OPEN', False):
+            return True
         if not current_user.is_active or not current_user.is_authenticated:
             return False
         if self._check_role():

@@ -7,10 +7,11 @@ from flask          import (Blueprint, render_template, request,
 from werkzeug.utils import secure_filename
 from flask_babelex  import gettext as _
 from PIL import Image
+from sqlalchemy.orm.exc import NoResultFound
 
 from .forms import UploadForm
-from .db    import UserFile, db
-from .utils import user_file_dict
+from .db    import UserFile, db, User
+from .utils import user_file_dict, create_participant
 from .i18n import all_locales
 
 views = Blueprint('views', __name__)
@@ -85,7 +86,12 @@ def post_upload():
         except IOError:
             flash(_('The error ocurred while saving file'))
             return render_template('upload.html', form=UploadForm()) 
-        file_model = UserFile(f.filename, filename, form.name_from_email) 
+        try:
+            user = User.query.filter(User.email == form.email.data).one()
+        except NoResultFound:
+            user = create_participant(form.email.data)
+            db.session.add(user)
+        file_model = UserFile(f.filename, filename, form.name_from_email, user) 
         db.session.add(file_model)
         db.session.commit()
         flash(_('Thank you, the file was successfully uploaded'))
