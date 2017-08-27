@@ -57,9 +57,11 @@ class UploadForm(FlaskForm):
             description=l_('Your photo in .jpg(.jpeg) or .png format')
     )
     captcha = CaptchaField('upload_check', validators=(
-        validators.DataRequired(message=_('Please, solve the equation')),
-        CaptchaValidator(_('Equation check failed. Please, try again'))
-    ))
+            validators.DataRequired(message=_('Please, solve the equation')),
+            CaptchaValidator(_('Equation check failed. Please, try again'))
+        ),
+        description=l_('What is the equation result?')
+    )
 
     def __init__(self, *args, **kwargs):
         super(UploadForm, self).__init__(*args, **kwargs)

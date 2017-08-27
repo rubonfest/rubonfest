@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stylish Portfolio - Start Bootstrap Template</title>
+
+    {% block stylesheets %}
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ url_for('theme.static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{{ url_for('theme.static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('theme.static', filename='css/stylish-portfolio.css') }}" rel="stylesheet">
+    {% endblock stylesheets %}
+
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+          <i class="fa fa-times"></i>
+        </a>
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#top">{{ _('Children Yard') }}</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#about">{{ _('Photo Contest') }}</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#services">{{ _('Contest conditions') }}</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#upload-form">{{ _('Upload photo') }}</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#portfolio">{{ _('Photo gallery') }}</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>{{ _('Contacts') }}</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="text-vertical-center">
+        <h1>Казка ў аб'ектыве</h1>
+        <h3>Конкурс малюнкаў і фотапрац на фестывалі "Рубон"</h3>
+        <br>
+        <a href="#about" class="btn btn-dark btn-lg js-scroll-trigger">Падрабязней</a>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container text-center">
+        <h2>Вітаем шаноўнае спадарства!</h2>
+        <p class="lead">
+          Фестываль сярэднявечнай культуры “Рубон” у Полацку абвяшчае конкурсы
+        </p>
+        <h4>Фотаконкурс “Казка ў аб’ектыве”</h4>
+        <p>
+          На фотаздымку павінна быць адлюстравана старажытная легенда, паданне ці проста ваша ўлёбёная казка: гэта могуць быць вашы блізкі ці каханыя, хлопчыкі ці дзяўчынкі, ваш хатні любімец маленькі ці вялікі і нават краявід які нагадвае вам чароўную краіну ці старадаўнюю баладу можа. Пераможца будзе абраны арганізатарамі фестываля. Лепшы з удзельнікаў атрымае цікавую сямейную ці сяброўскую фотасэсію ад фатографа Анастасіі Івановай. 
+        </p>
+        <h4>Конкурс малюнкаў</h4>
+        <p>
+          Маленькія рыцары і прынцэсы! 
+          Калі вы марыце аб чароўных замках і неверагодных подзвігах, чакаеце сустрэчы з прыгожымі дамамі і мужнымі воямі, фестываль сярэднявечнай культуры “РУБОН” запрашае вас на сустрэчу з сярэднявечнымі прыгодамі. Уявіце сябе жыхаром сярэднявечнай краіны і намалюйце свайго ідэальнага ваяра і прыгажуню-даму. У конкрсе могуць удзельнчаць мастакі да 12 год, на малюнку павінны быць намаляваны рыцар і дама якія патрапілі ў незвычайныя прыгоды дадайце ваш каментар аб тым што адбываецца з героямі і канешне не забывайце пазначаць аўтара і яго ўзрост. Усе працы будуц разгледжаны полацкімі мастакамі, якія абяруць лепшага. Пераможца конкурса атрымае ў падарунак майстар-класс па вырабу сувеніраў ад крамы “Горад майстроў” і маленькі камплімент ад крамы.
+        </p>
+        <a href="#services" class="btn btn-dark btn-lg js-scroll-trigger">Як прыняць удзел?</a>
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services bg-primary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-10 mx-auto">
+            <h2>Як прыняць удзел у конкурсах?</h2>
+            <hr class="small">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Падрыхтаваць</strong>
+                  </h4>
+                  <p>фота ці малюнак (фота ці скан арыгінальнай працы)</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Абраць</strong>
+                  </h4>
+                  <p>катэгорыю - фотаконкурс "Казка ў аб'ектыве" ці конкурс малюнкаў</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Пакінуць</strong>
+                  </h4>
+                  <p>інфармацыю аб працы: аб чым вашая казка ці хто аўтар малюнку?</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Дачакацца</strong>
+                  </h4>
+                  <p>фестываля сярэднявечнай культуры Рубон 2017, дзе ў межах Дзіцячай пляцоўкі будзе абвешчаны пераможца</p>
+                </div>
+              </div>
+            </div>
+            <!-- /.row (nested) -->
+          </div>
+          <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <section id="upload-form" class="about">
+      <div class="text-center">
+      <h2>Заладаваць працу</h2>
+      {% block form %}{% endblock %}
+      </div>
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+      <div class="text-vertical-center">
+        <h1>Vertically Centered Text</h1>
+      </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2>Our Work</h2>
+            <hr class="small">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="{{ url_for('theme.static', filename='img/portfolio-1.jpg') }}">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="{{ url_for('theme.static', filename='img/portfolio-2.jpg') }}">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="{{ url_for('theme.static', filename='img/portfolio-3.jpg') }}">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="{{ url_for('theme.static', filename='img/portfolio-4.jpg') }}">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /.row (nested) -->
+            <a href="#" class="btn btn-dark">View More Items</a>
+          </div>
+          <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary text-white">
+      <div class="container text-center">
+        <h3>The buttons below are impossible to resist.</h3>
+        <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+        <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h4>
+              <strong>Start Bootstrap</strong>
+            </h4>
+            <p>3481 Melrose Place
+              <br>Beverly Hills, CA 90210</p>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa fa-phone fa-fw"></i>
+                (123) 456-7890</li>
+              <li>
+                <i class="fa fa-envelope-o fa-fw"></i>
+                <a href="mailto:name@example.com">name@example.com</a>
+              </li>
+            </ul>
+            <br>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-dribbble fa-fw fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Your Website 2017</p>
+          </div>
+        </div>
+      </div>
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+      </a>
+    </footer>
+
+    {% block javascripts %}
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('theme.static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('theme.static', filename='vendor/popper/popper.min.js') }}"></script>
+    <script src="{{ url_for('theme.static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ url_for('theme.static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('theme.static', filename='js/stylish-portfolio.js') }}"></script>
+    {% endblock javascripts %}
+
+  </body>
+
+</html>

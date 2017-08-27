@@ -29,10 +29,10 @@ def store_lang_code(endpoint, values):
     else:
         abort(404)
 
-@views.route('/upload', methods=[ 'GET' ])
+@views.route('/', methods=[ 'GET' ])
 def get_upload():
     form = UploadForm()
-    return render_template('upload.html', form=form)
+    return render_template('fotakonkurs/upload.html', form=form)
 
 @views.route('/upload', methods=[ 'POST' ])
 def post_upload():
@@ -86,7 +86,7 @@ def post_upload():
             sml.save(os.path.join(sml_preset_path, filename))
         except IOError:
             flash(_('The error ocurred while saving file'))
-            return render_template('upload.html', form=UploadForm()) 
+            return render_template('fotakonkurs/upload.html', form=UploadForm()) 
         try:
             user = User.query.filter(User.email == form.email.data).one()
         except NoResultFound:
@@ -100,7 +100,7 @@ def post_upload():
         return redirect(url_for('.get_upload'))
     flash(_("Oops! You've got an error"))
     form.captcha.regenerate()
-    return render_template('upload.html', form=form)
+    return render_template('fotakonkurs/upload.html', form=form)
 
 @views.route('/jsonp/<string:endpoint>', methods=[ 'GET' ])
 def jsonp(endpoint):
