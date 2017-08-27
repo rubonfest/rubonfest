@@ -8,6 +8,8 @@
   {{ form.photo.label() }}{{ form.photo() }}
   <p><em>{{ form.photo.description }}</em></p>
   <p>{{ ", ".join(form.photo.errors) }}</p>
+  <p>{{ form.captcha.label() }}{{ form.captcha() }}</p>
+  <p>{{ ", ".join(form.captcha.errors) }}</p>
   <p>
     <input type="submit" value="{{ _('Submit') }}" />
   </p>

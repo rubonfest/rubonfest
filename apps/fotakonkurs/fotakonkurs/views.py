@@ -99,6 +99,7 @@ def post_upload():
         flash(_('Thank you, the file was successfully uploaded'))
         return redirect(url_for('.get_upload'))
     flash(_("Oops! You've got an error"))
+    form.captcha.regenerate()
     return render_template('upload.html', form=form)
 
 @views.route('/jsonp/<string:endpoint>', methods=[ 'GET' ])
