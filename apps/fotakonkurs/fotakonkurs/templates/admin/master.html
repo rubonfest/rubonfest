@@ -1,0 +1,25 @@
+{% extends 'admin/base.html' %}
+
+{% block brand %}
+<a class="navbar-brand" href="/">rubonfest.by</a>
+{% endblock brand %}
+
+{% block access_control %}
+<div class="navbar-text btn-group pull-right">
+{% if current_user.is_authenticated %}
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+        <i class="glyphicon glyphicon-user"></i>
+        {{ current_user.email }}
+        <span class="caret"></span></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="{{ url_for('security.logout') }}">{{ _("Logout") }}</a></li>
+    </ul>
+{% else %}
+  <a href="{{ url_for('security.login') }}">{{ _("Login") }}</a>
+{% endif %}
+</div>
+{% endblock %}
+
+{% block tail_js %}
+  {{ super() }}
+{% endblock %}

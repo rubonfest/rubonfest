@@ -25,6 +25,7 @@ def post_upload():
     if form.is_submitted():
         f = request.files['photo']
         filename    = secure_filename(f.filename)
+        # place to refactor
         public_path = os.path.join(os.path.dirname(__file__), current_app.static_folder, 'uploads', form.name_from_email)
         user_upload_path = os.path.join(current_app.config['FOTAKONKURS_UPLOADS_PATH'], form.name_from_email)
         big_preset_path  = os.path.join(public_path, 'big')

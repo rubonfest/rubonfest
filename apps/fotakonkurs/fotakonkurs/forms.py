@@ -1,5 +1,7 @@
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField
+from flask_security.forms import LoginForm as DefaultLoginForm
+from flask_babelex import lazy_gettext as _
 from wtforms.fields import html5
 
 class UploadForm(FlaskForm):
@@ -17,3 +19,13 @@ class UploadForm(FlaskForm):
                 return name
             except:
                 return ''
+
+class LoginForm(DefaultLoginForm):
+
+    def validate(self):
+        if super(LoginForm, self).validate():
+            return True
+        self.email.errors       = []
+        self.password.errors    = []
+        self.errors['submit'] = _('Invalid email and/or password')
+        return False
