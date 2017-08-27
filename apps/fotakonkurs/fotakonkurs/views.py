@@ -2,7 +2,7 @@ import os
 from json import dumps
 from flask          import (Blueprint, render_template, request, 
                             redirect, flash, current_app, url_for,
-                            abort
+                            abort, g
                             )
 from werkzeug.utils import secure_filename
 from flask_babelex  import gettext as _
@@ -11,8 +11,21 @@ from PIL import Image
 from .forms import UploadForm
 from .db    import UserFile, db
 from .utils import user_file_dict
+from .i18n import all_locales
 
 views = Blueprint('views', __name__)
+
+@views.url_defaults
+def add_lang_code(endpoint, values):
+    values.setdefault('lang_code', getattr(g, 'lang_code', None))
+
+@views.url_value_preprocessor
+def store_lang_code(endpoint, values):
+    lang_code = values.pop('lang_code')
+    if lang_code in all_locales:
+        g.lang_code = lang_code
+    else:
+        abort(404)
 
 @views.route('/upload', methods=[ 'GET' ])
 def get_upload():

@@ -1,0 +1,63 @@
+# Translations template for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-08-27 13:48+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.0\n"
+
+#: fotakonkurs/admin.py:65
+msgid "User"
+msgstr ""
+
+#: fotakonkurs/admin.py:66
+msgid "Role"
+msgstr ""
+
+#: fotakonkurs/admin.py:67
+msgid "User File"
+msgstr ""
+
+#: fotakonkurs/forms.py:30
+msgid "Invalid email and/or password"
+msgstr ""
+
+#: fotakonkurs/views.py:86
+msgid "The error ocurred while saving file"
+msgstr ""
+
+#: fotakonkurs/views.py:91
+msgid "Thank you, the file was successfully uploaded"
+msgstr ""
+
+#: fotakonkurs/views.py:93
+msgid "Oops! You've got an error"
+msgstr ""
+
+#: fotakonkurs/templates/upload.html:7
+msgid "Submit"
+msgstr ""
+
+#: fotakonkurs/templates/admin/master.html:15
+msgid "Logout"
+msgstr ""
+
+#: fotakonkurs/templates/admin/master.html:18
+msgid "Login"
+msgstr ""
+
+#: fotakonkurs/templates/security/login_user.html:10
+msgid "Enter for maintainers"
+msgstr ""
+

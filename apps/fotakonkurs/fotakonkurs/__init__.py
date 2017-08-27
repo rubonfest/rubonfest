@@ -3,10 +3,9 @@ from flask_babelex import Babel
 from flask_migrate import Migrate
 from .views import views
 from .db import db
+from .i18n import get_locale, default_locale
 import admin
 
-def get_locale():
-    return 'en'
 
 def create_app(conf_filename):
     app = Flask(__name__, instance_relative_config=True)
@@ -22,6 +21,7 @@ def create_app(conf_filename):
     db.init_app(app)
     admin.init_app(app)
     Migrate(app, db)
-    app.register_blueprint(views)
+    app.register_blueprint(views, url_defaults={'lang_code': default_locale})
+    app.register_blueprint(views, url_prefix='/<lang_code>')
     import db_events
     return app

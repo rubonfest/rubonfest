@@ -1,0 +1,65 @@
+# Belarusian translations for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-08-27 13:48+0300\n"
+"PO-Revision-Date: 2017-08-27 13:58+0300\n"
+"Language: be\n"
+"Language-Team: be <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.0\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: fotakonkurs/admin.py:65
+msgid "User"
+msgstr "Карыстач"
+
+#: fotakonkurs/admin.py:66
+msgid "Role"
+msgstr "Роля"
+
+#: fotakonkurs/admin.py:67
+msgid "User File"
+msgstr "Файл удзельніка"
+
+#: fotakonkurs/forms.py:30
+msgid "Invalid email and/or password"
+msgstr "Хібны email ды/ці пароль"
+
+#: fotakonkurs/views.py:86
+msgid "The error ocurred while saving file"
+msgstr "Узнікла памылка падчас захавання файлу"
+
+#: fotakonkurs/views.py:91
+msgid "Thank you, the file was successfully uploaded"
+msgstr "Дзякуй, файл быў паспяхова заладаваны"
+
+#: fotakonkurs/views.py:93
+msgid "Oops! You've got an error"
+msgstr "Ба! У вас памылка"
+
+#: fotakonkurs/templates/upload.html:7
+msgid "Submit"
+msgstr "Адправіць"
+
+#: fotakonkurs/templates/admin/master.html:15
+msgid "Logout"
+msgstr "Выйсці"
+
+#: fotakonkurs/templates/admin/master.html:18
+msgid "Login"
+msgstr "Увайсці"
+
+#: fotakonkurs/templates/security/login_user.html:10
+msgid "Enter for maintainers"
+msgstr "Уваход для персанала"
