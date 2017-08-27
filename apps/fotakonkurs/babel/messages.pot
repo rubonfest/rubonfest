@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-27 13:48+0300\n"
+"POT-Creation-Date: 2017-08-27 18:25+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,35 +17,67 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.0\n"
 
-#: fotakonkurs/admin.py:65
+#: fotakonkurs/admin.py:67
 msgid "User"
 msgstr ""
 
-#: fotakonkurs/admin.py:66
+#: fotakonkurs/admin.py:68
 msgid "Role"
 msgstr ""
 
-#: fotakonkurs/admin.py:67
+#: fotakonkurs/admin.py:69
 msgid "User File"
 msgstr ""
 
-#: fotakonkurs/forms.py:30
+#: fotakonkurs/forms.py:11
+msgid "This email address looks like invalid one"
+msgstr ""
+
+#: fotakonkurs/forms.py:12
+msgid "Wow, sorry, this email address is too long"
+msgstr ""
+
+#: fotakonkurs/forms.py:13
+msgid "Please, leave us your email address"
+msgstr ""
+
+#: fotakonkurs/forms.py:15
+msgid "Your email address to get in touch with you"
+msgstr ""
+
+#: fotakonkurs/forms.py:17
+msgid "Photo"
+msgstr ""
+
+#: fotakonkurs/forms.py:19
+msgid "Oops! You probably want to upload a photo here"
+msgstr ""
+
+#: fotakonkurs/forms.py:20
+msgid "Notice, only photos with .jpg (.jpeg) or .png extensions are allowed"
+msgstr ""
+
+#: fotakonkurs/forms.py:22
+msgid "Your photo in .jpg(.jpeg) or .png format"
+msgstr ""
+
+#: fotakonkurs/forms.py:44
 msgid "Invalid email and/or password"
 msgstr ""
 
-#: fotakonkurs/views.py:86
+#: fotakonkurs/views.py:87
 msgid "The error ocurred while saving file"
 msgstr ""
 
-#: fotakonkurs/views.py:91
+#: fotakonkurs/views.py:97
 msgid "Thank you, the file was successfully uploaded"
 msgstr ""
 
-#: fotakonkurs/views.py:93
+#: fotakonkurs/views.py:99
 msgid "Oops! You've got an error"
 msgstr ""
 
-#: fotakonkurs/templates/upload.html:7
+#: fotakonkurs/templates/upload.html:12
 msgid "Submit"
 msgstr ""
 

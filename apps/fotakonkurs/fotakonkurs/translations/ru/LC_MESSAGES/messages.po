@@ -7,48 +7,81 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-27 13:48+0300\n"
-"PO-Revision-Date: 2017-08-27 14:00+0300\n"
+"POT-Creation-Date: 2017-08-27 18:25+0300\n"
+"PO-Revision-Date: 2017-08-27 18:34+0300\n"
+"Last-Translator: \n"
 "Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.0\n"
-"Last-Translator: \n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: fotakonkurs/admin.py:65
+#: fotakonkurs/admin.py:67
 msgid "User"
 msgstr "Пользователь"
 
-#: fotakonkurs/admin.py:66
+#: fotakonkurs/admin.py:68
 msgid "Role"
 msgstr "Роль"
 
-#: fotakonkurs/admin.py:67
+#: fotakonkurs/admin.py:69
 msgid "User File"
 msgstr "Файл участника"
 
-#: fotakonkurs/forms.py:30
+#: fotakonkurs/forms.py:11
+msgid "This email address looks like invalid one"
+msgstr "Этот email-адрес похож на неверный"
+
+#: fotakonkurs/forms.py:12
+msgid "Wow, sorry, this email address is too long"
+msgstr "Вау, извините, этот email-адрес слишком длинный"
+
+#: fotakonkurs/forms.py:13
+msgid "Please, leave us your email address"
+msgstr "Пожалуйста, оставьте нам свой email-адрес"
+
+#: fotakonkurs/forms.py:15
+msgid "Your email address to get in touch with you"
+msgstr "Ваш email-адрес для связи с Вами"
+
+#: fotakonkurs/forms.py:17
+msgid "Photo"
+msgstr "Фотография"
+
+#: fotakonkurs/forms.py:19
+msgid "Oops! You probably want to upload a photo here"
+msgstr "Упс! Вы наверняка хочете загрузить фотографию здесь"
+
+#: fotakonkurs/forms.py:20
+msgid "Notice, only photos with .jpg (.jpeg) or .png extensions are allowed"
+msgstr ""
+"Заметьте, разрешены только фотографии с расширениями .jpg(.jpeg) или .png"
+
+#: fotakonkurs/forms.py:22
+msgid "Your photo in .jpg(.jpeg) or .png format"
+msgstr "Ваша фотография в .jpg(.jpeg) или .png формате"
+
+#: fotakonkurs/forms.py:44
 msgid "Invalid email and/or password"
 msgstr "Неправильный email и/или пароль"
 
-#: fotakonkurs/views.py:86
+#: fotakonkurs/views.py:87
 msgid "The error ocurred while saving file"
 msgstr "Произошла ошибка во время сохранения файла"
 
-#: fotakonkurs/views.py:91
+#: fotakonkurs/views.py:97
 msgid "Thank you, the file was successfully uploaded"
 msgstr "Спасибо, файл был успешно загружен"
 
-#: fotakonkurs/views.py:93
+#: fotakonkurs/views.py:99
 msgid "Oops! You've got an error"
 msgstr "Упс! У вас ошибка"
 
-#: fotakonkurs/templates/upload.html:7
+#: fotakonkurs/templates/upload.html:12
 msgid "Submit"
 msgstr "Отправить"
 
