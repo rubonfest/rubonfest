@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="be">
 
   <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="keywords" content="рубон 2017, рубон полацк, дзіцячая пляцоўка, конкурс">
+    <meta name="description" content="Дзіцячая пляцоўка на фестывалі Рубон 2017 праводзіць конкрурсы фотапрац і малюнкаў для дзетак">
+    <meta name="author" content="каманда фестываля Рубон">
 
     <title>Конкурс малюнкаў ды фотапрац на фестывалі "Рубон 2017"</title>
 
@@ -51,7 +52,7 @@
           <a class="js-scroll-trigger" href="#portfolio">{{ _('Photo gallery') }}</a>
         </li>
         <li>
-          <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>{{ _('Contacts') }}</a>
+          <a class="js-scroll-trigger" href="#footer" onclick=$( "#menu-close").click();>{{ _('Contacts') }}</a>
         </li>
       </ul>
     </nav>
@@ -73,14 +74,14 @@
         <p class="lead">
           Фестываль сярэднявечнай культуры “Рубон” у Полацку абвяшчае конкурсы
         </p>
-        <h4>Фотаконкурс “Казка ў аб’ектыве”</h4>
+        <h3>Фотаконкурс “Казка ў аб’ектыве”</h3>
         <p>
-          На фотаздымку павінна быць адлюстравана старажытная легенда, паданне ці проста ваша ўлёбёная казка: гэта могуць быць вашы блізкі ці каханыя, хлопчыкі ці дзяўчынкі, ваш хатні любімец маленькі ці вялікі і нават краявід які нагадвае вам чароўную краіну ці старадаўнюю баладу можа. Пераможца будзе абраны арганізатарамі фестываля. Лепшы з удзельнікаў атрымае цікавую сямейную ці сяброўскую фотасэсію ад фатографа Анастасіі Івановай. 
+          На фотаздымку павінна быць адлюстравана старажытная легенда, паданне ці проста ваша ўлюбёная казка: гэта могуць быць вашы блізкі ці каханыя, хлопчыкі ці дзяўчынкі, ваш хатні любімец маленькі ці вялікі і нават краявід, які нагадвае вам чароўную краіну ці старадаўнюю баладу можа. Пераможца будзе абраны арганізатарамі фестываля. Найлепшы з удзельнікаў атрымае цікавую сямейную ці сяброўскую фотасэсію ад фатографа Анастасіі Івановай. 
         </p>
-        <h4>Конкурс малюнкаў</h4>
+        <h3>Конкурс малюнкаў</h3>
         <p>
           Маленькія рыцары і прынцэсы! 
-          Калі вы марыце аб чароўных замках і неверагодных подзвігах, чакаеце сустрэчы з прыгожымі дамамі і мужнымі воямі, фестываль сярэднявечнай культуры “РУБОН” запрашае вас на сустрэчу з сярэднявечнымі прыгодамі. Уявіце сябе жыхаром сярэднявечнай краіны і намалюйце свайго ідэальнага ваяра і прыгажуню-даму. У конкрсе могуць удзельнчаць мастакі да 12 год, на малюнку павінны быць намаляваны рыцар і дама якія патрапілі ў незвычайныя прыгоды дадайце ваш каментар аб тым што адбываецца з героямі і канешне не забывайце пазначаць аўтара і яго ўзрост. Усе працы будуц разгледжаны полацкімі мастакамі, якія абяруць лепшага. Пераможца конкурса атрымае ў падарунак майстар-класс па вырабу сувеніраў ад крамы “Горад майстроў” і маленькі камплімент ад крамы.
+          Калі вы марыце аб чароўных замках і неверагодных подзвігах, чакаеце сустрэчы з прыгожымі дамамі і мужнымі воямі, фестываль сярэднявечнай культуры “РУБОН” запрашае вас на сустрэчу з сярэднявечнымі прыгодамі. Уявіце сябе жыхаром сярэднявечнай краіны і намалюйце свайго ідэальнага ваяра і прыгажуню-даму. У конкрсе могуць удзельнчаць мастакі да 12 год, на малюнку павінны быць намаляваны рыцар і дама, якія патрапілі ў незвычайныя прыгоды. Дадайце ваш каментар аб тым, што адбываецца з героямі і канешне не забывайце пазначаць аўтара і яго ўзрост. Усе працы будуць разгледжаны полацкімі мастакамі, якія абяруць найлепшага. Пераможца конкурса атрымае ў падарунак майстар-класс па вырабу сувеніраў ад крамы “Горад майстроў” і маленькі камплімент ад крамы.
         </p>
         <a href="#services" class="btn btn-dark btn-lg js-scroll-trigger">Як прыняць удзел?</a>
       </div>
@@ -163,16 +164,16 @@
     <!-- Callout -->
     <aside class="callout">
       <div class="text-vertical-center">
-        <h1>Vertically Centered Text</h1>
       </div>
     </aside>
 
     <!-- Portfolio -->
+    {% if images is defined %}
     <section id="portfolio" class="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto text-center">
-            <h2>Our Work</h2>
+            <h2>Дасланыя працы</h2>
             <hr class="small">
             <div class="row">
               <div class="col-md-6">
@@ -213,13 +214,15 @@
       </div>
       <!-- /.container -->
     </section>
+    {% endif %}
 
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary text-white">
       <div class="container text-center">
-        <h3>The buttons below are impossible to resist.</h3>
-        <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-        <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+        <h3>Фестываль сярэднявечнай культуры Рубон 2017</h3>
+        <a href="http://rubonfest.by/festival-events/dzicyachaya-plyacoka/" _target="blank" class="btn btn-lg btn-light">
+          Дзіцячая пляцоўка
+        </a>
       </div>
     </aside>
 
@@ -229,39 +232,16 @@
         <div class="row">
           <div class="col-lg-10 mx-auto text-center">
             <h4>
-              <strong>Start Bootstrap</strong>
+              <strong>Кантакты</strong>
             </h4>
-            <p>3481 Melrose Place
-              <br>Beverly Hills, CA 90210</p>
             <ul class="list-unstyled">
               <li>
                 <i class="fa fa-phone fa-fw"></i>
-                (123) 456-7890</li>
-              <li>
-                <i class="fa fa-envelope-o fa-fw"></i>
-                <a href="mailto:name@example.com">name@example.com</a>
-              </li>
+                +37529 292-97-55</li>
             </ul>
             <br>
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook fa-fw fa-3x"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter fa-fw fa-3x"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-dribbble fa-fw fa-3x"></i>
-                </a>
-              </li>
-            </ul>
             <hr class="small">
-            <p class="text-muted">Copyright &copy; Your Website 2017</p>
+            <p><a class="text-muted" href="http://rubonfest.by">Фестываль сярэднявечнай культуры Рубон 2017, горад Полацк</a></p>
           </div>
         </div>
       </div>

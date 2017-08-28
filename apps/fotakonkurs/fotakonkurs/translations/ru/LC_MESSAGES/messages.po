@@ -7,13 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-27 18:25+0300\n"
-"PO-Revision-Date: 2017-08-27 18:34+0300\n"
+"POT-Creation-Date: 2017-08-28 19:40+0300\n"
+"PO-Revision-Date: 2017-08-28 19:59+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,58 +31,97 @@ msgstr "Роль"
 msgid "User File"
 msgstr "Файл участника"
 
-#: fotakonkurs/forms.py:11
+#: fotakonkurs/forms.py:44
+msgid "Contest"
+msgstr "Конкурс"
+
+#: fotakonkurs/forms.py:45
+msgid "Fairytale"
+msgstr "Сказка в объективе"
+
+#: fotakonkurs/forms.py:45
+msgid "Paintings"
+msgstr "Рисунки"
+
+#: fotakonkurs/forms.py:46
+msgid "Please, select the contest"
+msgstr "Пожалуйста, выберите конкурс"
+
+#: fotakonkurs/forms.py:50
 msgid "This email address looks like invalid one"
 msgstr "Этот email-адрес похож на неверный"
 
-#: fotakonkurs/forms.py:12
+#: fotakonkurs/forms.py:51
 msgid "Wow, sorry, this email address is too long"
 msgstr "Вау, извините, этот email-адрес слишком длинный"
 
-#: fotakonkurs/forms.py:13
+#: fotakonkurs/forms.py:52
 msgid "Please, leave us your email address"
 msgstr "Пожалуйста, оставьте нам свой email-адрес"
 
-#: fotakonkurs/forms.py:15
+#: fotakonkurs/forms.py:54
 msgid "Your email address to get in touch with you"
 msgstr "Ваш email-адрес для связи с Вами"
 
-#: fotakonkurs/forms.py:17
+#: fotakonkurs/forms.py:56
 msgid "Photo"
 msgstr "Фотография"
 
-#: fotakonkurs/forms.py:19
+#: fotakonkurs/forms.py:58
 msgid "Oops! You probably want to upload a photo here"
 msgstr "Упс! Вы наверняка хочете загрузить фотографию здесь"
 
-#: fotakonkurs/forms.py:20
+#: fotakonkurs/forms.py:59
 msgid "Notice, only photos with .jpg (.jpeg) or .png extensions are allowed"
-msgstr ""
-"Заметьте, разрешены только фотографии с расширениями .jpg(.jpeg) или .png"
+msgstr "Заметьте, разрешены только фотографии с расширениями .jpg(.jpeg) или .png"
 
-#: fotakonkurs/forms.py:22
+#: fotakonkurs/forms.py:61
 msgid "Your photo in .jpg(.jpeg) or .png format"
-msgstr "Ваша фотография в .jpg(.jpeg) или .png формате"
+msgstr "Ваше фото в .jpg(.jpeg) или .png формате"
 
-#: fotakonkurs/forms.py:44
+#: fotakonkurs/forms.py:63
+msgid "Comment"
+msgstr "Комментарий"
+
+#: fotakonkurs/forms.py:65
+msgid "Please, not more than 500 characters"
+msgstr "Пожалуйста, не более чем 500 символов"
+
+#: fotakonkurs/forms.py:66
+msgid "Please, leave some comment about your work"
+msgstr "Пожалуйста, оставьте небольшой комментарий про Вашу работу"
+
+#: fotakonkurs/forms.py:68
+msgid "For fairytale contest tell us what your story is about; for paintings contest, please, tell us about the author: age, place of study etc."
+msgstr "Для конкурса \"Сказка в объективе\" расскажите нам о чём Ваша фото-история; для конкурса рисунков, пожалуйста, оставьте пару слов про автора: возраст, место учёбы и т.п."
+
+#: fotakonkurs/forms.py:71
+msgid "Please, solve the equation"
+msgstr "Пожалуйста, решите задачку"
+
+#: fotakonkurs/forms.py:72
+msgid "Equation check failed. Please, try again"
+msgstr "Ошибка проверки равности. Пожалуйста, попробуйте ещё раз"
+
+#: fotakonkurs/forms.py:74
+msgid "What is the equation result?"
+msgstr "Какой результат уравнения?"
+
+#: fotakonkurs/forms.py:103
 msgid "Invalid email and/or password"
 msgstr "Неправильный email и/или пароль"
 
-#: fotakonkurs/views.py:87
+#: fotakonkurs/views.py:88
 msgid "The error ocurred while saving file"
 msgstr "Произошла ошибка во время сохранения файла"
 
-#: fotakonkurs/views.py:97
+#: fotakonkurs/views.py:100
 msgid "Thank you, the file was successfully uploaded"
 msgstr "Спасибо, файл был успешно загружен"
 
-#: fotakonkurs/views.py:99
+#: fotakonkurs/views.py:102
 msgid "Oops! You've got an error"
 msgstr "Упс! У вас ошибка"
-
-#: fotakonkurs/templates/upload.html:12
-msgid "Submit"
-msgstr "Отправить"
 
 #: fotakonkurs/templates/admin/master.html:15
 msgid "Logout"
@@ -93,6 +131,39 @@ msgstr "Выйти"
 msgid "Login"
 msgstr "Войти"
 
+#: fotakonkurs/templates/fotakonkurs/plain_form.html:42
+#: fotakonkurs/templates/fotakonkurs/upload.html:42
+msgid "Submit"
+msgstr "Отправить"
+
+#: fotakonkurs/templates/fotakonkurs/plain_form.html:47
+msgid "Return to the main page"
+msgstr "Вернуться на главную страницу"
+
 #: fotakonkurs/templates/security/login_user.html:10
 msgid "Enter for maintainers"
 msgstr "Вход для персонала"
+
+#: theme/templates/theme/index.html:39
+msgid "Children Yard"
+msgstr "Детская площадка"
+
+#: theme/templates/theme/index.html:42
+msgid "Photo Contest"
+msgstr "Конкурс фоторабот"
+
+#: theme/templates/theme/index.html:45
+msgid "Contest conditions"
+msgstr "Условия конкурсов"
+
+#: theme/templates/theme/index.html:48
+msgid "Upload photo"
+msgstr "Загрузить изображение"
+
+#: theme/templates/theme/index.html:51
+msgid "Photo gallery"
+msgstr "Фотогалерея"
+
+#: theme/templates/theme/index.html:54
+msgid "Contacts"
+msgstr "Контакты"

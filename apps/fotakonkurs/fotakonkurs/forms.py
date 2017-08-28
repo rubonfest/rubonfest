@@ -3,7 +3,7 @@ from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed, FileRequired
 from flask_security.forms import LoginForm as DefaultLoginForm
 from flask_security import current_user
-from flask_babelex import gettext as _, lazy_gettext as l_
+from flask_babelex import lazy_gettext as _
 from wtforms import validators
 from wtforms.fields import html5, IntegerField, Label, SelectField, TextAreaField
 from random import randint, choice
@@ -41,9 +41,9 @@ class CaptchaValidator(object):
             raise validators.StopValidation(self.message)
 
 class UploadForm(FlaskForm):
-    contest = SelectField(l_('Contest'), 
-            choices=( ("Fairytale", l_("Fairytale")), ("Paintings", l_("Paintings")) ),
-            description=l_("Please, select the contest")
+    contest = SelectField(_('Contest'), 
+            choices=( ("Fairytale", _("Fairytale")), ("Paintings", _("Paintings")) ),
+            description=_("Please, select the contest")
     )
     email = html5.EmailField(
             validators=(
@@ -51,27 +51,27 @@ class UploadForm(FlaskForm):
                 validators.Length(min=1, max=50, message=_("Wow, sorry, this email address is too long")),
                 validators.DataRequired(message=_('Please, leave us your email address'))
             ),
-            description=l_('Your email address to get in touch with you')
+            description=_('Your email address to get in touch with you')
     )
-    photo = FileField(l_('Photo'),
+    photo = FileField(_('Photo'),
             validators=(
                 FileRequired(message=_("Oops! You probably want to upload a photo here")),
                 FileAllowed(['jpg', 'jpeg', 'png'], message=_('Notice, only photos with .jpg (.jpeg) or .png extensions are allowed'))
             ), 
-            description=l_('Your photo in .jpg(.jpeg) or .png format')
+            description=_('Your photo in .jpg(.jpeg) or .png format')
     )
-    comment = TextAreaField(l_("Comment"),
+    comment = TextAreaField(_("Comment"),
             validators=(
                 validators.Length(max=500, message=_("Please, not more than 500 characters")),
                 validators.DataRequired(message=_('Please, leave some comment about your work'))
             ),
-            description=l_("For fairytale contest tell us what your story is about; for paintings contest, please, tell us about the author: age, place of study etc.") 
+            description=_("For fairytale contest tell us what your story is about; for paintings contest, please, tell us about the author: age, place of study etc.") 
     )
     captcha = CaptchaField('upload_check', validators=(
             validators.DataRequired(message=_('Please, solve the equation')),
             CaptchaValidator(_('Equation check failed. Please, try again'))
         ),
-        description=l_('What is the equation result?')
+        description=_('What is the equation result?')
     )
 
     def __init__(self, *args, **kwargs):
