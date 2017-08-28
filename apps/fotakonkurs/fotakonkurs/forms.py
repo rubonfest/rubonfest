@@ -5,7 +5,7 @@ from flask_security.forms import LoginForm as DefaultLoginForm
 from flask_security import current_user
 from flask_babelex import gettext as _, lazy_gettext as l_
 from wtforms import validators
-from wtforms.fields import html5, IntegerField, Label
+from wtforms.fields import html5, IntegerField, Label, SelectField, TextAreaField
 from random import randint, choice
 
 class CaptchaField(IntegerField):
@@ -49,12 +49,23 @@ class UploadForm(FlaskForm):
             ),
             description=l_('Your email address to get in touch with you')
     )
+    contest = SelectField(l_('Contest'), 
+            choices=( ("Fairytale", l_("Fairytale")), ("Paintings", l_("Paintings")) ),
+            description=l_("Please, select the contest")
+    )
     photo = FileField(l_('Photo'),
             validators=(
                 FileRequired(message=_("Oops! You probably want to upload a photo here")),
                 FileAllowed(['jpg', 'jpeg', 'png'], message=_('Notice, only photos with .jpg (.jpeg) or .png extensions are allowed'))
             ), 
             description=l_('Your photo in .jpg(.jpeg) or .png format')
+    )
+    comment = TextAreaField(l_("Comment"),
+            validators=(
+                validators.Length(max=500, message=_("Please, not more than 500 characters")),
+                validators.DataRequired(message=_('Please, leave some comment about your work'))
+            ),
+            description=l_("For fairytale contest tell us what your story is about; for paintings contest, please, tell us about the author: how old is he/she, where he/she studies etc.") 
     )
     captcha = CaptchaField('upload_check', validators=(
             validators.DataRequired(message=_('Please, solve the equation')),

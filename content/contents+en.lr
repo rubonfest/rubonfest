@@ -8,7 +8,7 @@ days: 1-3
 ---
 month: September
 ---
-partners: 
+partners:
 
 #### partner ####
 file: polack.png
@@ -19,11 +19,67 @@ title: Полацкі раённы выканаўчы камітэт
 ----
 placement: column
 #### partner ####
+file: eu_en.png
+----
+link: 
+----
+title: 
+----
+placement: column
+#### partner ####
+file: undp_en.png
+----
+link: 
+----
+title: 
+----
+placement: column
+#### partner ####
+file: vicebsk.png
+----
+link: 
+----
+title: 
+----
+placement: column
+#### partner ####
 file: polack_info.jpg
 ----
 link: http://www.polotsk-turizm.by
 ----
 title: Полацкі аддзел міністэрства спорту і турызму
+----
+placement: column
+#### partner ####
+file: horad.jpg
+----
+link: https://vk.com/club137960665
+----
+title: 
+----
+placement: column
+#### partner ####
+file: viasna_energa.png
+----
+link: 
+----
+title: 
+----
+placement: column
+#### partner ####
+file: chliabcy.png
+----
+link: 
+----
+title: 
+----
+placement: column
+#### partner ####
+file: razdollie.png
+----
+link: 
+----
+title: 
 ----
 placement: column
 ---
