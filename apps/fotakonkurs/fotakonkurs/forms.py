@@ -41,6 +41,10 @@ class CaptchaValidator(object):
             raise validators.StopValidation(self.message)
 
 class UploadForm(FlaskForm):
+    contest = SelectField(l_('Contest'), 
+            choices=( ("Fairytale", l_("Fairytale")), ("Paintings", l_("Paintings")) ),
+            description=l_("Please, select the contest")
+    )
     email = html5.EmailField(
             validators=(
                 validators.Email(message=_('This email address looks like invalid one')),
@@ -48,10 +52,6 @@ class UploadForm(FlaskForm):
                 validators.DataRequired(message=_('Please, leave us your email address'))
             ),
             description=l_('Your email address to get in touch with you')
-    )
-    contest = SelectField(l_('Contest'), 
-            choices=( ("Fairytale", l_("Fairytale")), ("Paintings", l_("Paintings")) ),
-            description=l_("Please, select the contest")
     )
     photo = FileField(l_('Photo'),
             validators=(
@@ -65,7 +65,7 @@ class UploadForm(FlaskForm):
                 validators.Length(max=500, message=_("Please, not more than 500 characters")),
                 validators.DataRequired(message=_('Please, leave some comment about your work'))
             ),
-            description=l_("For fairytale contest tell us what your story is about; for paintings contest, please, tell us about the author: how old is he/she, where he/she studies etc.") 
+            description=l_("For fairytale contest tell us what your story is about; for paintings contest, please, tell us about the author: age, place of study etc.") 
     )
     captcha = CaptchaField('upload_check', validators=(
             validators.DataRequired(message=_('Please, solve the equation')),

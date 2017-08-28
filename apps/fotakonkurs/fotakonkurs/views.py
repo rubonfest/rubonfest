@@ -86,25 +86,26 @@ def post_upload():
             sml.save(os.path.join(sml_preset_path, filename))
         except IOError:
             flash(_('The error ocurred while saving file'))
-            return render_template('fotakonkurs/upload.html', form=UploadForm()) 
+            return render_template('fotakonkurs/plain_form.html', form=UploadForm()) 
         try:
             user = User.query.filter(User.email == form.email.data).one()
         except NoResultFound:
             user = create_participant(form.email.data)
             db.session.add(user)
-        file_model = UserFile(f.filename, filename, form.name_from_email, user) 
+        file_model = UserFile(f.filename, filename, form.name_from_email, user,
+                form.contest.data, form.comment.data) 
         db.session.add(file_model)
         db.session.commit()
         login_user(user)
         flash(_('Thank you, the file was successfully uploaded'))
-        return redirect(url_for('.get_upload'))
+        return redirect(url_for('.get_upload', _anchor="upload-form"))
     flash(_("Oops! You've got an error"))
     form.captcha.regenerate()
-    return render_template('fotakonkurs/upload.html', form=form)
+    return render_template('fotakonkurs/plain_form.html', form=form)
 
 @views.route('/jsonp/<string:endpoint>', methods=[ 'GET' ])
 def jsonp(endpoint):
-    user_files = UserFile.query.all()
+    user_files = UserFile.query.filter(UserFile.show == True).all()
     return 'try { fotakonkurs.%s(%s); } catch (e) { console.log(e.message); }' % (
             endpoint, dumps({'records': map(user_file_dict, user_files)})
     )

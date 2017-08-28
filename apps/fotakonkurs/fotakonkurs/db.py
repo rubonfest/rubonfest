@@ -12,15 +12,17 @@ class UserFile(db.Model):
     orig_name   = db.Column(db.Unicode(100))
     contest     = db.Column(db.String(100), nullable=False)
     comment     = db.Column(db.UnicodeText)
+    show        = db.Column(db.Boolean, nullable=False, default=False)
     user_id     = db.Column(db.ForeignKey('users.id'))
     user        = db.relationship('User', backref="files")
 
-    def __init__(self, orig_name, filename, filedir, user, contest):
+    def __init__(self, orig_name, filename, filedir, user, contest, comment):
         self.orig_name = orig_name
         self.filename  = filename
         self.filedir   = filedir
         self.user      = user
         self.contest   = contest
+        self.comment   = comment
 
     def __unicode__(self):
         return self.orig_name
