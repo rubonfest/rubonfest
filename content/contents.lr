@@ -91,11 +91,27 @@ title:
 ----
 placement: column
 #### partner ####
-file: eksby.png
+file: zharocha.png
 ----
-link: http://ekskursii.by
+link: 
 ----
-title: Экскурсии по Беларуси - Белорусский экскурсионный портал
+title: 
+----
+placement: column
+#### partner ####
+file: pkchp.jpg
+----
+link: 
+----
+title: 
+----
+placement: column
+#### partner ####
+file: tme.jpg
+----
+link: 
+----
+title: 
 ----
 placement: column
 #### partner ####
@@ -120,6 +136,30 @@ file: samit.jpg
 link: http://sammittv.hol.es/
 ----
 title: Тэлеканал "Самміт+ТБ"
+----
+placement: column
+#### partner ####
+file: chimik.jpg
+----
+link: http://ximik.info
+----
+title: 
+----
+placement: column
+#### partner ####
+file: novycas.jpg
+----
+link: http://novychas.by/
+----
+title: 
+----
+placement: column
+#### partner ####
+file: eksby.png
+----
+link: http://ekskursii.by
+----
+title: Экскурсии по Беларуси - Белорусский экскурсионный портал
 ----
 placement: column
 ---
