@@ -11,7 +11,7 @@ link:
 ----
 is_bold: yes
 #### program_item ####
-timeline: 12:00 - 12:20
+timeline: 12:00
 ----
 title: Прадстаўленне калектываў
 ----
@@ -19,7 +19,7 @@ link:
 ----
 is_bold: 
 #### program_item ####
-timeline: 12:20 - 13:00
+timeline: 12:30
 ----
 title: Канцэрт сярэднявечай музыкі
 ----
@@ -27,15 +27,7 @@ link:
 ----
 is_bold: 
 #### program_item ####
-timeline: 15:00 - 15:30
-----
-title: Канцэрт сярэднявечай музыкі
-----
-link: 
-----
-is_bold: 
-#### program_item ####
-timeline: 16:00 - 16:30
+timeline: 16:00
 ----
 title: Канцэрт сярэднявечнай музыкі
 ----
@@ -43,17 +35,9 @@ link:
 ----
 is_bold: 
 #### program_item ####
-timeline: 17:00 - 17:30
+timeline: 21:00
 ----
-title: Сярэднявечныя гульні
-----
-link: 
-----
-is_bold: 
-#### program_item ####
-timeline: 21:00 - 23:00
-----
-title: Канцэрт сярэднявечай музыкі. Сярэднявечныя танцы
+title: Канцэрт сярэднявечай музыкі (Drolls, PAWA, Holloenek Hungarica). Сярэднявечныя танцы
 ----
 link: 
 ----
@@ -67,7 +51,7 @@ link:
 ----
 is_bold: yes
 #### program_item ####
-timeline: 13:00 - 15:00
+timeline: 14:00
 ----
 title: Турнір развітага Сярэднявечча
 ----
@@ -75,7 +59,7 @@ link:
 ----
 is_bold: 
 #### program_item ####
-timeline: 15:30 - 16:00
+timeline: 15:30
 ----
 title: Турнір развітага Сярэднявечча (фінал)
 ----
@@ -83,7 +67,7 @@ link:
 ----
 is_bold: 
 #### program_item ####
-timeline: 16:30 - 17:00
+timeline: 19:30
 ----
 title: Турнір 5x5
 ----
@@ -91,7 +75,7 @@ link:
 ----
 is_bold: 
 #### program_item ####
-timeline: 17:30 - 18:30
+timeline: 20:00
 ----
 title: Бугурты развітага Сярэднявечча
 ----
@@ -99,7 +83,7 @@ link:
 ----
 is_bold: 
 #### program_item ####
-timeline: 18:30 - 21:00
+timeline: 21:00
 ----
 title: Рэпетыцыя бітвы
 ----
@@ -115,7 +99,7 @@ link:
 ----
 is_bold: yes
 #### program_item ####
-timeline: 13:00 - 14:00
+timeline: 13:00
 ----
 title: Турнір ранняга Сярэднявечча
 ----
@@ -123,7 +107,7 @@ link:
 ----
 is_bold: 
 #### program_item ####
-timeline: 14:30 - 15:30
+timeline: 14:30
 ----
 title: Бугурты ранняга Сярэднявечча
 ----
@@ -131,7 +115,7 @@ link:
 ----
 is_bold: 
 #### program_item ####
-timeline: 15:30 - 16:30
+timeline: 15:30
 ----
 title: Манеўры праз перасечаную мясцовасць
 ----
@@ -139,9 +123,33 @@ link:
 ----
 is_bold: 
 #### program_item ####
-timeline: 16:30 - 19:30
+timeline: 
 ----
-title: Сплавы на ладдзях. Паказальныя абардажы
+title: Прыстань
+----
+link: 
+----
+is_bold: yes
+#### program_item ####
+timeline: 12:00
+----
+title: Катанне на дракарах
+----
+link: 
+----
+is_bold: 
+#### program_item ####
+timeline: 17:00
+----
+title: Сплавы на ладдзях. Рэгата
+----
+link: 
+----
+is_bold: 
+#### program_item ####
+timeline: 18:00
+----
+title: Тэатралізаваная бітва "Напад з Дзвіны"
 ----
 link: 
 ----
@@ -155,9 +163,65 @@ link:
 ----
 is_bold: yes
 #### program_item ####
-timeline: 13:00 - 17:00
+timeline: 13:00
 ----
-title: Адбудуцца паказальныя выступленні лучнікаў. Будзе дзейнічаць некалькі сектараў для стрэлаў у лукаў
+title: Будзе дзейнічаць некалькі сектараў для стрэлаў у лукаў
+----
+link: 
+----
+is_bold: 
+#### program_item ####
+timeline: 
+----
+title: Дзіцячая пляцоўка
+----
+link: 
+----
+is_bold: yes
+#### program_item ####
+timeline: 12:00 - 20:00
+----
+title: Работа пляцоўкі (гульні, танцы)
+----
+link: 
+----
+is_bold: 
+#### program_item ####
+timeline: 13:00
+----
+title: Выступленні батлеек
+----
+link: 
+----
+is_bold: 
+#### program_item ####
+timeline: 
+----
+title: Пляцоўка лятальных апаратаў
+----
+link: 
+----
+is_bold: yes
+#### program_item ####
+timeline: 12:30
+----
+title: Катанне на геракоптарах
+----
+link: 
+----
+is_bold: 
+#### program_item ####
+timeline: 19:00
+----
+title: Катанне на паветраных шарах
+----
+link: 
+----
+is_bold: 
+#### program_item ####
+timeline: 23:00
+----
+title: Паветранае шоу
 ----
 link: 
 ----

@@ -3,15 +3,23 @@ title: 3 верасня
 items:
 
 #### program_item ####
-timeline: 6:30 - 8:00
+timeline: 6:30
 ----
-title: [Архаічныя спевы па-над Дзвіною](/festival-events/arhaichnyya-spevy/)
+title: [Світанак над Дзвіною](/festival-events/arhaichnyya-spevy/)
 ----
 link: 
 ----
 is_bold: 
 #### program_item ####
-timeline: 12:30 - 14:00
+timeline: 12:00
+----
+title: Навукова-практычны семінар Адраджэнне полацкага суднаходства
+----
+link: 
+----
+is_bold: 
+#### program_item ####
+timeline: 13:00
 ----
 title: Тэатралізацыя бітвы
 ----
@@ -19,7 +27,7 @@ link:
 ----
 is_bold: 
 #### program_item ####
-timeline: 14:00 - 14:20
+timeline: 14:00
 ----
 title: Урачыстае закрыццё фэсту. Узнагарода ўдзельнікаў
 ----
@@ -27,7 +35,7 @@ link:
 ----
 is_bold: 
 #### program_item ####
-timeline: 14:30 - 15:30
+timeline: 14:30
 ----
 title: Канцэрт сярэднявечнай музыкі
 ----
