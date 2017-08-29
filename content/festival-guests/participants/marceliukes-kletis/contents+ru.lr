@@ -5,13 +5,13 @@ body:
 
 <div class="row">
   <div class="six columns">
-    <a target="_blank" href="/festival-participants/festyval-syarednyavechnaj-kuhni/1.jpg"><img alt="Marceliukes kletis" src="/festival-participants/festyval-syarednyavechnaj-kuhni/1.jpg" /></a>
+    <a target="_blank" href="/festival-events/festyval-syarednyavechnaj-kuhni/1.jpg"><img alt="Marceliukes kletis" src="/festival-events/festyval-syarednyavechnaj-kuhni/1.jpg" /></a>
   </div>
   <div class="six columns">
-    <a target="_blank" href="/festival-participants/festyval-syarednyavechnaj-kuhni/3.jpg"><img alt="Marceliukes kletis" src="/festival-participants/festyval-syarednyavechnaj-kuhni/3.jpg" /></a>
+    <a target="_blank" href="/festival-events/festyval-syarednyavechnaj-kuhni/3.jpg"><img alt="Marceliukes kletis" src="/festival-events/festyval-syarednyavechnaj-kuhni/3.jpg" /></a>
   </div>
   <div class="twelve columns">
-    <a target="_blank" href="/festival-participants/festyval-syarednyavechnaj-kuhni/2.jpg"><img alt="Marceliukes kletis" src="/festival-participants/festyval-syarednyavechnaj-kuhni/2.jpg" /></a>
+    <a target="_blank" href="/festival-events/festyval-syarednyavechnaj-kuhni/2.jpg"><img alt="Marceliukes kletis" src="/festival-events/festyval-syarednyavechnaj-kuhni/2.jpg" /></a>
   </div>
 </div>
 
@@ -31,10 +31,10 @@ meta_keywords: рубон, рубон 2017, рубон полоцк, ресто�
 ---
 name: Marceliukes kletis
 ---
-placement: right
+placement: 
 ---
-row: 1
+row: 
 ---
 title: Ресторан литовской народной кухни "Marceliukes kletis" - участник фестиваля средневековой культуры "Рубон 2017" в Полоцке
 ---
-show_name: yes
+show_name: no

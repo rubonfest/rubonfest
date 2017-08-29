@@ -2,7 +2,8 @@ body:
 
 ![Детская площадка](/festival-events/dzicyachaya-plyacoka/pv7mj2mEvu0.jpg)
 
-#[&gt; Конкурс фоторабот и рисунков &lt;](http://fotakonkurs.rubonfest.by)
+#[&gt; Конкурс фоторабот и рисунков &lt;](http://fotakonkurs.rubonfest.by)  
+<a href="#fotakonkurs">Посмотреть галлерею работ</a>
 
 Детство – беззаботная пора в жизни любого человека. Все мы проводили время за разными играми. Но когда сегодня у нас есть разноцветные игрушки из пластика, то дети средневековья забавлялись с деревянными приспособлениями и игрушками. Ради того, чтобы познакомиться с тем, как это было – приглашаем на Детскую площадку фестиваля “Рубон”. Здесь вы сможете увидеть, как проводили свободное время дети в разное время. Для детей будут организованы различные игры, в том числе настольные. На фестивале своё отличительное место займёт интерактивная детская площадка. Маленькие любители истории получат возможность лично познакомиться с жизнью средневековых людей, их бытом и традициями.
 
@@ -25,6 +26,11 @@ body:
       <img title="Гармония" src="/festival-guests/participants/garmoniya/XJF2osEzAP8.jpg" />
     </a>
   </div>
+  <div class="column">
+    <a href="/ru/festival-guests/participants/batlejka/">
+      <img title="Лялька" src="/festival-guests/participants/batlejka/batlejka.jpg" />
+    </a>
+  </div>
 </div>
 
 План мероприятий детской площадки:
@@ -32,6 +38,11 @@ body:
 ![Афиша детсткой площадки](/festival-events/dzicyachaya-plyacoka/goAeR0DYfbE.jpg)
 По вопросам работы детской площадки +375 29 292 97 55  
 aleksej-koc{at}yandex.ru varvara-koc31{at}yandex.ru
+
+<div id="fotakonkurs">
+  <h3>Галлерея конкурсов детской площадки</h3>
+<div id="fotakonkurs-container"></div>
+</div>
 ---
 description:
 
