@@ -158,18 +158,6 @@
     
   </url>
   <url>
-    <loc>http://rubonfest.by/festival-guests/musicians/hardwood/</loc>
-    
-      <xhtml:link rel="alternate"
-                  hreflang="en"
-                  href="http://rubonfest.by/en/festival-guests/musicians/hardwood/" />
-    
-      <xhtml:link rel="alternate"
-                  hreflang="ru"
-                  href="http://rubonfest.by/ru/festival-guests/musicians/hardwood/" />
-    
-  </url>
-  <url>
     <loc>http://rubonfest.by/festival-guests/musicians/hmelny-vir/</loc>
     
       <xhtml:link rel="alternate"
@@ -179,6 +167,18 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-guests/musicians/hmelny-vir/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-guests/musicians/holloenek/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/musicians/holloenek/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/musicians/holloenek/" />
     
   </url>
   <url>
@@ -503,6 +503,18 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-news/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-news/konkursy-dzicyachaj-plyacoki/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-news/konkursy-dzicyachaj-plyacoki/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-news/konkursy-dzicyachaj-plyacoki/" />
     
   </url>
   <url>
