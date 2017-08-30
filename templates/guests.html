@@ -13,7 +13,7 @@
     {% for guest in guest_role.children %}
       <div class="content-center">
       <a href="{{ guest|url }}" class="bigtext">
-        {% set img = guest.attachments.images.first() %}
+        {% set img = guest.attachments.images.filter(F._id != 'logo.png').first() %}
         {% if img %}
         <img src="{{ img|url }}" />
         {% endif %}
