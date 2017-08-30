@@ -290,6 +290,18 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-guests/participants/knyazhych/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/knyazhych/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/knyazhych/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-guests/participants/kresiva/</loc>
     
       <xhtml:link rel="alternate"
@@ -299,6 +311,18 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-guests/participants/kresiva/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-guests/participants/laddzya-varvara/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-guests/participants/laddzya-varvara/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-guests/participants/laddzya-varvara/" />
     
   </url>
   <url>
