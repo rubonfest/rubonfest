@@ -1,0 +1,66 @@
+{% extends 'theme/base.html' %}
+
+{% block body %}
+  {% block top %}
+    <form method="POST" action="{{ url_for('.login') }}">
+      <div>
+        {{ form.login.label() }} {{ form.login() }}
+      </div>
+      <div>
+        {{ form.password.label() }} {{ form.password() }}
+      </div>
+      {% if form.errors|length > 0 %}
+      <div>{{ form.errors.values()[0][0] }}</div>
+      {% endif %}
+      <div>
+        <input type="submit" value="Увайсці" />
+      </div>
+      {{ form.hidden_tag() }}
+    </form>
+  {% endblock top %}
+
+  <div data-bind="component: 'global'">
+    <div data-bind="component: {name: 'message-catalog',
+                                params: {messagesData: messagesData}}">
+      <div data-bind="foreach: messageCategories">
+        <div data-bind="component: {name: 'message-category',
+                                    params: {categoryData: $data}}">
+        </div>
+      </div>
+      <div data-bind="component: 'all-messages'">
+      </div>
+    </div>
+  </div>
+
+  <script id="message-category-template" type="template/html">
+    <h3 data-bind="text: name"></h3>
+    <p>Апошнія <span data-bind="text: categoryLimit"></span> паведамленняў (аднаўляецца)</p>
+    <div data-bind="foreach: messages">
+      <div data-bind="component: {name: 'message',
+                                  params: {message: $data}}">
+      </div>
+    </div>
+  </script>
+  <script id="message-template" type="template/html">
+    <p><em data-bind="text: created"></em>: <span data-bind="text: message"></span></p>
+  </script>
+  <script id="all-messages-template" type="template/html">
+    <hr />
+    <em>Усе паведамленні (не аднаўляецца):</em>
+    <div data-bind="foreach: messages">
+      <em data-bind="text: $data.category"></em><br />
+      <div data-bind="component: {name: 'message', 
+                                  params: {message: $data}}">
+      </div>
+    </div>
+    <button data-bind="click: load">
+      Ладаваць...
+    </button>
+  </script>
+{% endblock body %}
+
+{% block javascripts %}
+  {{ super() }}
+  <script data-main="{{ url_for('static', filename='js/main') }}" src="{{ url_for('static', filename='js/require.js') }}"></script>
+
+{% endblock javascripts %}

@@ -1,0 +1,28 @@
+{% extends 'online/index.html' %}
+
+{% block top %}
+  {% for message in get_flashed_messages(category_filter=['error']) %}
+    <div style="color: red">{{ message }}</div>
+  {% endfor %}
+  {% for message in get_flashed_messages(category_filter=['info']) %}
+    <div style="color: green">{{ message }}</div>
+  {% endfor %}
+  <form method="POST" action="{{ url_for('.post_messages') }}">
+    <div>
+      {{ form.category.label() }} {{ form.category() }}
+      {% if form.category.errors|length > 0 %}
+        <div>{{ ", ".join(form.category.errors) }}</div>
+      {% endif %}
+    </div>
+    <div>
+      {{ form.message.label() }} {{ form.message() }}
+      {% if form.message.errors|length > 0 %}
+        <div>{{ ", ".join(form.message.errors) }}</div>
+      {% endif %}
+    </div>
+    <div>
+      <input type="submit" value="Адправіць" />
+    </div>
+    {{ form.hidden_tag() }}
+  </form>
+{% endblock top %}
