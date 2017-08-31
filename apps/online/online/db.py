@@ -8,7 +8,7 @@ all_categories = (
         u"Дзіцячая пляцоўка",
         u"Кулінарны фестываль"
 )
-category_limit = 1
+category_limit = 50
 
 class Message(db.Model):
     __tablename__ = 'messages'

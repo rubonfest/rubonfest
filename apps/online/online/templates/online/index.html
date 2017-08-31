@@ -3,17 +3,17 @@
 {% block body %}
   {% block top %}
     <form method="POST" action="{{ url_for('.login') }}">
-      <div>
-        {{ form.login.label() }} {{ form.login() }}
+      <div class="form-group">
+        {{ form.login.label() }} {{ form.login(class_="form-control") }}
       </div>
-      <div>
-        {{ form.password.label() }} {{ form.password() }}
+      <div class="form-group">
+        {{ form.password.label() }} {{ form.password(class_="form-control") }}
       </div>
       {% if form.errors|length > 0 %}
-      <div>{{ form.errors.values()[0][0] }}</div>
+      <div class="alert alert-danger">{{ form.errors.values()[0][0] }}</div>
       {% endif %}
-      <div>
-        <input type="submit" value="Увайсці" />
+      <div class="form-group">
+        <input type="submit" class="btn btn-default" value="Увайсці" />
       </div>
       {{ form.hidden_tag() }}
     </form>
@@ -33,28 +33,61 @@
   </div>
 
   <script id="message-category-template" type="template/html">
-    <h3 data-bind="text: name"></h3>
-    <p>Апошнія <span data-bind="text: categoryLimit"></span> паведамленняў (аднаўляецца)</p>
-    <div data-bind="foreach: messages">
-      <div data-bind="component: {name: 'message',
-                                  params: {message: $data}}">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 data-bind="text: name"></h3>
+        <p>Паказваюцца апошнія <span data-bind="text: categoryLimit"></span> паведамленняў (аднаўляецца аўтаматычна)</p>
+      </div>
+      <div class="panel-body">
+        <div class="list-group" data-bind="foreach: messages">
+          <div data-bind="component: {name: 'message',
+                                      params: {message: $data}}">
+          </div>
+        </div>
       </div>
     </div>
   </script>
+
   <script id="message-template" type="template/html">
-    <p><em data-bind="text: created"></em>: <span data-bind="text: message"></span></p>
+    <div class="list-group-item">
+      <div class="row">
+        <!-- ko if: withCategory -->
+        <div class="col-xs-2">
+          <strong>
+            <span data-bind="text: category"></span>
+          </strong>
+        </div>
+        <!-- /ko -->
+        <div class="col-xs-2">
+          <em>
+            <span data-bind="text: created"></span>
+          </em>
+        </div>
+        <!-- ko if: withCategory -->
+        <div class="col-xs-8">
+          <span data-bind="text: message"></span>
+        </div>
+        <!-- /ko -->
+        <!-- ko ifnot: withCategory -->
+        <div class="col-xs-10">
+          <span data-bind="text: message"></span>
+        </div>
+        <!-- /ko -->
+      </div>
+    </div>
   </script>
+
   <script id="all-messages-template" type="template/html">
     <hr />
     <em>Усе паведамленні (не аднаўляецца):</em>
-    <div data-bind="foreach: messages">
-      <em data-bind="text: $data.category"></em><br />
+    <div class="list-group" data-bind="foreach: messages">
       <div data-bind="component: {name: 'message', 
-                                  params: {message: $data}}">
+                                  params: {message: $data,
+                                           withCategory: true}}">
       </div>
     </div>
-    <button data-bind="click: load">
-      Ладаваць...
+    <button class="btn btn-default" data-bind="click: load">
+      Заладаваць...
     </button>
   </script>
 {% endblock body %}
