@@ -67,6 +67,7 @@ def get_messages():
     })
 
 @views.route('/messages/<int:id>', methods=['DELETE'])
+@authorized_view
 def delete_message(id):
     remove_message(id)
     return ("", 200)
