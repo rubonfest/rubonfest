@@ -1,0 +1,17 @@
+{% macro login_form(form) %}
+  <form method="POST" action="{{ url_for('.login') }}">
+    <div class="form-group">
+      {{ form.login.label() }} {{ form.login(class_="form-control") }}
+    </div>
+    <div class="form-group">
+      {{ form.password.label() }} {{ form.password(class_="form-control") }}
+    </div>
+    {% if form.errors|length > 0 %}
+    <div class="alert alert-danger">{{ form.errors.values()[0][0] }}</div>
+    {% endif %}
+    <div class="form-group">
+      <input type="submit" class="btn btn-default" value="Увайсці" />
+    </div>
+    {{ form.hidden_tag() }}
+  </form>
+{% endmacro %}

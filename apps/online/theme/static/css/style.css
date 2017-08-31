@@ -3,6 +3,6 @@ img {
   max-width: 100%;
 }
 
-header, main {
+.theme-margin-bottom {
   margin-bottom: 3em;
 }

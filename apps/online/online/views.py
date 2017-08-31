@@ -58,8 +58,11 @@ def get_categorized_messages():
 def get_messages():
     offset = int(request.args['offset'])
     messages = query_all_messages(offset)
+    next_offset = offset
+    if messages.count() > 0:
+        next_offset = next_offset + category_limit
     return jsonify({
         'messages': map(message_dict, messages),
-        'next_offset': offset+category_limit
+        'next_offset': next_offset
     })
 

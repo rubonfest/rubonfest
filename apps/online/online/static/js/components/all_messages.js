@@ -16,6 +16,10 @@ define(['knockout', 'jquery'], function(ko, $) {
       }, this);
       this.offset = response.next_offset;
     }},
+    clear: {value: function(model, e) {
+      model.messages.removeAll();
+      this.offset = 0;
+    }},
   });
 
   return {

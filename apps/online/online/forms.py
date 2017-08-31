@@ -3,6 +3,8 @@ from flask import current_app
 from flask_wtf import FlaskForm
 from wtforms import fields, validators
 
+from .db import all_categories
+
 _login_invalid_message = u"Хібныя звесткі для ўваходу, паспрабуйце яшчэ"
 
 class LoginValidator(object):
@@ -39,11 +41,6 @@ class LoginForm(FlaskForm):
 
 class MessageForm(FlaskForm):
     category = fields.SelectField(u"Катэгорыя", 
-            choices=(
-                ("", u"-- катэгорыя --"),
-                (u"Дзіцячая пляцоўка", u"Дзіцячая пляцоўка"),
-                (u"Кулінарны фестываль", u"Кулінарны фестываль")
-            ),
             validators=(
                 validators.InputRequired(message=u"Выберыце, калі ласка, катэгорыю паведамлення"),
             )
@@ -54,4 +51,9 @@ class MessageForm(FlaskForm):
                 validators.Length(max=500, message=u"Калі ласка, не больш за 500 сімвалаў")
             )
     )
+
+    def __init__(self, *args, **kwargs):
+        super(MessageForm, self).__init__(*args, **kwargs)
+        self.category.choices=[ (name, name) for name in all_categories]
+        self.category.choices.insert(0, ("", u"-- катэгорыя --"))
 
