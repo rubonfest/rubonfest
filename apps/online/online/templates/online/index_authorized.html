@@ -1,6 +1,12 @@
 {% extends 'online/index.html' %}
 
 {% block top %}
+  <div class="theme-margin-bottom pull-right">
+    <a href="{{ url_for('.logout') }}" class="btn btn-default">
+      <span class="glyphicon glyphicon-log-out"></span> Выйсці
+    </a>
+  </div>
+  <div class="clearfix"></div>
   {% for message in get_flashed_messages(category_filter=['error']) %}
     <div class="text-danger">{{ message }}</div>
   {% endfor %}

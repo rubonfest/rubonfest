@@ -36,6 +36,7 @@ class Message(db.Model):
 
 def message_dict(message):
     return {
+            'id': message.id,
             'category': message.category,
             'message': message.message,
             'created': message.created,
@@ -63,3 +64,8 @@ def query_all_messages(offset):
                          .offset(offset)
                          .limit(category_limit)
     )
+
+def remove_message(id):
+    m = Message.query.get_or_404(id)
+    db.session.delete(m)
+    db.session.commit()

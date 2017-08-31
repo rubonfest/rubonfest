@@ -3,7 +3,7 @@ from flask import Blueprint, render_template, session, redirect, url_for, flash,
 
 from .forms import LoginForm, MessageForm
 from .utils import authorized_view
-from .db    import create_message, query_all_messages, message_dict, category_limit, query_categorized_messages
+from .db    import create_message, query_all_messages, message_dict, category_limit, query_categorized_messages, remove_message
 
 views = Blueprint('views', __name__)
 
@@ -65,4 +65,9 @@ def get_messages():
         'messages': map(message_dict, messages),
         'next_offset': next_offset
     })
+
+@views.route('/messages/<int:id>', methods=['DELETE'])
+def delete_message(id):
+    remove_message(id)
+    return ("", 200)
 

@@ -1,10 +1,23 @@
-define(['knockout'], function(ko) {
+define(['knockout', 'jquery'], function(ko, $) {
   function ViewModel(params) {
+    this.id = params.message.id;
     this.message = params.message.message;
     this.category = params.message.category;
     this.created = makeCreated(params.message.created);
     this.withCategory = params.withCategory || false;
+    this.showControls = params.showControls || false;
   }
+  ViewModel.prototype = Object.create(Object.prototype, {
+    remove: {value: function(model, e) {
+      var sure = confirm('Вы дакладна жадаеце выдаліць гэтае паведамленне?');
+      if ( ! sure)
+        return;
+      $.ajax({
+        type: 'DELETE',
+        url: '/messages/'+model.id,
+      });
+    }},
+  });
 
   function pad(number) {
     if (number < 10) {

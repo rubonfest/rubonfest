@@ -11,5 +11,5 @@ require(['knockout'], function(ko) {
   ko.components.register('message-category', { require: 'components/message_category' });
   ko.components.register('all-messages', { require: 'components/all_messages' });
   ko.components.register('message', { require: 'components/message' });
-  ko.applyBindings();
+  ko.applyBindings({isAuthorized: window.rubonSettings.isAuthorized});
 });
