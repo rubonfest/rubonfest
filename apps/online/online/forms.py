@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from flask import current_app
 from flask_wtf import FlaskForm
+from flask_wtf.file import FileField
 from wtforms import fields, validators
 
 from .db import all_categories
@@ -45,6 +46,7 @@ class MessageForm(FlaskForm):
                 validators.InputRequired(message=u"Выберыце, калі ласка, катэгорыю паведамлення"),
             )
     )
+    photo = FileField(u"Фатаздымак")
     message = fields.TextAreaField(u"Паведамленне",
             validators=(
                 validators.InputRequired(message=u"Як жа без паведамлення?"),

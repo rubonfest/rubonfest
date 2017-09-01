@@ -80,11 +80,21 @@
         </div>
         <!-- ko if: withCategory -->
         <div class="col-xs-7">
+          <!-- ko if: photo -->
+          <a class="theme-message-imagelink" target="_blank" data-bind="attr: {href: photo}">
+            <img class="theme-message-image" data-bind="attr: {src: photo, alt: category}" />
+          </a>
+          <!-- /ko -->
           <span data-bind="text: message"></span>
         </div>
         <!-- /ko -->
         <!-- ko ifnot: withCategory -->
         <div class="col-xs-9">
+          <!-- ko if: photo -->
+          <a class="theme-message-imagelink" target="_blank" data-bind="attr: {href: photo}">
+            <img class="theme-message-image" data-bind="attr: {src: photo, alt: category}" />
+          </a>
+          <!-- /ko -->
           <span data-bind="text: message"></span>
         </div>
         <!-- /ko -->

@@ -2,6 +2,8 @@
 from flask_sqlalchemy import SQLAlchemy
 from time import time
 
+from .utils import photos
+
 db = SQLAlchemy()
 
 all_categories = (
@@ -27,12 +29,14 @@ class Message(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     category = db.Column(db.Unicode(100), nullable=False)
     message = db.Column(db.UnicodeText, nullable=False)
+    filename = db.Column(db.Unicode(200))
     created = db.Column(db.Integer(), nullable=False)
 
-    def __init__(self, category, message):
+    def __init__(self, category, message, filename):
         self.category   = category
         self.message    = message
         self.created    = int(time())
+        self.filename   = filename
 
 def message_dict(message):
     return {
@@ -40,6 +44,7 @@ def message_dict(message):
             'category': message.category,
             'message': message.message,
             'created': message.created,
+            'photo': photos.url(message.filename) if message.filename != None else None
     }
 
 def create_message(*args):
