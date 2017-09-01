@@ -518,6 +518,18 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-news/pragrama-kulinarnaga-festu/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-news/pragrama-kulinarnaga-festu/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-news/pragrama-kulinarnaga-festu/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-news/konkursy-dzicyachaj-plyacoki/</loc>
     
       <xhtml:link rel="alternate"
