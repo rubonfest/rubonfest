@@ -35,8 +35,7 @@ def post_messages():
     form = MessageForm()
     if form.validate_on_submit():
         photo = None
-        print(request.files.keys())
-        if 'photo' in request.files:
+        if 'photo' in request.files and request.files['photo']:
             photo = photos.save(request.files['photo'])
         create_message(form.category.data, form.message.data, photo)
         flash(u"Дзякуй, паведамленне паспяхова атрымана", 'info')

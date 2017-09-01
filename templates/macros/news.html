@@ -1,5 +1,10 @@
 {% macro news_block(news) %}
   <h4>{{ news.title }}</h4>
+  <h2>
+    <a href="http://online.rubonfest.by" target="_blank">
+      {{ news.online_rubon_text }}
+    </a>
+  </h2>
   <div id="news-content">
     <img id="news-left" src="{{ '/static/images/news-left.jpg'|url }}" />
     <img id="news-right" src="{{ '/static/images/news-right.jpg'|url }}" />
