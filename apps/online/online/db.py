@@ -47,7 +47,7 @@ def message_dict(message):
             'message': message.message,
             'created': message.created,
             'photo': '/preset/list/%s' % message.filename if message.filename != None else None,
-            'photo_full': photos.url(message.filename),
+            'photo_full': photos.url(message.filename) if message.filename != None else None,
     }
 
 def create_message(*args):
