@@ -2,3 +2,4 @@ env
 instance/*.cfg
 *.swp
 *.pyc
+online/static/images/list/*

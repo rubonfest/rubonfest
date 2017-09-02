@@ -4,6 +4,7 @@ define(['knockout', 'jquery'], function(ko, $) {
     this.message = params.message.message;
     this.category = params.message.category;
     this.photo = params.message.photo
+    this.photo_full = params.message.photo_full
     this.created = makeCreated(params.message.created);
     this.withCategory = params.withCategory || false;
     this.showControls = params.showControls || false;

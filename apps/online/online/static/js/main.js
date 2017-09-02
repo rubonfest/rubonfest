@@ -7,9 +7,9 @@ requirejs.config({
 });
 require(['knockout'], function(ko) {
   ko.components.register('global', { require: 'components/global' });
-  ko.components.register('message-catalog', { require: 'components/message_catalog' });
+  ko.components.register('message-catalog', { require: 'components/message_catalog_1' });
   ko.components.register('message-category', { require: 'components/message_category' });
   ko.components.register('all-messages', { require: 'components/all_messages' });
-  ko.components.register('message', { require: 'components/message' });
+  ko.components.register('message', { require: 'components/message_1' });
   ko.applyBindings({isAuthorized: window.rubonSettings.isAuthorized});
 });

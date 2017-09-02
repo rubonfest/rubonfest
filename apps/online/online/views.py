@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-from flask import Blueprint, render_template, session, redirect, url_for, flash, jsonify, request, abort
+from os import path
+from flask import Blueprint, render_template, session, redirect, url_for, flash, jsonify, request, abort, send_from_directory, current_app
+from PIL import Image
 
 from .forms import LoginForm, MessageForm
 from .utils import authorized_view, photos
@@ -75,3 +77,19 @@ def delete_message(id):
     remove_message(id)
     return ("", 200)
 
+@views.route('/preset/list/<string:filename>', methods=['GET'])
+def get_list_preset(filename):
+    filepath = photos.path(filename)
+    try:
+        orig = Image.open(filepath)
+    except IOError:
+        abort(404)
+    preset_path = path.join(path.dirname(__file__), current_app.static_folder, 'images', 'list', filename)
+    if path.exists(preset_path):
+        return send_from_directory(path.dirname(preset_path), filename)
+    preset = orig.resize((int(orig.width*0.2), int(orig.height*0.2)))
+    try:
+        preset.save(preset_path)
+    except IOError:
+        abort(500)
+    return send_from_directory(path.dirname(preset_path), filename)

@@ -91,7 +91,7 @@
         <!-- ko if: withCategory -->
         <div class="col-xs-7">
           <!-- ko if: photo -->
-          <a class="theme-message-imagelink" target="_blank" data-bind="attr: {href: photo}">
+          <a class="theme-message-imagelink" target="_blank" data-bind="attr: {href: photo_full}">
             <img class="theme-message-image" data-bind="attr: {src: photo, alt: category}" />
           </a>
           <!-- /ko -->
@@ -101,7 +101,7 @@
         <!-- ko ifnot: withCategory -->
         <div class="col-xs-9">
           <!-- ko if: photo -->
-          <a class="theme-message-imagelink" target="_blank" data-bind="attr: {href: photo}">
+          <a class="theme-message-imagelink" target="_blank" data-bind="attr: {href: photo_full}">
             <img class="theme-message-image" data-bind="attr: {src: photo, alt: category}" />
           </a>
           <!-- /ko -->
