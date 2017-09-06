@@ -1,0 +1,25 @@
+{% extends 'page_layout.html' %}
+
+{% block article_title %}{{ this.title }}{% endblock %}
+
+{% block page_children %}
+  <div class="container">
+    {% for link in this.children.all() %}
+    <div class="row mass-media-link">
+      <div class="offset-by-three three columns">
+        {% set logo = this.attachments.images.get(link.logo) %}
+        {% if logo %}
+          <a href="{{ link.url }}"><img src={{ logo|url }} /></a>
+        {% endif %}
+      </div>
+      <div class="three columns">
+        <h4><a href="{{ link.url }}">{{ link.title }}</a></h4>
+      </div>
+      <div class="three columns">
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+{% endblock page_children %}
+
+

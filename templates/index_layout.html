@@ -175,10 +175,11 @@
   {% block news %}
   <section id="news" class="side-borders">
     {% set news = site.get('festival-news', alt=this.alt) %}
+    {% set mm   = site.get('mass-media', alt=this.alt) %}
     <div class="container">
       <div class="row">
         <div class="column">
-          {{ news_block(news) }}
+          {{ news_block(news,mm) }}
         </div>
       </div>
     </div>

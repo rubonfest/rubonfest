@@ -306,6 +306,17 @@ header {
   margin-top: 2em;
 }
 
+/* mass media */
+.mass-media-link {
+  margin-bottom: 4em;
+}
+.mass-media-link img {
+  max-width: 200px;
+}
+.mass-media-link h4 {
+  font-family: Charis_R;
+}
+
 /* photo-gap-1 */
 #photo-gap-1 {
   background-image: url('../images/photo-gap-1.jpg');
