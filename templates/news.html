@@ -3,5 +3,6 @@
 {% from 'macros/news.html' import news_block %}
 
 {% block content %}
-  {{ news_block(this) }}
+  {% set mm   = site.get('mass-media', alt=this.alt) %}
+  {{ news_block(this, mm) }}
 {% endblock content %}
