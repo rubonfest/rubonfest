@@ -87,8 +87,8 @@ def get_list_preset(filename):
     preset_path = path.join(path.dirname(__file__), current_app.static_folder, 'images', 'list', filename)
     if path.exists(preset_path):
         return send_from_directory(path.dirname(preset_path), filename)
-    preset = orig.resize((int(orig.width*0.2), int(orig.height*0.2)))
     try:
+        preset = orig.resize((int(orig.width*0.2), int(orig.height*0.2)))
         preset.save(preset_path)
     except IOError:
         abort(500)
