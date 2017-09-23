@@ -86,6 +86,18 @@
     
   </url>
   <url>
+    <loc>http://rubonfest.by/festival-events/kvest-polock-turisticheskij/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-events/kvest-polock-turisticheskij/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-events/kvest-polock-turisticheskij/" />
+    
+  </url>
+  <url>
     <loc>http://rubonfest.by/festival-events/pavetranyya-shary/</loc>
     
       <xhtml:link rel="alternate"
@@ -515,6 +527,18 @@
       <xhtml:link rel="alternate"
                   hreflang="ru"
                   href="http://rubonfest.by/ru/festival-news/" />
+    
+  </url>
+  <url>
+    <loc>http://rubonfest.by/festival-news/kvest-polock-turisticheskij/</loc>
+    
+      <xhtml:link rel="alternate"
+                  hreflang="en"
+                  href="http://rubonfest.by/en/festival-news/kvest-polock-turisticheskij/" />
+    
+      <xhtml:link rel="alternate"
+                  hreflang="ru"
+                  href="http://rubonfest.by/ru/festival-news/kvest-polock-turisticheskij/" />
     
   </url>
   <url>
