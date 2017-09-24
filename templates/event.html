@@ -7,7 +7,22 @@
   <link rel="stylesheet" href="http://fotakonkurs.rubonfest.by/static/css/fotakonkurs.css" type="text/css"/>
 {% endblock %}
 
+{% block gallery_content %}
+{% set gallery = site.get(this.path~'/gallery') %}
+{% if gallery != None %}
+  <div id="festival-gallery">
+  {% for image in gallery.attachments.all() %}
+  <a href="{{ image|url }}" 
+     data-lightbox="event-gallery">
+     <img src="{{ image.thumbnail(300, 300, True)|url }}" />
+  </a>
+  {% endfor %}
+  </div>
+{% endif %}
+{% endblock gallery_content %}
+
 {% block javascripts %}
   {{ super() }}
   <script src="http://fotakonkurs.rubonfest.by/static/js/fotakonkurs.js"></script>
+  <script src="{{ '/static/js/lightbox2-master/dist/js/lightbox.min.js'|url }}"></script>
 {% endblock javascripts %}
